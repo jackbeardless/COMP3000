@@ -1,5 +1,5 @@
 import re
-from typing import Optional, List, Dict
+from typing import Optional, List, Dict, Tuple
 from urllib.parse import urlparse
 
 PLATFORM_HOST_HINTS = {
@@ -14,22 +14,16 @@ PLATFORM_HOST_HINTS = {
     "reddit.com": "reddit",
     "facebook.com": "facebook",
     "linkedin.com": "linkedin",
+    "patreon.com": "patreon",
+    "steamcommunity.com": "steam",
+    "pinterest.com": "pinterest",
+    "vimeo.com": "vimeo",
 }
+
+SFURL_RE = re.compile(r"<SFURL>\s*(https?://[^<\s]+)\s*</SFURL>", re.IGNORECASE)
 
 def _as_str(x) -> str:
     return "" if x is None else str(x)
-
-def looks_like_urlish(s: str) -> bool:
-    if not s or " " in s:
-        return False
-    return s.startswith(("http://", "https://", "www.")) or ("." in s and "/" in s)
-
-def ensure_scheme(s: str) -> str:
-    if s.startswith(("http://", "https://")):
-        return s
-    if s.startswith("www."):
-        return "https://" + s
-    return "https://" + s
 
 def platform_from_url(url: str) -> Optional[str]:
     try:
@@ -41,71 +35,100 @@ def platform_from_url(url: str) -> Optional[str]:
             return name
     return None
 
-def guess_platform_from_text(text: str) -> Optional[str]:
-    t = text.lower()
-    for host, name in PLATFORM_HOST_HINTS.items():
-        if host in t or name in t:
-            return name
+def username_from_url(url: str) -> Optional[str]:
+    try:
+        path = urlparse(url).path.strip("/")
+    except Exception:
+        return None
+    if not path:
+        return None
+    first = path.split("/")[0]
+    if first.lower() in {"watch", "channel", "c", "user", "status", "hashtag", "search"}:
+        return None
+    if re.fullmatch(r"[A-Za-z0-9._-]{2,64}", first):
+        return first
     return None
 
+def extract_urls(value: str) -> List[str]:
+    """Extract URLs from raw SpiderFoot strings (supports <SFURL> tags and plain URLs)."""
+    urls = []
+
+    # <SFURL>...</SFURL>
+    for m in SFURL_RE.finditer(value):
+        urls.append(m.group(1))
+
+    # plain http(s) URLs anywhere in the string
+    for m in re.finditer(r"(https?://[^\s<]+)", value):
+        u = m.group(1).rstrip(").,]")
+        urls.append(u)
+
+    # de-dup while preserving order
+    seen = set()
+    out = []
+    for u in urls:
+        if u not in seen:
+            seen.add(u)
+            out.append(u)
+    return out
+
 def normalize_events(target: str, events: List[Dict]) -> Dict:
-    evidence = []
+    evidence: List[Dict] = []
     usernames = set()
     urls = set()
-    accounts = {}  # key=(platform_guess, value)
+
+    # accounts keyed by URL (best) or by (platform,value)
+    accounts_by_url: Dict[str, Dict] = {}
+    accounts_other: Dict[Tuple[str, str], Dict] = {}
 
     for e in events:
         etype = _as_str(e.get("type")).strip()
-        data_raw = _as_str(e.get("data")).strip()
+        value = _as_str(e.get("data")).strip()
         module = _as_str(e.get("module")).strip()
         source = _as_str(e.get("source")).strip()
         ts = e.get("generated")
 
-        if not data_raw or not etype:
+        if not etype or not value:
             continue
 
         evidence.append({
             "type": etype,
-            "value": data_raw,
+            "value": value,
             "module": module,
             "source": source,
             "ts": ts
         })
 
         if etype.lower() == "username":
-            usernames.add(data_raw)
+            usernames.add(value)
 
-        # URLs if present
-        if looks_like_urlish(data_raw):
-            url = ensure_scheme(data_raw)
-            urls.add(url)
-            plat = platform_from_url(url)
-            if plat:
-                key = (plat, url)
-                accounts[key] = {
+        found_urls = extract_urls(value)
+        for u in found_urls:
+            urls.add(u)
+            plat = platform_from_url(u)
+            uname = username_from_url(u)
+
+            acc = accounts_by_url.get(u)
+            if not acc:
+                acc = {
                     "platform": plat,
-                    "value": url,
+                    "url": u,
+                    "username": uname,
                     "kind": "url",
-                    "signals": accounts.get(key, {}).get("signals", []) + [{
-                        "from_event": etype, "module": module, "source": source
-                    }]
+                    "signals": []
                 }
-            continue
+            acc["signals"].append({"from_event": etype, "module": module, "source": source})
+            accounts_by_url[u] = acc
 
-        # Non-URL account evidence
-        # ACCOUNT_EXTERNAL often contains something like "site:username" or just a handle-like value
-        if etype.upper() in {"ACCOUNT_EXTERNAL", "USERNAME_MEMBER"}:
-            plat_guess = guess_platform_from_text(source) or guess_platform_from_text(module) or guess_platform_from_text(data_raw)
-            val = data_raw
-            key = (plat_guess or "unknown", val)
-            accounts[key] = {
-                "platform": plat_guess,
-                "value": val,
-                "kind": etype.lower(),
-                "signals": accounts.get(key, {}).get("signals", []) + [{
-                    "from_event": etype, "module": module, "source": source
-                }]
-            }
+        # Also capture non-URL “account” evidence as fallback
+        if etype.lower() in {"account on external site", "account_external", "username_member"} and not found_urls:
+            key = (platform_from_url(value) or "unknown", value)
+            acc2 = accounts_other.get(key)
+            if not acc2:
+                acc2 = {"platform": key[0], "value": value, "kind": etype.lower(), "signals": []}
+            acc2["signals"].append({"from_event": etype, "module": module, "source": source})
+            accounts_other[key] = acc2
+
+    accounts = list(accounts_by_url.values()) + list(accounts_other.values())
 
     return {
         "target": target,
@@ -118,6 +141,6 @@ def normalize_events(target: str, events: List[Dict]) -> Dict:
         },
         "usernames": sorted(usernames),
         "urls": sorted(urls),
-        "accounts": list(accounts.values()),
+        "accounts": accounts,
         "evidence": evidence,
     }
