@@ -1,0 +1,1202 @@
+{
+  "target": "Yogscast",
+  "counts": {
+    "raw_events": 57,
+    "evidence": 57,
+    "unique_usernames": 1,
+    "unique_urls": 56,
+    "accounts": 56
+  },
+  "usernames": [
+    "Yogscast"
+  ],
+  "urls": [
+    "http://Yogscast.blogspot.com",
+    "https://Yogscast.bdsmlr.com",
+    "https://Yogscast.chatango.com",
+    "https://Yogscast.insanejournal.com/profile",
+    "https://Yogscast.livejournal.com",
+    "https://archive.org/search.php?query=Yogscast",
+    "https://archive.org/wayback/available?url=https://instagram.com/Yogscast/",
+    "https://chyoa.com/user/Yogscast",
+    "https://discord.com/invite/Yogscast",
+    "https://disqus.com/by/Yogscast/",
+    "https://fansly.com/Yogscast/posts",
+    "https://flipboard.com/@Yogscast",
+    "https://genius.com/artists/Yogscast",
+    "https://github.com/CameronJMurphy/Yogscast",
+    "https://github.com/JakeSteam/Yogscast",
+    "https://github.com/Yogscast",
+    "https://imageshack.com/user/Yogscast",
+    "https://kik.me/Yogscast",
+    "https://letterboxd.com/Yogscast/",
+    "https://linktr.ee/Yogscast",
+    "https://mcuuid.net/?q=Yogscast",
+    "https://meta.wikimedia.org/wiki/Special:CentralAuth?target=Yogscast",
+    "https://myspace.com/Yogscast",
+    "https://nightbot.tv/t/Yogscast/commands",
+    "https://origins.habbo.com/api/public/users?name=Yogscast",
+    "https://pastebin.com/u/Yogscast",
+    "https://picsart.com/u/Yogscast",
+    "https://scratch.mit.edu/users/Yogscast/",
+    "https://stackoverflow.com/users/filter?search=Yogscast",
+    "https://steamcommunity.com/id/Yogscast",
+    "https://streamelements.com/Yogscast",
+    "https://streamlabs.com/Yogscast/tip",
+    "https://tinder.com/@Yogscast",
+    "https://truckersmp.com/user/search?search=Yogscast",
+    "https://twitch.tv/Yogscast/",
+    "https://vimeo.com/Yogscast",
+    "https://web.archive.org/web/*/https://twitter.com/Yogscast/status/*",
+    "https://web.archive.org/web/2/https://twitter.com/Yogscast",
+    "https://web.zepeto.me/share/user/profile/Yogscast?language=en",
+    "https://www.7cups.com/@Yogscast",
+    "https://www.artbreeder.com/Yogscast",
+    "https://www.chess.com/member/Yogscast",
+    "https://www.deviantart.com/Yogscast",
+    "https://www.duolingo.com/profile/Yogscast",
+    "https://www.etoro.com/people/Yogscast",
+    "https://www.gog.com/u/Yogscast",
+    "https://www.instagram.com/Yogscast/",
+    "https://www.kongregate.com/accounts/Yogscast",
+    "https://www.last.fm/user/Yogscast",
+    "https://www.mixcloud.com/Yogscast/",
+    "https://www.patreon.com/Yogscast",
+    "https://www.periscope.tv/Yogscast",
+    "https://www.pinterest.com/Yogscast/",
+    "https://www.reddit.com/user/Yogscast",
+    "https://www.smule.com/Yogscast",
+    "https://www.wattpad.com/user/Yogscast"
+  ],
+  "accounts": [
+    {
+      "platform": "github",
+      "url": "https://github.com/CameronJMurphy/Yogscast",
+      "username": "CameronJMurphy",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Public Code Repository",
+          "module": "sfp_github",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": "github",
+      "url": "https://github.com/JakeSteam/Yogscast",
+      "username": "JakeSteam",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Public Code Repository",
+          "module": "sfp_github",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.7cups.com/@Yogscast",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.artbreeder.com/Yogscast",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://Yogscast.bdsmlr.com",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "http://Yogscast.blogspot.com",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.chess.com/member/Yogscast",
+      "username": "member",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://chyoa.com/user/Yogscast",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://Yogscast.chatango.com",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.deviantart.com/Yogscast",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://discord.com/invite/Yogscast",
+      "username": "invite",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://disqus.com/by/Yogscast/",
+      "username": "by",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.etoro.com/people/Yogscast",
+      "username": "people",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.duolingo.com/profile/Yogscast",
+      "username": "profile",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://fansly.com/Yogscast/posts",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://flipboard.com/@Yogscast",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://genius.com/artists/Yogscast",
+      "username": "artists",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": "github",
+      "url": "https://github.com/Yogscast",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.gog.com/u/Yogscast",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://Yogscast.insanejournal.com/profile",
+      "username": "profile",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/Yogscast/",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://archive.org/wayback/available?url=https://instagram.com/Yogscast/",
+      "username": "wayback",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://archive.org/search.php?query=Yogscast",
+      "username": "search.php",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://imageshack.com/user/Yogscast",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://kik.me/Yogscast",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.kongregate.com/accounts/Yogscast",
+      "username": "accounts",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.last.fm/user/Yogscast",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://letterboxd.com/Yogscast/",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://Yogscast.livejournal.com",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://linktr.ee/Yogscast",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://mcuuid.net/?q=Yogscast",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://meta.wikimedia.org/wiki/Special:CentralAuth?target=Yogscast",
+      "username": "wiki",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.mixcloud.com/Yogscast/",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://myspace.com/Yogscast",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://nightbot.tv/t/Yogscast/commands",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://origins.habbo.com/api/public/users?name=Yogscast",
+      "username": "api",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://pastebin.com/u/Yogscast",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": "patreon",
+      "url": "https://www.patreon.com/Yogscast",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://picsart.com/u/Yogscast",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": "pinterest",
+      "url": "https://www.pinterest.com/Yogscast/",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.periscope.tv/Yogscast",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": "reddit",
+      "url": "https://www.reddit.com/user/Yogscast",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://scratch.mit.edu/users/Yogscast/",
+      "username": "users",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.smule.com/Yogscast",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://stackoverflow.com/users/filter?search=Yogscast",
+      "username": "users",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": "steam",
+      "url": "https://steamcommunity.com/id/Yogscast",
+      "username": "id",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://streamelements.com/Yogscast",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://streamlabs.com/Yogscast/tip",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://tinder.com/@Yogscast",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": "twitch",
+      "url": "https://twitch.tv/Yogscast/",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://web.archive.org/web/*/https://twitter.com/Yogscast/status/*",
+      "username": "web",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://web.archive.org/web/2/https://twitter.com/Yogscast",
+      "username": "web",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://truckersmp.com/user/search?search=Yogscast",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": "vimeo",
+      "url": "https://vimeo.com/Yogscast",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.wattpad.com/user/Yogscast",
+      "username": null,
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://web.zepeto.me/share/user/profile/Yogscast?language=en",
+      "username": "share",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "type": "Username",
+      "value": "Yogscast",
+      "module": "SpiderFoot UI",
+      "source": "Yogscast",
+      "ts": 1772053547
+    },
+    {
+      "type": "Public Code Repository",
+      "value": "Name: Yogscast\nURL: https://github.com/CameronJMurphy/Yogscast\nDescription: For Yogscast",
+      "module": "sfp_github",
+      "source": "Yogscast",
+      "ts": 1772053549
+    },
+    {
+      "type": "Public Code Repository",
+      "value": "Name: Yogscast\nURL: https://github.com/JakeSteam/Yogscast\nDescription: Automatically updated list of Yogscast official & fan channels",
+      "module": "sfp_github",
+      "source": "Yogscast",
+      "ts": 1772053549
+    },
+    {
+      "type": "Account on External Site",
+      "value": "7cup (Category: social)\n<SFURL>https://www.7cups.com/@Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "ArtBreeder (Category: art)\n<SFURL>https://www.artbreeder.com/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "BDSMLR (Category: xx NSFW xx)\n<SFURL>https://Yogscast.bdsmlr.com</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Blogspot (Category: blog)\n<SFURL>http://Yogscast.blogspot.com</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Chess.com (Category: gaming)\n<SFURL>https://www.chess.com/member/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Chyoa (Category: xx NSFW xx)\n<SFURL>https://chyoa.com/user/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "chatango.com (Category: social)\n<SFURL>https://Yogscast.chatango.com</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "DeviantArt (Category: images)\n<SFURL>https://www.deviantart.com/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Discord (Invite) (Category: social)\n<SFURL>https://discord.com/invite/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Disqus (Category: social)\n<SFURL>https://disqus.com/by/Yogscast/</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Etoro (Category: finance)\n<SFURL>https://www.etoro.com/people/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Duolingo (Category: hobby)\n<SFURL>https://www.duolingo.com/profile/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Fansly (Category: xx NSFW xx)\n<SFURL>https://fansly.com/Yogscast/posts</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Flipboard (Category: tech)\n<SFURL>https://flipboard.com/@Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Genius (Artist) (Category: music)\n<SFURL>https://genius.com/artists/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "GitHub (User) (Category: coding)\n<SFURL>https://github.com/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "GOG (Category: gaming)\n<SFURL>https://www.gog.com/u/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "InsaneJournal (Category: social)\n<SFURL>https://Yogscast.insanejournal.com/profile</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Instagram (Category: social)\n<SFURL>https://www.instagram.com/Yogscast/</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Instagram_archives (Category: social)\n<SFURL>https://archive.org/wayback/available?url=https://instagram.com/Yogscast/</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Internet Archive User Search (Category: misc)\n<SFURL>https://archive.org/search.php?query=Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "ImageShack (Category: images)\n<SFURL>https://imageshack.com/user/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "kik (Category: social)\n<SFURL>https://kik.me/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Kongregate (Category: gaming)\n<SFURL>https://www.kongregate.com/accounts/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Last.fm (Category: music)\n<SFURL>https://www.last.fm/user/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Letterboxd (Category: social)\n<SFURL>https://letterboxd.com/Yogscast/</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Livejournal (Category: blog)\n<SFURL>https://Yogscast.livejournal.com</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Linktree (Category: social)\n<SFURL>https://linktr.ee/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "MCUUID (Minecraft) (Category: gaming)\n<SFURL>https://mcuuid.net/?q=Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Meta-Wiki (Wikimedia) (Category: news)\n<SFURL>https://meta.wikimedia.org/wiki/Special:CentralAuth?target=Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Mixcloud (Category: music)\n<SFURL>https://www.mixcloud.com/Yogscast/</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "MySpace (Category: social)\n<SFURL>https://myspace.com/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Nightbot (Category: social)\n<SFURL>https://nightbot.tv/t/Yogscast/commands</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Origins.Habbo.com (Category: gaming)\n<SFURL>https://origins.habbo.com/api/public/users?name=Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Pastebin (Category: tech)\n<SFURL>https://pastebin.com/u/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Patreon (Category: finance)\n<SFURL>https://www.patreon.com/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Picsart (Category: art)\n<SFURL>https://picsart.com/u/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Pinterest (Category: social)\n<SFURL>https://www.pinterest.com/Yogscast/</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Periscope (Category: video)\n<SFURL>https://www.periscope.tv/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Reddit (Category: social)\n<SFURL>https://www.reddit.com/user/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Scratch (Category: coding)\n<SFURL>https://scratch.mit.edu/users/Yogscast/</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "smule (Category: music)\n<SFURL>https://www.smule.com/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "StackOverflow (Category: coding)\n<SFURL>https://stackoverflow.com/users/filter?search=Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Steam (Category: gaming)\n<SFURL>https://steamcommunity.com/id/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "StreamElements (Category: finance)\n<SFURL>https://streamelements.com/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "StreamLabs (Category: finance)\n<SFURL>https://streamlabs.com/Yogscast/tip</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Tinder (Category: dating)\n<SFURL>https://tinder.com/@Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Twitch (Category: gaming)\n<SFURL>https://twitch.tv/Yogscast/</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Twitter archived tweets (Category: archived)\n<SFURL>https://web.archive.org/web/*/https://twitter.com/Yogscast/status/*</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Twitter archived profile (Category: archived)\n<SFURL>https://web.archive.org/web/2/https://twitter.com/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "TruckersMP (Category: gaming)\n<SFURL>https://truckersmp.com/user/search?search=Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Vimeo (Category: video)\n<SFURL>https://vimeo.com/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Wattpad (Category: social)\n<SFURL>https://www.wattpad.com/user/Yogscast</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Zepeto (Category: social)\n<SFURL>https://web.zepeto.me/share/user/profile/Yogscast?language=en</SFURL>",
+      "module": "sfp_accounts",
+      "source": "Yogscast",
+      "ts": 1772053647
+    }
+  ]
+}
