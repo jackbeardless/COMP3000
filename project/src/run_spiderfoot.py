@@ -12,8 +12,8 @@ LOGS_DIR = PROJECT_DIR / "logs"
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
-# This is the mode that you proved returns ~128 events
 EVENT_TYPES = "USERNAME,ACCOUNT_EXTERNAL,USERNAME_MEMBER,URL"
+MAX_THREADS = 5  # lower = fewer "too many open files" issues on macOS
 
 def run_spiderfoot_username_scan(target: str, output_format: str = "json") -> dict:
     ts = int(time.time())
@@ -22,10 +22,14 @@ def run_spiderfoot_username_scan(target: str, output_format: str = "json") -> di
     out_json = RESULTS_DIR / f"spiderfoot_{safe_target}_{ts}.{output_format}"
     out_stderr = LOGS_DIR / f"spiderfoot_{safe_target}_{ts}.stderr.log"
 
+    # Ensure SpiderFoot dirs exist, raise ulimit, then run scan
     cmd = (
+        'mkdir -p "$HOME/.spiderfoot/db" "$HOME/.spiderfoot/cache" && '
+        'chmod -R u+rwX "$HOME/.spiderfoot" && '
+        'ulimit -n 8192 && '
         f'cd "{SPIDERFOOT_DIR}" && '
-        f'source "venv/bin/activate" && '
-        f'python sf.py -s "{target}" -t "{EVENT_TYPES}" -o {output_format}'
+        'source "venv/bin/activate" && '
+        f'python sf.py -max-threads {MAX_THREADS} -s "{target}" -t "{EVENT_TYPES}" -o {output_format}'
     )
 
     print("Running (bash -lc):")
@@ -45,6 +49,7 @@ def run_spiderfoot_username_scan(target: str, output_format: str = "json") -> di
     return {
         "target": target,
         "event_types": EVENT_TYPES,
+        "max_threads": MAX_THREADS,
         "output_file": str(out_json),
         "stderr_log": str(out_stderr),
         "event_count": len(data) if isinstance(data, list) else None,
