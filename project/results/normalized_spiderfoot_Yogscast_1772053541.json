@@ -4,8 +4,8 @@
     "raw_events": 57,
     "evidence": 57,
     "unique_usernames": 1,
-    "unique_urls": 56,
-    "accounts": 56
+    "unique_urls": 54,
+    "accounts": 54
   },
   "usernames": [
     "Yogscast"
@@ -24,8 +24,6 @@
     "https://fansly.com/Yogscast/posts",
     "https://flipboard.com/@Yogscast",
     "https://genius.com/artists/Yogscast",
-    "https://github.com/CameronJMurphy/Yogscast",
-    "https://github.com/JakeSteam/Yogscast",
     "https://github.com/Yogscast",
     "https://imageshack.com/user/Yogscast",
     "https://kik.me/Yogscast",
@@ -70,35 +68,9 @@
   ],
   "accounts": [
     {
-      "platform": "github",
-      "url": "https://github.com/CameronJMurphy/Yogscast",
-      "username": "CameronJMurphy",
-      "kind": "url",
-      "signals": [
-        {
-          "from_event": "Public Code Repository",
-          "module": "sfp_github",
-          "source": "Yogscast"
-        }
-      ]
-    },
-    {
-      "platform": "github",
-      "url": "https://github.com/JakeSteam/Yogscast",
-      "username": "JakeSteam",
-      "kind": "url",
-      "signals": [
-        {
-          "from_event": "Public Code Repository",
-          "module": "sfp_github",
-          "source": "Yogscast"
-        }
-      ]
-    },
-    {
       "platform": null,
       "url": "https://www.7cups.com/@Yogscast",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -124,7 +96,7 @@
     {
       "platform": null,
       "url": "https://Yogscast.bdsmlr.com",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -137,7 +109,7 @@
     {
       "platform": null,
       "url": "http://Yogscast.blogspot.com",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -148,9 +120,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "chess",
       "url": "https://www.chess.com/member/Yogscast",
-      "username": "member",
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -163,7 +135,7 @@
     {
       "platform": null,
       "url": "https://chyoa.com/user/Yogscast",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -176,7 +148,7 @@
     {
       "platform": null,
       "url": "https://Yogscast.chatango.com",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -200,60 +172,8 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "discord",
       "url": "https://discord.com/invite/Yogscast",
-      "username": "invite",
-      "kind": "url",
-      "signals": [
-        {
-          "from_event": "Account on External Site",
-          "module": "sfp_accounts",
-          "source": "Yogscast"
-        }
-      ]
-    },
-    {
-      "platform": null,
-      "url": "https://disqus.com/by/Yogscast/",
-      "username": "by",
-      "kind": "url",
-      "signals": [
-        {
-          "from_event": "Account on External Site",
-          "module": "sfp_accounts",
-          "source": "Yogscast"
-        }
-      ]
-    },
-    {
-      "platform": null,
-      "url": "https://www.etoro.com/people/Yogscast",
-      "username": "people",
-      "kind": "url",
-      "signals": [
-        {
-          "from_event": "Account on External Site",
-          "module": "sfp_accounts",
-          "source": "Yogscast"
-        }
-      ]
-    },
-    {
-      "platform": null,
-      "url": "https://www.duolingo.com/profile/Yogscast",
-      "username": "profile",
-      "kind": "url",
-      "signals": [
-        {
-          "from_event": "Account on External Site",
-          "module": "sfp_accounts",
-          "source": "Yogscast"
-        }
-      ]
-    },
-    {
-      "platform": null,
-      "url": "https://fansly.com/Yogscast/posts",
       "username": "Yogscast",
       "kind": "url",
       "signals": [
@@ -266,8 +186,60 @@
     },
     {
       "platform": null,
+      "url": "https://disqus.com/by/Yogscast/",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.etoro.com/people/Yogscast",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://www.duolingo.com/profile/Yogscast",
+      "username": "Yogscast",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://fansly.com/Yogscast/posts",
+      "username": "posts",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "Yogscast"
+        }
+      ]
+    },
+    {
+      "platform": null,
       "url": "https://flipboard.com/@Yogscast",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -280,7 +252,7 @@
     {
       "platform": null,
       "url": "https://genius.com/artists/Yogscast",
-      "username": "artists",
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -304,9 +276,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "gog",
       "url": "https://www.gog.com/u/Yogscast",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -319,7 +291,7 @@
     {
       "platform": null,
       "url": "https://Yogscast.insanejournal.com/profile",
-      "username": "profile",
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -343,9 +315,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "archive",
       "url": "https://archive.org/wayback/available?url=https://instagram.com/Yogscast/",
-      "username": "wayback",
+      "username": "available",
       "kind": "url",
       "signals": [
         {
@@ -356,9 +328,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "archive",
       "url": "https://archive.org/search.php?query=Yogscast",
-      "username": "search.php",
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -369,9 +341,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "imageshack",
       "url": "https://imageshack.com/user/Yogscast",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -395,9 +367,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "kongregate",
       "url": "https://www.kongregate.com/accounts/Yogscast",
-      "username": "accounts",
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -408,9 +380,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "lastfm",
       "url": "https://www.last.fm/user/Yogscast",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -436,7 +408,7 @@
     {
       "platform": null,
       "url": "https://Yogscast.livejournal.com",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -462,7 +434,7 @@
     {
       "platform": null,
       "url": "https://mcuuid.net/?q=Yogscast",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -473,9 +445,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "wikimedia",
       "url": "https://meta.wikimedia.org/wiki/Special:CentralAuth?target=Yogscast",
-      "username": "wiki",
+      "username": "Special:CentralAuth",
       "kind": "url",
       "signals": [
         {
@@ -486,7 +458,7 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "mixcloud",
       "url": "https://www.mixcloud.com/Yogscast/",
       "username": "Yogscast",
       "kind": "url",
@@ -499,7 +471,7 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "myspace",
       "url": "https://myspace.com/Yogscast",
       "username": "Yogscast",
       "kind": "url",
@@ -514,7 +486,7 @@
     {
       "platform": null,
       "url": "https://nightbot.tv/t/Yogscast/commands",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -527,7 +499,7 @@
     {
       "platform": null,
       "url": "https://origins.habbo.com/api/public/users?name=Yogscast",
-      "username": "api",
+      "username": "public",
       "kind": "url",
       "signals": [
         {
@@ -538,9 +510,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "pastebin",
       "url": "https://pastebin.com/u/Yogscast",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -564,9 +536,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "picsart",
       "url": "https://picsart.com/u/Yogscast",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -605,7 +577,7 @@
     {
       "platform": "reddit",
       "url": "https://www.reddit.com/user/Yogscast",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -618,7 +590,7 @@
     {
       "platform": null,
       "url": "https://scratch.mit.edu/users/Yogscast/",
-      "username": "users",
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -642,9 +614,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "stackoverflow",
       "url": "https://stackoverflow.com/users/filter?search=Yogscast",
-      "username": "users",
+      "username": "filter",
       "kind": "url",
       "signals": [
         {
@@ -657,7 +629,7 @@
     {
       "platform": "steam",
       "url": "https://steamcommunity.com/id/Yogscast",
-      "username": "id",
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -683,7 +655,7 @@
     {
       "platform": null,
       "url": "https://streamlabs.com/Yogscast/tip",
-      "username": "Yogscast",
+      "username": "tip",
       "kind": "url",
       "signals": [
         {
@@ -696,7 +668,7 @@
     {
       "platform": null,
       "url": "https://tinder.com/@Yogscast",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -720,9 +692,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "archive",
       "url": "https://web.archive.org/web/*/https://twitter.com/Yogscast/status/*",
-      "username": "web",
+      "username": "*",
       "kind": "url",
       "signals": [
         {
@@ -733,9 +705,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "archive",
       "url": "https://web.archive.org/web/2/https://twitter.com/Yogscast",
-      "username": "web",
+      "username": "2",
       "kind": "url",
       "signals": [
         {
@@ -746,9 +718,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "truckersmp",
       "url": "https://truckersmp.com/user/search?search=Yogscast",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -774,7 +746,7 @@
     {
       "platform": null,
       "url": "https://www.wattpad.com/user/Yogscast",
-      "username": null,
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
@@ -785,9 +757,9 @@
       ]
     },
     {
-      "platform": null,
+      "platform": "zepeto",
       "url": "https://web.zepeto.me/share/user/profile/Yogscast?language=en",
-      "username": "share",
+      "username": "Yogscast",
       "kind": "url",
       "signals": [
         {
