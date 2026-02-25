@@ -1,0 +1,1656 @@
+2026-02-25 17:21:33,538 [INFO] sf : Modules enabled (150): sfp_gravatar,sfp_stackoverflow,sfp_accounts,sfp_c99,sfp_social,sfp_keybase,sfp_pgp,sfp_snov,sfp_clearbit,sfp_searchcode,sfp_skymem,sfp_jsonwhoiscom,sfp_email,sfp_zonefiles,sfp_grep_app,sfp_hostio,sfp_fullcontact,sfp_intelx,sfp_dehashed,sfp_emailformat,sfp_flickr,sfp_builtwith,sfp_hunter,sfp_emailcrawlr,sfp_fsecure_riddler,sfp_google_tag_manager,sfp_urlscan,sfp_mnemonic,sfp_virustotal,sfp_riskiq,sfp_sslcert,sfp_crt,sfp_xforce,sfp_hybrid_analysis,sfp_dnsresolve,sfp_certspotter,sfp_hackertarget,sfp_binaryedge,sfp_spyonweb,sfp_securitytrails,sfp_arin,sfp_venmo,sfp_names,sfp_seon,sfp_sociallinks,sfp_phone,sfp_dnsdb,sfp_bingsharedip,sfp_robtex,sfp_tool_testsslsh,sfp_tool_onesixtyone,sfp_dnsneighbor,sfp_spur,sfp_shodan,sfp_alienvault,sfp_tool_nmap,sfp_circllu,sfp_tool_nbtscan,sfp_tool_nuclei,sfp_opennic,sfp_torexits,sfp_networksdb,sfp_maltiverse,sfp_spider,sfp_webserver,sfp_fullhunt,sfp_dnsdumpster,sfp_projectdiscovery,sfp_dnsraw,sfp_leakix,sfp_dnsgrep,sfp_dnsbrute,sfp_dnszonexfer,sfp_crobat_api,sfp_zetalytics,sfp_threatminer,sfp_crxcavator,sfp_apple_itunes,sfp_dnscommonsrv,sfp_onyphe,sfp_sublist3r,sfp_reversewhois,sfp_viewdns,sfp_whoxy,sfp_whoisology,sfp_base64,sfp_whois,sfp_psbdmp,sfp_trashpanda,sfp_pastebin,sfp_haveibeenpwned,sfp_wikileaks,sfp_filemeta,sfp_binstring,sfp_trumail,sfp_tool_whatweb,sfp_onioncity,sfp_gleif,sfp_textmagic,sfp_ipqualityscore,sfp_googlesafebrowsing,sfp_socialprofiles,sfp_etherscan,sfp_bitcoinwhoswho,sfp_slideshare,sfp_debounce,sfp_greynoise_community,sfp_twilio,sfp_neutrinoapi,sfp_tool_wafw00f,sfp_nameapi,sfp_ipapicom,sfp_ipapico,sfp_numverify,sfp_koodous,sfp_bitcoinabuse,sfp_bingsearch,sfp_whatcms,sfp_opencorporates,sfp_abstractapi,sfp_bgpview,sfp_greynoise,sfp_ipregistry,sfp_twitter,sfp_googlesearch,sfp_focsec,sfp_grayhatwarfare,sfp_phishstats,sfp_censys,sfp_emailrep,sfp_googlemaps,sfp_github,sfp_ripe,sfp_portscan_tcp,sfp_bitcoin,sfp_webanalytics,sfp_commoncrawl,sfp_crossref,sfp_tldsearch,sfp_similar,sfp_tool_dnstwist,sfp_intfiles,sfp_company,sfp_ethereum,sfp_myspace,sfp_ahmia,sfp_torch,sfp_onionsearchengine,sfp__stor_db,sfp__stor_stdout
+2026-02-25 17:21:34,105 [INFO] sflib : Scan [3BC17A55] for 'markiplier' initiated.
+2026-02-25 17:21:34,121 [INFO] sflib : sfp_gravatar module loaded.
+2026-02-25 17:21:34,136 [INFO] sflib : sfp_stackoverflow module loaded.
+2026-02-25 17:21:34,690 [INFO] sflib : sfp_accounts module loaded.
+2026-02-25 17:21:34,706 [INFO] sflib : sfp_c99 module loaded.
+2026-02-25 17:21:34,721 [INFO] sflib : sfp_social module loaded.
+2026-02-25 17:21:34,736 [INFO] sflib : sfp_keybase module loaded.
+2026-02-25 17:21:34,751 [INFO] sflib : sfp_pgp module loaded.
+2026-02-25 17:21:34,817 [INFO] sflib : sfp_snov module loaded.
+2026-02-25 17:21:34,832 [INFO] sflib : sfp_clearbit module loaded.
+2026-02-25 17:21:34,848 [INFO] sflib : sfp_searchcode module loaded.
+2026-02-25 17:21:34,862 [INFO] sflib : sfp_skymem module loaded.
+2026-02-25 17:21:34,877 [INFO] sflib : sfp_jsonwhoiscom module loaded.
+2026-02-25 17:21:34,892 [INFO] sflib : sfp_email module loaded.
+2026-02-25 17:21:34,907 [INFO] sflib : sfp_zonefiles module loaded.
+2026-02-25 17:21:34,922 [INFO] sflib : sfp_grep_app module loaded.
+2026-02-25 17:21:34,937 [INFO] sflib : sfp_hostio module loaded.
+2026-02-25 17:21:34,952 [INFO] sflib : sfp_fullcontact module loaded.
+2026-02-25 17:21:34,967 [INFO] sflib : sfp_intelx module loaded.
+2026-02-25 17:21:34,982 [INFO] sflib : sfp_dehashed module loaded.
+2026-02-25 17:21:34,997 [INFO] sflib : sfp_emailformat module loaded.
+2026-02-25 17:21:35,012 [INFO] sflib : sfp_flickr module loaded.
+2026-02-25 17:21:35,027 [INFO] sflib : sfp_builtwith module loaded.
+2026-02-25 17:21:35,041 [INFO] sflib : sfp_hunter module loaded.
+2026-02-25 17:21:35,056 [INFO] sflib : sfp_emailcrawlr module loaded.
+2026-02-25 17:21:35,071 [INFO] sflib : sfp_fsecure_riddler module loaded.
+2026-02-25 17:21:35,086 [INFO] sflib : sfp_google_tag_manager module loaded.
+2026-02-25 17:21:35,101 [INFO] sflib : sfp_urlscan module loaded.
+2026-02-25 17:21:35,115 [INFO] sflib : sfp_mnemonic module loaded.
+2026-02-25 17:21:35,131 [INFO] sflib : sfp_virustotal module loaded.
+2026-02-25 17:21:35,145 [INFO] sflib : sfp_riskiq module loaded.
+2026-02-25 17:21:35,160 [INFO] sflib : sfp_sslcert module loaded.
+2026-02-25 17:21:35,175 [INFO] sflib : sfp_crt module loaded.
+2026-02-25 17:21:35,190 [INFO] sflib : sfp_xforce module loaded.
+2026-02-25 17:21:35,273 [INFO] sflib : sfp_hybrid_analysis module loaded.
+2026-02-25 17:21:35,288 [INFO] sfp_dnsresolve : Identifying aliases for specified target(s)
+2026-02-25 17:21:35,288 [INFO] sflib : sfp_dnsresolve module loaded.
+2026-02-25 17:21:35,303 [INFO] sflib : sfp_certspotter module loaded.
+2026-02-25 17:21:35,319 [INFO] sflib : sfp_hackertarget module loaded.
+2026-02-25 17:21:35,334 [INFO] sflib : sfp_binaryedge module loaded.
+2026-02-25 17:21:35,349 [INFO] sflib : sfp_spyonweb module loaded.
+2026-02-25 17:21:35,363 [INFO] sflib : sfp_securitytrails module loaded.
+2026-02-25 17:21:35,379 [INFO] sflib : sfp_arin module loaded.
+2026-02-25 17:21:35,393 [INFO] sflib : sfp_venmo module loaded.
+2026-02-25 17:21:35,865 [INFO] sflib : sfp_names module loaded.
+2026-02-25 17:21:35,912 [INFO] sflib : sfp_seon module loaded.
+2026-02-25 17:21:35,927 [INFO] sflib : sfp_sociallinks module loaded.
+2026-02-25 17:21:35,942 [INFO] sflib : sfp_phone module loaded.
+2026-02-25 17:21:35,957 [INFO] sflib : sfp_dnsdb module loaded.
+2026-02-25 17:21:35,972 [INFO] sflib : sfp_bingsharedip module loaded.
+2026-02-25 17:21:35,987 [INFO] sflib : sfp_robtex module loaded.
+2026-02-25 17:21:36,002 [INFO] sflib : sfp_tool_testsslsh module loaded.
+2026-02-25 17:21:36,018 [INFO] sflib : sfp_tool_onesixtyone module loaded.
+2026-02-25 17:21:36,033 [INFO] sflib : sfp_dnsneighbor module loaded.
+2026-02-25 17:21:36,048 [INFO] sflib : sfp_spur module loaded.
+2026-02-25 17:21:36,063 [INFO] sflib : sfp_shodan module loaded.
+2026-02-25 17:21:36,078 [INFO] sflib : sfp_alienvault module loaded.
+2026-02-25 17:21:36,093 [INFO] sflib : sfp_tool_nmap module loaded.
+2026-02-25 17:21:36,107 [INFO] sflib : sfp_circllu module loaded.
+2026-02-25 17:21:36,123 [INFO] sflib : sfp_tool_nbtscan module loaded.
+2026-02-25 17:21:36,137 [INFO] sflib : sfp_tool_nuclei module loaded.
+2026-02-25 17:21:36,153 [INFO] sflib : sfp_opennic module loaded.
+2026-02-25 17:21:36,296 [INFO] sflib : sfp_torexits module loaded.
+2026-02-25 17:21:36,311 [INFO] sflib : sfp_networksdb module loaded.
+2026-02-25 17:21:36,326 [INFO] sflib : sfp_maltiverse module loaded.
+2026-02-25 17:21:36,341 [INFO] sflib : sfp_spider module loaded.
+2026-02-25 17:21:36,356 [INFO] sflib : sfp_webserver module loaded.
+2026-02-25 17:21:36,371 [INFO] sflib : sfp_fullhunt module loaded.
+2026-02-25 17:21:36,386 [INFO] sflib : sfp_dnsdumpster module loaded.
+2026-02-25 17:21:36,401 [INFO] sflib : sfp_projectdiscovery module loaded.
+2026-02-25 17:21:36,416 [INFO] sflib : sfp_dnsraw module loaded.
+2026-02-25 17:21:36,432 [INFO] sflib : sfp_leakix module loaded.
+2026-02-25 17:21:36,446 [INFO] sflib : sfp_dnsgrep module loaded.
+2026-02-25 17:21:36,462 [INFO] sflib : sfp_dnsbrute module loaded.
+2026-02-25 17:21:36,477 [INFO] sflib : sfp_dnszonexfer module loaded.
+2026-02-25 17:21:36,492 [INFO] sflib : sfp_crobat_api module loaded.
+2026-02-25 17:21:36,507 [INFO] sflib : sfp_zetalytics module loaded.
+2026-02-25 17:21:36,522 [INFO] sflib : sfp_threatminer module loaded.
+2026-02-25 17:21:36,537 [INFO] sflib : sfp_crxcavator module loaded.
+2026-02-25 17:21:36,552 [INFO] sflib : sfp_apple_itunes module loaded.
+2026-02-25 17:21:36,567 [INFO] sflib : sfp_dnscommonsrv module loaded.
+2026-02-25 17:21:36,582 [INFO] sflib : sfp_onyphe module loaded.
+2026-02-25 17:21:36,597 [INFO] sflib : sfp_sublist3r module loaded.
+2026-02-25 17:21:36,612 [INFO] sflib : sfp_reversewhois module loaded.
+2026-02-25 17:21:36,627 [INFO] sflib : sfp_viewdns module loaded.
+2026-02-25 17:21:36,643 [INFO] sflib : sfp_whoxy module loaded.
+2026-02-25 17:21:36,658 [INFO] sflib : sfp_whoisology module loaded.
+2026-02-25 17:21:36,672 [INFO] sflib : sfp_base64 module loaded.
+2026-02-25 17:21:36,687 [INFO] sflib : sfp_whois module loaded.
+2026-02-25 17:21:36,702 [INFO] sflib : sfp_psbdmp module loaded.
+2026-02-25 17:21:36,819 [INFO] sflib : sfp_trashpanda module loaded.
+2026-02-25 17:21:36,835 [INFO] sflib : sfp_pastebin module loaded.
+2026-02-25 17:21:36,850 [INFO] sflib : sfp_haveibeenpwned module loaded.
+2026-02-25 17:21:36,865 [INFO] sflib : sfp_wikileaks module loaded.
+2026-02-25 17:21:36,880 [INFO] sflib : sfp_filemeta module loaded.
+2026-02-25 17:21:37,366 [INFO] sflib : sfp_binstring module loaded.
+2026-02-25 17:21:37,422 [INFO] sflib : sfp_trumail module loaded.
+2026-02-25 17:21:37,473 [INFO] sflib : sfp_tool_whatweb module loaded.
+2026-02-25 17:21:37,489 [INFO] sflib : sfp_onioncity module loaded.
+2026-02-25 17:21:37,505 [INFO] sflib : sfp_gleif module loaded.
+2026-02-25 17:21:37,519 [INFO] sflib : sfp_textmagic module loaded.
+2026-02-25 17:21:37,534 [INFO] sflib : sfp_ipqualityscore module loaded.
+2026-02-25 17:21:37,550 [INFO] sflib : sfp_googlesafebrowsing module loaded.
+2026-02-25 17:21:37,564 [INFO] sflib : sfp_socialprofiles module loaded.
+2026-02-25 17:21:37,580 [INFO] sflib : sfp_etherscan module loaded.
+2026-02-25 17:21:37,595 [INFO] sflib : sfp_bitcoinwhoswho module loaded.
+2026-02-25 17:21:37,610 [INFO] sflib : sfp_slideshare module loaded.
+2026-02-25 17:21:37,625 [INFO] sflib : sfp_debounce module loaded.
+2026-02-25 17:21:37,640 [INFO] sflib : sfp_greynoise_community module loaded.
+2026-02-25 17:21:37,656 [INFO] sflib : sfp_twilio module loaded.
+2026-02-25 17:21:37,671 [INFO] sflib : sfp_neutrinoapi module loaded.
+2026-02-25 17:21:37,686 [INFO] sflib : sfp_tool_wafw00f module loaded.
+2026-02-25 17:21:37,701 [INFO] sflib : sfp_nameapi module loaded.
+2026-02-25 17:21:37,715 [INFO] sflib : sfp_ipapicom module loaded.
+2026-02-25 17:21:37,731 [INFO] sflib : sfp_ipapico module loaded.
+2026-02-25 17:21:37,745 [INFO] sflib : sfp_numverify module loaded.
+2026-02-25 17:21:37,761 [INFO] sflib : sfp_koodous module loaded.
+2026-02-25 17:21:37,776 [INFO] sflib : sfp_bitcoinabuse module loaded.
+2026-02-25 17:21:37,790 [INFO] sflib : sfp_bingsearch module loaded.
+2026-02-25 17:21:37,806 [INFO] sflib : sfp_whatcms module loaded.
+2026-02-25 17:21:37,820 [INFO] sflib : sfp_opencorporates module loaded.
+2026-02-25 17:21:37,836 [INFO] sflib : sfp_abstractapi module loaded.
+2026-02-25 17:21:37,851 [INFO] sflib : sfp_bgpview module loaded.
+2026-02-25 17:21:37,866 [INFO] sflib : sfp_greynoise module loaded.
+2026-02-25 17:21:37,880 [INFO] sflib : sfp_ipregistry module loaded.
+2026-02-25 17:21:37,895 [INFO] sflib : sfp_twitter module loaded.
+2026-02-25 17:21:38,101 [INFO] sflib : sfp_googlesearch module loaded.
+2026-02-25 17:21:38,117 [INFO] sflib : sfp_focsec module loaded.
+2026-02-25 17:21:38,133 [INFO] sflib : sfp_grayhatwarfare module loaded.
+2026-02-25 17:21:38,147 [INFO] sflib : sfp_phishstats module loaded.
+2026-02-25 17:21:38,162 [INFO] sflib : sfp_censys module loaded.
+2026-02-25 17:21:38,178 [INFO] sflib : sfp_emailrep module loaded.
+2026-02-25 17:21:38,193 [INFO] sflib : sfp_googlemaps module loaded.
+2026-02-25 17:21:38,208 [INFO] sflib : sfp_github module loaded.
+2026-02-25 17:21:38,223 [INFO] sflib : sfp_ripe module loaded.
+2026-02-25 17:21:38,238 [INFO] sflib : sfp_portscan_tcp module loaded.
+2026-02-25 17:21:38,253 [INFO] sflib : sfp_bitcoin module loaded.
+2026-02-25 17:21:38,268 [INFO] sflib : sfp_webanalytics module loaded.
+2026-02-25 17:21:38,283 [INFO] sflib : sfp_commoncrawl module loaded.
+2026-02-25 17:21:38,298 [INFO] sflib : sfp_crossref module loaded.
+2026-02-25 17:21:38,313 [INFO] sflib : sfp_tldsearch module loaded.
+2026-02-25 17:21:38,328 [INFO] sflib : sfp_similar module loaded.
+2026-02-25 17:21:38,343 [INFO] sflib : sfp_tool_dnstwist module loaded.
+2026-02-25 17:21:38,358 [INFO] sflib : sfp_intfiles module loaded.
+2026-02-25 17:21:38,373 [INFO] sflib : sfp_company module loaded.
+2026-02-25 17:21:38,388 [INFO] sflib : sfp_ethereum module loaded.
+2026-02-25 17:21:38,403 [INFO] sflib : sfp_myspace module loaded.
+2026-02-25 17:21:38,418 [INFO] sflib : sfp_ahmia module loaded.
+2026-02-25 17:21:38,432 [INFO] sflib : sfp_torch module loaded.
+2026-02-25 17:21:38,447 [INFO] sflib : sfp_onionsearchengine module loaded.
+2026-02-25 17:21:38,462 [INFO] sflib : sfp__stor_db module loaded.
+2026-02-25 17:21:38,477 [INFO] sflib : sfp__stor_stdout module loaded.
+2026-02-25 17:21:38,529 [ERROR] sflib : Exception (OSError) in module sfp_trashpanda.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,530 [ERROR] sflib : Exception (OSError) in module sfp_pastebin.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,530 [ERROR] sflib : Exception (OSError) in module sfp_haveibeenpwned.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,530 [ERROR] sflib : Exception (OSError) in module sfp_wikileaks.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,530 [ERROR] sflib : Exception (OSError) in module sfp_filemeta.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,531 [ERROR] sflib : Exception (OSError) in module sfp_binstring.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,531 [ERROR] sflib : Exception (OSError) in module sfp_tool_whatweb.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,531 [ERROR] sflib : Exception (OSError) in module sfp_trumail.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,531 [ERROR] sflib : Exception (OSError) in module sfp_gleif.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,532 [ERROR] sflib : Exception (OSError) in module sfp_onioncity.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,532 [ERROR] sflib : Exception (OSError) in module sfp_ipqualityscore.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,532 [ERROR] sflib : Exception (OSError) in module sfp_textmagic.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,532 [ERROR] sflib : Exception (OSError) in module sfp_googlesafebrowsing.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,532 [ERROR] sflib : Exception (OSError) in module sfp_socialprofiles.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,533 [ERROR] sflib : Exception (OSError) in module sfp_etherscan.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,533 [ERROR] sflib : Exception (OSError) in module sfp_slideshare.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,533 [ERROR] sflib : Exception (OSError) in module sfp_bitcoinwhoswho.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,533 [ERROR] sflib : Exception (OSError) in module sfp_debounce.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,534 [ERROR] sflib : Exception (OSError) in module sfp_twilio.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,534 [ERROR] sflib : Exception (OSError) in module sfp_greynoise_community.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,534 [ERROR] sflib : Exception (OSError) in module sfp_neutrinoapi.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,534 [ERROR] sflib : Exception (OSError) in module sfp_tool_wafw00f.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,534 [ERROR] sflib : Exception (OSError) in module sfp_nameapi.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,535 [ERROR] sflib : Exception (OSError) in module sfp_ipapico.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,535 [ERROR] sflib : Exception (OSError) in module sfp_numverify.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,535 [ERROR] sflib : Exception (OSError) in module sfp_ipapicom.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,535 [ERROR] sflib : Exception (OSError) in module sfp_bitcoinabuse.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,535 [ERROR] sflib : Exception (OSError) in module sfp_koodous.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,535 [ERROR] sflib : Exception (OSError) in module sfp_bingsearch.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,536 [ERROR] sflib : Exception (OSError) in module sfp_whatcms.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,536 [ERROR] sflib : Exception (OSError) in module sfp_opencorporates.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,536 [ERROR] sflib : Exception (OSError) in module sfp_abstractapi.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,536 [ERROR] sflib : Exception (OSError) in module sfp_bgpview.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,536 [ERROR] sflib : Exception (OSError) in module sfp_greynoise.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,537 [ERROR] sflib : Exception (OSError) in module sfp_ipregistry.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,537 [ERROR] sflib : Exception (OSError) in module sfp_twitter.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,537 [ERROR] sflib : Exception (OSError) in module sfp_googlesearch.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,537 [ERROR] sflib : Exception (OSError) in module sfp_focsec.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,537 [ERROR] sflib : Exception (OSError) in module sfp_grayhatwarfare.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,538 [ERROR] sflib : Exception (OSError) in module sfp_phishstats.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,538 [ERROR] sflib : Exception (OSError) in module sfp_censys.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,538 [ERROR] sflib : Exception (OSError) in module sfp_emailrep.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,538 [ERROR] sflib : Exception (OSError) in module sfp_github.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,538 [ERROR] sflib : Exception (OSError) in module sfp_ripe.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,538 [ERROR] sflib : Exception (OSError) in module sfp_googlemaps.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,539 [ERROR] sflib : Exception (OSError) in module sfp_portscan_tcp.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,539 [ERROR] sflib : Exception (OSError) in module sfp_bitcoin.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,539 [ERROR] sflib : Exception (OSError) in module sfp_webanalytics.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,539 [ERROR] sflib : Exception (OSError) in module sfp_commoncrawl.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,539 [ERROR] sflib : Exception (OSError) in module sfp_crossref.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,540 [ERROR] sflib : Exception (OSError) in module sfp_tldsearch.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,540 [ERROR] sflib : Exception (OSError) in module sfp_similar.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,540 [ERROR] sflib : Exception (OSError) in module sfp_tool_dnstwist.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,540 [ERROR] sflib : Exception (OSError) in module sfp_intfiles.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,540 [ERROR] sflib : Exception (OSError) in module sfp_company.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,540 [ERROR] sflib : Exception (OSError) in module sfp_ethereum.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,541 [ERROR] sflib : Exception (OSError) in module sfp_myspace.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,541 [ERROR] sflib : Exception (OSError) in module sfp_ahmia.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,541 [ERROR] sflib : Exception (OSError) in module sfp_torch.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,542 [ERROR] sflib : Exception (OSError) in module sfp_onionsearchengine.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 353, in __init__
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 408, in create
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 358, in __init__
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 422, in create
+OSError: SQL error encountered when setting up database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 502, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 360, in __init__
+OSError: Tried to set up the SpiderFoot database schema, but failed
+
+2026-02-25 17:21:38,800 [ERROR] sflib : Exception (OSError) in module sfp__stor_db.Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 520, in threadWorker
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/plugin.py", line 552, in poolExecute
+  File "/Users/jack/osint-dissertation/spiderfoot/modules/sfp__stor_db.py", line 60, in handleEvent
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/db.py", line 1427, in scanEventStore
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/event.py", line 136, in hash
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/encodings/__init__.py", line 98, in search_function
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 982, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1039, in get_data
+OSError: [Errno 24] Too many open files: '/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/encodings/raw_unicode_escape.py'
+
+2026-02-25 17:21:38,803 [ERROR] threadpool : Error in thread worker sharedThreadPool_worker_1: Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/threadpool.py", line 255, in run
+  File "/Users/jack/osint-dissertation/spiderfoot/modules/sfp_keybase.py", line 158, in handleEvent
+  File "/Users/jack/osint-dissertation/spiderfoot/modules/sfp_keybase.py", line 87, in query
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/encodings/__init__.py", line 98, in search_function
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 982, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1039, in get_data
+OSError: [Errno 24] Too many open files: '/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/encodings/raw_unicode_escape.py'
+
+2026-02-25 17:21:38,826 [ERROR] sfp_c99 : You enabled sfp_c99, but did not set an API key!
+2026-02-25 17:21:38,826 [INFO] sflib : Fetching (GET): https://api.venmo.com/v1/users/markiplier (proxy=None, user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0, timeout=5, cookies=None)
+2026-02-25 17:21:38,858 [ERROR] sfp_sociallinks : You enabled sfp_sociallinks but did not set an API key!
+2026-02-25 17:21:38,938 [ERROR] threadpool : Error in thread worker sharedThreadPool_worker_3: Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/sflib.py", line 1360, in fetchUrl
+  File "/Users/jack/osint-dissertation/spiderfoot/venv/lib/python3.9/site-packages/requests/sessions.py", line 602, in get
+  File "/Users/jack/osint-dissertation/spiderfoot/venv/lib/python3.9/site-packages/requests/sessions.py", line 575, in request
+  File "/Users/jack/osint-dissertation/spiderfoot/venv/lib/python3.9/site-packages/requests/sessions.py", line 481, in prepare_request
+  File "/Users/jack/osint-dissertation/spiderfoot/venv/lib/python3.9/site-packages/requests/utils.py", line 217, in get_netrc_auth
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 982, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1039, in get_data
+OSError: [Errno 24] Too many open files: '/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/netrc.py'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/threadpool.py", line 255, in run
+  File "/Users/jack/osint-dissertation/spiderfoot/modules/sfp_venmo.py", line 100, in handleEvent
+  File "/Users/jack/osint-dissertation/spiderfoot/modules/sfp_venmo.py", line 63, in query
+  File "/Users/jack/osint-dissertation/spiderfoot/sflib.py", line 1376, in fetchUrl
+TypeError: error() got an unexpected keyword argument 'exc_info'
+
+2026-02-25 17:21:39,043 [ERROR] threadpool : Error in thread worker sharedThreadPool_worker_2: Traceback (most recent call last):
+  File "/Users/jack/osint-dissertation/spiderfoot/spiderfoot/threadpool.py", line 255, in run
+  File "/Users/jack/osint-dissertation/spiderfoot/modules/sfp_accounts.py", line 337, in handleEvent
+  File "/Users/jack/osint-dissertation/spiderfoot/sflib.py", line 263, in cachePut
+OSError: [Errno 24] Too many open files: '/Users/jack/.spiderfoot/cache/15a7ec12e475eaebce163c4c42e8b7b2ac2aa02401f1c2881d6bcdca'
+
+2026-02-25 17:21:40,177 [INFO] sflib : Running 37 correlation rules on scan 3BC17A55.
+2026-02-25 17:21:40,268 [INFO] sflib : Scan [3BC17A55] completed.
+2026-02-25 17:21:41,558 [INFO] sf : Scan completed with status FINISHED
