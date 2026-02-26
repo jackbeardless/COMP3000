@@ -19,33 +19,47 @@ HOST_PLATFORM_MAP = {
     "youtu.be": "youtube",
     "vimeo.com": "vimeo",
     "pinterest.com": "pinterest",
-
+    "7cups.com": "7cups",
+    "artbreeder.com": "artbreeder",
+    "deviantart.com": "deviantart",
+    "fansly.com": "fansly",
+    "flipboard.com": "flipboard",
+    "letterboxd.com": "letterboxd",
+    "linktr.ee": "linktree",
+    "periscope.tv": "periscope",
+    "smule.com": "smule",
+    "streamelements.com": "streamelements",
+    "streamlabs.com": "streamlabs",
+    "tinder.com": "tinder",
+    "nightbot.tv": "nightbot",
+    "blogspot.com": "blogspot",
+    "bdsmlr.com": "bdsmlr",
+    "chatango.com": "chatango",
+    "livejournal.com": "livejournal",
+    "insanejournal.com": "insanejournal",
+    "duolingo.com": "duolingo",
+    "genius.com": "genius",
     "last.fm": "lastfm",
     "wattpad.com": "wattpad",
     "scratch.mit.edu": "scratch",
     "steamcommunity.com": "steam",
     "chess.com": "chess",
-
     "disqus.com": "disqus",
     "discord.com": "discord",
     "kik.me": "kik",
     "mixcloud.com": "mixcloud",
     "myspace.com": "myspace",
-
     "pastebin.com": "pastebin",
     "picsart.com": "picsart",
     "gog.com": "gog",
     "imageshack.com": "imageshack",
-
     "chyoa.com": "chyoa",
     "kongregate.com": "kongregate",
     "etoro.com": "etoro",
     "truckersmp.com": "truckersmp",
     "zepeto.me": "zepeto",
     "web.zepeto.me": "zepeto",
-
     "stackoverflow.com": "stackoverflow",
-
     "archive.org": "archive",
     "web.archive.org": "archive",
     "meta.wikimedia.org": "wikimedia",
@@ -53,14 +67,15 @@ HOST_PLATFORM_MAP = {
 
 NON_PROFILE_PLATFORMS = {"archive", "wikimedia"}
 
-def _host(url: str) -> str:
-    return urlparse(url).netloc.lower().lstrip("www.")
 
 def _host(url: str) -> str:
     h = urlparse(url).netloc.lower()
     if h.startswith("www."):
         h = h[4:]
     return h
+
+def _path_parts(url: str) -> List[str]:
+    return [p for p in urlparse(url).path.strip("/").split("/") if p]
 
 def platform_guess(url: str, platform_field: Optional[str]) -> str:
     if platform_field:
@@ -149,6 +164,12 @@ def extract_handle(platform: str, url: str) -> Optional[str]:
             return parts[1]
         return None
 
+    if platform == "zepeto":
+        # example: /share/user/profile/<name>
+        if len(parts) >= 4 and parts[0].lower() == "share" and parts[1].lower() == "user" and parts[2].lower() == "profile":
+            return parts[3]
+        return None
+
     # default patterns:
     if platform == "github":
         return parts[0]
@@ -215,6 +236,10 @@ def score_account(target: str, acc: Dict) -> Tuple[float, List[str]]:
         if plat in HIGH_SIGNAL_PLATFORMS:
             score += 0.10
             reasons.append("high_signal_platform(+0.10)")
+            
+    if plat == "unknown":
+        score -= 0.20
+        reasons.append("unknown_platform(-0.20)")
 
     if target_n and target_n in normalized_handle(url):
         score += 0.05
@@ -239,10 +264,17 @@ def cluster_accounts(target: str, accounts: List[Dict]) -> List[Dict]:
         acc2["platform"] = plat
         acc2["handle"] = handle
 
-        key = (plat, normalized_handle(handle) if handle else _host(url))
+        # If we don't know the platform, DO NOT cluster by handle.
+        # Otherwise lots of unrelated domains collapse into one cluster.
+        if plat == "unknown":
+            key = (plat, _host(url))
+        else:
+            key = (plat, normalized_handle(handle) if handle else _host(url))
+
         c = clusters.get(key)
         if not c:
             c = {"platform": plat, "handle": handle or None, "key": key[1], "accounts": []}
+
         c["accounts"].append(acc2)
         clusters[key] = c
 
