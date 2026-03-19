@@ -2,8 +2,7 @@
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 from urllib.parse import urlparse
 
 SFURL_RE = re.compile(r"<SFURL>\s*(.*?)\s*</SFURL>", re.IGNORECASE | re.DOTALL)
@@ -132,7 +131,7 @@ def parse_platform_and_username(url: str) -> tuple[str | None, str | None]:
         return platform, segs[0]
     if host == "pinterest.com" and len(segs) >= 1:
         return platform, segs[0]
-    if host == "www.last.fm" and len(segs) >= 2 and segs[0] == "user":
+    if host == "last.fm" and len(segs) >= 2 and segs[0] == "user":
         return platform, segs[1]
     if host == "mixcloud.com" and len(segs) >= 1:
         return platform, segs[0]

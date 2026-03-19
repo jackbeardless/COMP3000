@@ -187,76 +187,6 @@
       ]
     },
     {
-      "platform": "unknown",
-      "handle": "Yogscast",
-      "key": "7cups.com",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://www.7cups.com/@Yogscast",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": "Yogscast"
-        }
-      ],
-      "confidence": 0.8,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "profile_like(+0.10)",
-        "exact_handle_match(+0.30)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://www.7cups.com/@Yogscast"
-      ]
-    },
-    {
-      "platform": "unknown",
-      "handle": "Yogscast",
-      "key": "artbreeder.com",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://www.artbreeder.com/Yogscast",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": "Yogscast"
-        }
-      ],
-      "confidence": 0.8,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "profile_like(+0.10)",
-        "exact_handle_match(+0.30)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://www.artbreeder.com/Yogscast"
-      ]
-    },
-    {
       "platform": "chess",
       "handle": "Yogscast",
       "key": "yogscast",
@@ -327,12 +257,12 @@
       ]
     },
     {
-      "platform": "unknown",
+      "platform": "deviantart",
       "handle": "Yogscast",
-      "key": "deviantart.com",
+      "key": "yogscast",
       "accounts": [
         {
-          "platform": "unknown",
+          "platform": "deviantart",
           "url": "https://www.deviantart.com/Yogscast",
           "username": "Yogscast",
           "kind": "url",
@@ -432,14 +362,14 @@
       ]
     },
     {
-      "platform": "unknown",
+      "platform": "duolingo",
       "handle": "Yogscast",
-      "key": "fansly.com",
+      "key": "yogscast",
       "accounts": [
         {
-          "platform": "unknown",
-          "url": "https://fansly.com/Yogscast/posts",
-          "username": "posts",
+          "platform": "duolingo",
+          "url": "https://www.duolingo.com/profile/Yogscast",
+          "username": "Yogscast",
           "kind": "url",
           "signals": [
             {
@@ -463,16 +393,16 @@
         "sfp_accounts"
       ],
       "urls": [
-        "https://fansly.com/Yogscast/posts"
+        "https://www.duolingo.com/profile/Yogscast"
       ]
     },
     {
-      "platform": "unknown",
+      "platform": "flipboard",
       "handle": "Yogscast",
-      "key": "flipboard.com",
+      "key": "yogscast",
       "accounts": [
         {
-          "platform": "unknown",
+          "platform": "flipboard",
           "url": "https://flipboard.com/@Yogscast",
           "username": "Yogscast",
           "kind": "url",
@@ -499,6 +429,41 @@
       ],
       "urls": [
         "https://flipboard.com/@Yogscast"
+      ]
+    },
+    {
+      "platform": "genius",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "accounts": [
+        {
+          "platform": "genius",
+          "url": "https://genius.com/artists/Yogscast",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": "Yogscast"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://genius.com/artists/Yogscast"
       ]
     },
     {
@@ -677,12 +642,12 @@
       ]
     },
     {
-      "platform": "unknown",
+      "platform": "letterboxd",
       "handle": "Yogscast",
-      "key": "letterboxd.com",
+      "key": "yogscast",
       "accounts": [
         {
-          "platform": "unknown",
+          "platform": "letterboxd",
           "url": "https://letterboxd.com/Yogscast/",
           "username": "Yogscast",
           "kind": "url",
@@ -709,41 +674,6 @@
       ],
       "urls": [
         "https://letterboxd.com/Yogscast/"
-      ]
-    },
-    {
-      "platform": "unknown",
-      "handle": "Yogscast",
-      "key": "linktr.ee",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://linktr.ee/Yogscast",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": "Yogscast"
-        }
-      ],
-      "confidence": 0.8,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "profile_like(+0.10)",
-        "exact_handle_match(+0.30)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://linktr.ee/Yogscast"
       ]
     },
     {
@@ -922,41 +852,6 @@
       ]
     },
     {
-      "platform": "unknown",
-      "handle": "Yogscast",
-      "key": "periscope.tv",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://www.periscope.tv/Yogscast",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": "Yogscast"
-        }
-      ],
-      "confidence": 0.8,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "profile_like(+0.10)",
-        "exact_handle_match(+0.30)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://www.periscope.tv/Yogscast"
-      ]
-    },
-    {
       "platform": "scratch",
       "handle": "Yogscast",
       "key": "yogscast",
@@ -992,41 +887,6 @@
       ]
     },
     {
-      "platform": "unknown",
-      "handle": "Yogscast",
-      "key": "smule.com",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://www.smule.com/Yogscast",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": "Yogscast"
-        }
-      ],
-      "confidence": 0.8,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "profile_like(+0.10)",
-        "exact_handle_match(+0.30)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://www.smule.com/Yogscast"
-      ]
-    },
-    {
       "platform": "steam",
       "handle": "Yogscast",
       "key": "yogscast",
@@ -1059,111 +919,6 @@
       ],
       "urls": [
         "https://steamcommunity.com/id/Yogscast"
-      ]
-    },
-    {
-      "platform": "unknown",
-      "handle": "Yogscast",
-      "key": "streamelements.com",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://streamelements.com/Yogscast",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": "Yogscast"
-        }
-      ],
-      "confidence": 0.8,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "profile_like(+0.10)",
-        "exact_handle_match(+0.30)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://streamelements.com/Yogscast"
-      ]
-    },
-    {
-      "platform": "unknown",
-      "handle": "Yogscast",
-      "key": "streamlabs.com",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://streamlabs.com/Yogscast/tip",
-          "username": "tip",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": "Yogscast"
-        }
-      ],
-      "confidence": 0.8,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "profile_like(+0.10)",
-        "exact_handle_match(+0.30)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://streamlabs.com/Yogscast/tip"
-      ]
-    },
-    {
-      "platform": "unknown",
-      "handle": "Yogscast",
-      "key": "tinder.com",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://tinder.com/@Yogscast",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": "Yogscast"
-        }
-      ],
-      "confidence": 0.8,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "profile_like(+0.10)",
-        "exact_handle_match(+0.30)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://tinder.com/@Yogscast"
       ]
     },
     {
@@ -1256,6 +1011,365 @@
           "handle": "Yogscast"
         }
       ],
+      "confidence": 0.8,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://web.zepeto.me/share/user/profile/Yogscast?language=en"
+      ]
+    },
+    {
+      "platform": "7cups",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "accounts": [
+        {
+          "platform": "7cups",
+          "url": "https://www.7cups.com/@Yogscast",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": "Yogscast"
+        }
+      ],
+      "confidence": 0.7000000000000001,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://www.7cups.com/@Yogscast"
+      ]
+    },
+    {
+      "platform": "artbreeder",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "accounts": [
+        {
+          "platform": "artbreeder",
+          "url": "https://www.artbreeder.com/Yogscast",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": "Yogscast"
+        }
+      ],
+      "confidence": 0.7000000000000001,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://www.artbreeder.com/Yogscast"
+      ]
+    },
+    {
+      "platform": "fansly",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "accounts": [
+        {
+          "platform": "fansly",
+          "url": "https://fansly.com/Yogscast/posts",
+          "username": "posts",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": "Yogscast"
+        }
+      ],
+      "confidence": 0.7000000000000001,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://fansly.com/Yogscast/posts"
+      ]
+    },
+    {
+      "platform": "linktree",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "accounts": [
+        {
+          "platform": "linktree",
+          "url": "https://linktr.ee/Yogscast",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": "Yogscast"
+        }
+      ],
+      "confidence": 0.7000000000000001,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://linktr.ee/Yogscast"
+      ]
+    },
+    {
+      "platform": "periscope",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "accounts": [
+        {
+          "platform": "periscope",
+          "url": "https://www.periscope.tv/Yogscast",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": "Yogscast"
+        }
+      ],
+      "confidence": 0.7000000000000001,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://www.periscope.tv/Yogscast"
+      ]
+    },
+    {
+      "platform": "smule",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "accounts": [
+        {
+          "platform": "smule",
+          "url": "https://www.smule.com/Yogscast",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": "Yogscast"
+        }
+      ],
+      "confidence": 0.7000000000000001,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://www.smule.com/Yogscast"
+      ]
+    },
+    {
+      "platform": "streamelements",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "accounts": [
+        {
+          "platform": "streamelements",
+          "url": "https://streamelements.com/Yogscast",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": "Yogscast"
+        }
+      ],
+      "confidence": 0.7000000000000001,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://streamelements.com/Yogscast"
+      ]
+    },
+    {
+      "platform": "streamlabs",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "accounts": [
+        {
+          "platform": "streamlabs",
+          "url": "https://streamlabs.com/Yogscast/tip",
+          "username": "tip",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": "Yogscast"
+        }
+      ],
+      "confidence": 0.7000000000000001,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://streamlabs.com/Yogscast/tip"
+      ]
+    },
+    {
+      "platform": "tinder",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "accounts": [
+        {
+          "platform": "tinder",
+          "url": "https://tinder.com/@Yogscast",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": "Yogscast"
+        }
+      ],
+      "confidence": 0.7000000000000001,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://tinder.com/@Yogscast"
+      ]
+    },
+    {
+      "platform": "nightbot",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "accounts": [
+        {
+          "platform": "nightbot",
+          "url": "https://nightbot.tv/t/Yogscast/commands",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": "Yogscast"
+        }
+      ],
       "confidence": 0.55,
       "confidence_reasons": [
         "base=0.20",
@@ -1268,7 +1382,42 @@
         "sfp_accounts"
       ],
       "urls": [
-        "https://web.zepeto.me/share/user/profile/Yogscast?language=en"
+        "https://nightbot.tv/t/Yogscast/commands"
+      ]
+    },
+    {
+      "platform": "insanejournal",
+      "handle": "profile",
+      "key": "profile",
+      "accounts": [
+        {
+          "platform": "insanejournal",
+          "url": "https://Yogscast.insanejournal.com/profile",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": "profile"
+        }
+      ],
+      "confidence": 0.39999999999999997,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://Yogscast.insanejournal.com/profile"
       ]
     },
     {
@@ -1291,11 +1440,11 @@
           "handle": ""
         }
       ],
-      "confidence": 0.49999999999999994,
+      "confidence": 0.25,
       "confidence_reasons": [
         "base=0.20",
         "module_support(+0.15) modules=['sfp_accounts']",
-        "profile_like(+0.10)",
+        "non_profile_like(-0.15)",
         "target_in_url(+0.05)"
       ],
       "signals": [
@@ -1303,244 +1452,6 @@
       ],
       "urls": [
         "https://discord.com/invite/Yogscast"
-      ]
-    },
-    {
-      "platform": "unknown",
-      "handle": "profile",
-      "key": "duolingo.com",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://www.duolingo.com/profile/Yogscast",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": "profile"
-        }
-      ],
-      "confidence": 0.49999999999999994,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "profile_like(+0.10)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://www.duolingo.com/profile/Yogscast"
-      ]
-    },
-    {
-      "platform": "unknown",
-      "handle": "artists",
-      "key": "genius.com",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://genius.com/artists/Yogscast",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": "artists"
-        }
-      ],
-      "confidence": 0.49999999999999994,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "profile_like(+0.10)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://genius.com/artists/Yogscast"
-      ]
-    },
-    {
-      "platform": "unknown",
-      "handle": "profile",
-      "key": "yogscast.insanejournal.com",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://Yogscast.insanejournal.com/profile",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": "profile"
-        }
-      ],
-      "confidence": 0.49999999999999994,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "profile_like(+0.10)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://Yogscast.insanejournal.com/profile"
-      ]
-    },
-    {
-      "platform": "unknown",
-      "handle": "t",
-      "key": "nightbot.tv",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://nightbot.tv/t/Yogscast/commands",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": "t"
-        }
-      ],
-      "confidence": 0.49999999999999994,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "profile_like(+0.10)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://nightbot.tv/t/Yogscast/commands"
-      ]
-    },
-    {
-      "platform": "unknown",
-      "handle": null,
-      "key": "yogscast.bdsmlr.com",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://Yogscast.bdsmlr.com",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": ""
-        }
-      ],
-      "confidence": 0.25,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "non_profile_like(-0.15)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://Yogscast.bdsmlr.com"
-      ]
-    },
-    {
-      "platform": "unknown",
-      "handle": null,
-      "key": "yogscast.blogspot.com",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "http://Yogscast.blogspot.com",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": ""
-        }
-      ],
-      "confidence": 0.25,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "non_profile_like(-0.15)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "http://Yogscast.blogspot.com"
-      ]
-    },
-    {
-      "platform": "unknown",
-      "handle": null,
-      "key": "yogscast.chatango.com",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://Yogscast.chatango.com",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": ""
-        }
-      ],
-      "confidence": 0.25,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "non_profile_like(-0.15)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://Yogscast.chatango.com"
       ]
     },
     {
@@ -1590,40 +1501,6 @@
       "urls": [
         "https://archive.org/search.php?query=Yogscast",
         "https://archive.org/wayback/available?url=https://instagram.com/Yogscast/"
-      ]
-    },
-    {
-      "platform": "unknown",
-      "handle": null,
-      "key": "yogscast.livejournal.com",
-      "accounts": [
-        {
-          "platform": "unknown",
-          "url": "https://Yogscast.livejournal.com",
-          "username": "Yogscast",
-          "kind": "url",
-          "signals": [
-            {
-              "from_event": "Account on External Site",
-              "module": "sfp_accounts",
-              "source": "Yogscast"
-            }
-          ],
-          "handle": ""
-        }
-      ],
-      "confidence": 0.25,
-      "confidence_reasons": [
-        "base=0.20",
-        "module_support(+0.15) modules=['sfp_accounts']",
-        "non_profile_like(-0.15)",
-        "target_in_url(+0.05)"
-      ],
-      "signals": [
-        "sfp_accounts"
-      ],
-      "urls": [
-        "https://Yogscast.livejournal.com"
       ]
     },
     {
@@ -1843,6 +1720,146 @@
       ],
       "urls": [
         "https://truckersmp.com/user/search?search=Yogscast"
+      ]
+    },
+    {
+      "platform": "bdsmlr",
+      "handle": null,
+      "key": "yogscast.bdsmlr.com",
+      "accounts": [
+        {
+          "platform": "bdsmlr",
+          "url": "https://Yogscast.bdsmlr.com",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": ""
+        }
+      ],
+      "confidence": 0.14999999999999997,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://Yogscast.bdsmlr.com"
+      ]
+    },
+    {
+      "platform": "blogspot",
+      "handle": null,
+      "key": "yogscast.blogspot.com",
+      "accounts": [
+        {
+          "platform": "blogspot",
+          "url": "http://Yogscast.blogspot.com",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": ""
+        }
+      ],
+      "confidence": 0.14999999999999997,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "http://Yogscast.blogspot.com"
+      ]
+    },
+    {
+      "platform": "chatango",
+      "handle": null,
+      "key": "yogscast.chatango.com",
+      "accounts": [
+        {
+          "platform": "chatango",
+          "url": "https://Yogscast.chatango.com",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": ""
+        }
+      ],
+      "confidence": 0.14999999999999997,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://Yogscast.chatango.com"
+      ]
+    },
+    {
+      "platform": "livejournal",
+      "handle": null,
+      "key": "yogscast.livejournal.com",
+      "accounts": [
+        {
+          "platform": "livejournal",
+          "url": "https://Yogscast.livejournal.com",
+          "username": "Yogscast",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "Yogscast"
+            }
+          ],
+          "handle": ""
+        }
+      ],
+      "confidence": 0.14999999999999997,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://Yogscast.livejournal.com"
       ]
     }
   ]

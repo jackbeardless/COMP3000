@@ -1,0 +1,1826 @@
+{
+  "target": "Yogscast",
+  "input_file": "llm_ready_clustered_normalized_spiderfoot_Yogscast_1772053541.json",
+  "config": {
+    "threshold": 0.75,
+    "include_low": false,
+    "dry_run": false,
+    "model": "gemini-2.5-flash",
+    "batch_size": 20,
+    "skip_obvious_noise": true,
+    "retry_sleep_seconds": 20
+  },
+  "counts": {
+    "clusters": 52,
+    "shown": 6,
+    "hidden": 46,
+    "llm_judged": 39,
+    "auto_classified": 13
+  },
+  "shown": [
+    {
+      "target": "Yogscast",
+      "cluster_id": "github:yogscast",
+      "platform": "github",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://github.com/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.9,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "high_signal_platform(+0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "high",
+      "final_confidence": 0.9,
+      "verdict": "likely",
+      "rationale": "Exact handle match on a high-trust platform with a profile-like URL.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "instagram:yogscast",
+      "platform": "instagram",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.instagram.com/Yogscast/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.9,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "high_signal_platform(+0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "high",
+      "final_confidence": 0.9,
+      "verdict": "likely",
+      "rationale": "Exact handle match on a high-trust platform with a profile-like URL.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "patreon:yogscast",
+      "platform": "patreon",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.patreon.com/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.9,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "high_signal_platform(+0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "high",
+      "final_confidence": 0.9,
+      "verdict": "likely",
+      "rationale": "Exact handle match on a high-trust platform with a profile-like URL.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "reddit:yogscast",
+      "platform": "reddit",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.reddit.com/user/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.9,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "high_signal_platform(+0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "high",
+      "final_confidence": 0.9,
+      "verdict": "likely",
+      "rationale": "Exact handle match on a high-trust platform with a profile-like URL.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "twitch:yogscast",
+      "platform": "twitch",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://twitch.tv/Yogscast/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.9,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "high_signal_platform(+0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "high",
+      "final_confidence": 0.9,
+      "verdict": "likely",
+      "rationale": "Exact handle match on a high-trust platform with a profile-like URL.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "steam:yogscast",
+      "platform": "steam",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://steamcommunity.com/id/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "medium",
+      "final_confidence": 0.85,
+      "verdict": "likely",
+      "rationale": "Exact handle and profile URL on Steam. Steam is a major gaming platform, highly relevant for a gaming/entertainment group like Yogscast.",
+      "flags": []
+    }
+  ],
+  "hidden": [
+    {
+      "target": "Yogscast",
+      "cluster_id": "chess:yogscast",
+      "platform": "chess",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.chess.com/member/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "medium",
+      "final_confidence": 0.7,
+      "verdict": "maybe",
+      "rationale": "Exact handle match on a medium-trust platform; conservative reduction from heuristic score.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "deviantart:yogscast",
+      "platform": "deviantart",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.deviantart.com/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "medium",
+      "final_confidence": 0.7,
+      "verdict": "maybe",
+      "rationale": "Exact handle match on a medium-trust platform; conservative reduction from heuristic score.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "gog:yogscast",
+      "platform": "gog",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.gog.com/u/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.7,
+      "verdict": "maybe",
+      "rationale": "Exact handle match on an unknown-trust platform, highly plausible for a gaming content group.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "lastfm:yogscast",
+      "platform": "lastfm",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.last.fm/user/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "medium",
+      "final_confidence": 0.7,
+      "verdict": "maybe",
+      "rationale": "Exact handle match on a medium-trust platform, plausible for a media group.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "mixcloud:yogscast",
+      "platform": "mixcloud",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.mixcloud.com/Yogscast/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "medium",
+      "final_confidence": 0.7,
+      "verdict": "maybe",
+      "rationale": "Exact handle match on a medium-trust platform, plausible for a media group.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "myspace:yogscast",
+      "platform": "myspace",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://myspace.com/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.7,
+      "verdict": "maybe",
+      "rationale": "Exact handle and profile-like URL on MySpace. While an exact match, MySpace is an older platform, warranting a conservative 'maybe'.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "picsart:yogscast",
+      "platform": "picsart",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://picsart.com/u/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.7,
+      "verdict": "maybe",
+      "rationale": "Exact handle and user profile URL on PicsArt. PicsArt is an image editing and sharing platform, which is a secondary social presence for an entertainment group.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "pinterest:yogscast",
+      "platform": "pinterest",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.pinterest.com/Yogscast/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.7,
+      "verdict": "maybe",
+      "rationale": "Exact handle and profile URL on Pinterest. Pinterest is a relevant platform for brands and public figures for visual content, making this a strong indicator.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "vimeo:yogscast",
+      "platform": "vimeo",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://vimeo.com/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.7,
+      "verdict": "maybe",
+      "rationale": "Exact handle and profile URL on Vimeo. Vimeo is a professional video-sharing platform, highly relevant for an entertainment group.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "wattpad:yogscast",
+      "platform": "wattpad",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.wattpad.com/user/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "medium",
+      "final_confidence": 0.7,
+      "verdict": "maybe",
+      "rationale": "Exact handle and user profile URL on Wattpad. Wattpad is a storytelling community, which is less directly relevant to a gaming/entertainment group.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "linktree:yogscast",
+      "platform": "linktree",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://linktr.ee/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.7,
+      "verdict": "maybe",
+      "rationale": "Exact handle and profile URL on Linktree. Linktree is a common 'link-in-bio' tool used by public figures and brands to consolidate links, indicating an official presence.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "streamelements:yogscast",
+      "platform": "streamelements",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://streamelements.com/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.7,
+      "verdict": "maybe",
+      "rationale": "Exact handle and profile URL on StreamElements. StreamElements is a widely used tool for live streamers, highly relevant for a gaming/entertainment group like Yogscast.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "streamlabs:yogscast",
+      "platform": "streamlabs",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://streamlabs.com/Yogscast/tip"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.7,
+      "verdict": "maybe",
+      "rationale": "Exact handle and tipping page URL on Streamlabs. Streamlabs is a popular tool for live streamers, highly relevant for a gaming/entertainment group like Yogscast.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "genius:yogscast",
+      "platform": "genius",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://genius.com/artists/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.65,
+      "verdict": "maybe",
+      "rationale": "Exact handle match on an unknown-trust platform, plausible for a media group.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "pastebin:yogscast",
+      "platform": "pastebin",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://pastebin.com/u/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.65,
+      "verdict": "maybe",
+      "rationale": "Exact handle and user profile URL on Pastebin. Pastebin is primarily for text snippets, not a core social platform for an entertainment group.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "zepeto:yogscast",
+      "platform": "zepeto",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://web.zepeto.me/share/user/profile/Yogscast?language=en"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.65,
+      "verdict": "maybe",
+      "rationale": "Exact handle and user profile URL on Zepeto. Zepeto is a 3D avatar social app, which is a niche platform for an entertainment group.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "chyoa:yogscast",
+      "platform": "chyoa",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://chyoa.com/user/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.6,
+      "verdict": "maybe",
+      "rationale": "Exact handle match on an unknown-trust, niche platform; conservative reduction from heuristic score.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "duolingo:yogscast",
+      "platform": "duolingo",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.duolingo.com/profile/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.6,
+      "verdict": "maybe",
+      "rationale": "Exact handle match on an unknown-trust platform; conservative reduction from heuristic score.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "flipboard:yogscast",
+      "platform": "flipboard",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://flipboard.com/@Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.6,
+      "verdict": "maybe",
+      "rationale": "Exact handle match on an unknown-trust platform; conservative reduction from heuristic score.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "imageshack:yogscast",
+      "platform": "imageshack",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://imageshack.com/user/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.6,
+      "verdict": "maybe",
+      "rationale": "Exact handle match on an unknown-trust platform; conservative reduction from heuristic score.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "kik:yogscast",
+      "platform": "kik",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://kik.me/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.6,
+      "verdict": "maybe",
+      "rationale": "Exact handle match on an unknown-trust messaging platform; conservative reduction from heuristic score.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "kongregate:yogscast",
+      "platform": "kongregate",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.kongregate.com/accounts/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.6,
+      "verdict": "maybe",
+      "rationale": "Exact handle match on an unknown-trust, niche gaming platform; conservative reduction from heuristic score.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "letterboxd:yogscast",
+      "platform": "letterboxd",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://letterboxd.com/Yogscast/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.6,
+      "verdict": "maybe",
+      "rationale": "Exact handle match on an unknown-trust platform; conservative reduction from heuristic score.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "scratch:yogscast",
+      "platform": "scratch",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://scratch.mit.edu/users/Yogscast/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.6,
+      "verdict": "maybe",
+      "rationale": "Exact handle and user profile URL on Scratch. Scratch is a community for children's programming, which is a demographic mismatch for a professional entertainment group.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "artbreeder:yogscast",
+      "platform": "artbreeder",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.artbreeder.com/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.6,
+      "verdict": "maybe",
+      "rationale": "Exact handle and user profile URL on Artbreeder. Artbreeder is an AI art generation platform, a niche creative platform for an entertainment group.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "disqus:yogscast",
+      "platform": "disqus",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://disqus.com/by/Yogscast/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "low",
+      "final_confidence": 0.5,
+      "verdict": "low",
+      "rationale": "Exact handle match on a low-trust platform; significant reduction from heuristic score.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "etoro:yogscast",
+      "platform": "etoro",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.etoro.com/people/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.5,
+      "verdict": "low",
+      "rationale": "Exact handle match on an unknown-trust, unrelated platform; significant reduction from heuristic score.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "periscope:yogscast",
+      "platform": "periscope",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.periscope.tv/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.5,
+      "verdict": "low",
+      "rationale": "Exact handle and profile URL on Periscope. Periscope is a defunct live streaming platform, reducing the current relevance and strength of this finding.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "smule:yogscast",
+      "platform": "smule",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.smule.com/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.5,
+      "verdict": "low",
+      "rationale": "Exact handle and user profile URL on Smule. Smule is a social singing app, which is a low-relevance platform for a gaming/entertainment group.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "7cups:yogscast",
+      "platform": "7cups",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://www.7cups.com/@Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.4,
+      "verdict": "low",
+      "rationale": "Exact handle and user profile URL on 7 Cups. This is a mental health support platform, which is highly unlikely for a public entertainment group to maintain a public profile.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "insanejournal:profile",
+      "platform": "insanejournal",
+      "handle": "profile",
+      "key": "profile",
+      "urls": [
+        "https://Yogscast.insanejournal.com/profile"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.39999999999999997,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.35,
+      "verdict": "low",
+      "rationale": "The handle is 'profile', not 'Yogscast', and the target is only in the subdomain. InsaneJournal is a niche blogging platform, further weakening the link.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "fansly:yogscast",
+      "platform": "fansly",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://fansly.com/Yogscast/posts"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "low",
+      "final_confidence": 0.3,
+      "verdict": "low",
+      "rationale": "Exact handle and profile URL on Fansly. Fansly is a subscription content platform often associated with adult content, making it highly unlikely for a professional entertainment group.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "discord:discord.com",
+      "platform": "discord",
+      "handle": null,
+      "key": "discord.com",
+      "urls": [
+        "https://discord.com/invite/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.25,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "invite_or_redirect",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.2,
+      "verdict": "low",
+      "rationale": "Auto-low: invite/redirect style URL, not a direct profile.",
+      "flags": [
+        "status:invite_or_redirect"
+      ]
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "tinder:yogscast",
+      "platform": "tinder",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://tinder.com/@Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1,
+      "platform_trust": "low",
+      "final_confidence": 0.2,
+      "verdict": "low",
+      "rationale": "Exact handle and profile URL on Tinder. Tinder is a dating app, making it highly improbable for a professional entertainment group to have a legitimate profile.",
+      "flags": []
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "nightbot:yogscast",
+      "platform": "nightbot",
+      "handle": "Yogscast",
+      "key": "yogscast",
+      "urls": [
+        "https://nightbot.tv/t/Yogscast/commands"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.55,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "search_or_tooling",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.15,
+      "verdict": "low",
+      "rationale": "Auto-low: search/tooling/archive-style URL, not a direct profile.",
+      "flags": [
+        "status:search_or_tooling"
+      ]
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "archive:archive.org",
+      "platform": "archive",
+      "handle": null,
+      "key": "archive.org",
+      "urls": [
+        "https://archive.org/search.php?query=Yogscast",
+        "https://archive.org/wayback/available?url=https://instagram.com/Yogscast/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.25,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "search_or_tooling",
+      "account_count": 2,
+      "platform_trust": "low",
+      "final_confidence": 0.15,
+      "verdict": "low",
+      "rationale": "Auto-low: search/tooling/archive-style URL, not a direct profile.",
+      "flags": [
+        "status:search_or_tooling"
+      ]
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "unknown:mcuuid.net",
+      "platform": "unknown",
+      "handle": null,
+      "key": "mcuuid.net",
+      "urls": [
+        "https://mcuuid.net/?q=Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.25,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "search_or_tooling",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.15,
+      "verdict": "low",
+      "rationale": "Auto-low: search/tooling/archive-style URL, not a direct profile.",
+      "flags": [
+        "status:search_or_tooling"
+      ]
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "wikimedia:meta.wikimedia.org",
+      "platform": "wikimedia",
+      "handle": null,
+      "key": "meta.wikimedia.org",
+      "urls": [
+        "https://meta.wikimedia.org/wiki/Special:CentralAuth?target=Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.25,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "search_or_tooling",
+      "account_count": 1,
+      "platform_trust": "low",
+      "final_confidence": 0.15,
+      "verdict": "low",
+      "rationale": "Auto-low: search/tooling/archive-style URL, not a direct profile.",
+      "flags": [
+        "status:search_or_tooling"
+      ]
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "unknown:origins.habbo.com",
+      "platform": "unknown",
+      "handle": "api",
+      "key": "origins.habbo.com",
+      "urls": [
+        "https://origins.habbo.com/api/public/users?name=Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.25,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "search_or_tooling",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.15,
+      "verdict": "low",
+      "rationale": "Auto-low: search/tooling/archive-style URL, not a direct profile.",
+      "flags": [
+        "status:search_or_tooling"
+      ]
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "stackoverflow:stackoverflow.com",
+      "platform": "stackoverflow",
+      "handle": null,
+      "key": "stackoverflow.com",
+      "urls": [
+        "https://stackoverflow.com/users/filter?search=Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.25,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "search_or_tooling",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.15,
+      "verdict": "low",
+      "rationale": "Auto-low: search/tooling/archive-style URL, not a direct profile.",
+      "flags": [
+        "status:search_or_tooling"
+      ]
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "archive:web.archive.org",
+      "platform": "archive",
+      "handle": null,
+      "key": "web.archive.org",
+      "urls": [
+        "https://web.archive.org/web/*/https://twitter.com/Yogscast/status/*",
+        "https://web.archive.org/web/2/https://twitter.com/Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.25,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "search_or_tooling",
+      "account_count": 2,
+      "platform_trust": "low",
+      "final_confidence": 0.15,
+      "verdict": "low",
+      "rationale": "Auto-low: search/tooling/archive-style URL, not a direct profile.",
+      "flags": [
+        "status:search_or_tooling"
+      ]
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "truckersmp:truckersmp.com",
+      "platform": "truckersmp",
+      "handle": null,
+      "key": "truckersmp.com",
+      "urls": [
+        "https://truckersmp.com/user/search?search=Yogscast"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.25,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "search_or_tooling",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.15,
+      "verdict": "low",
+      "rationale": "Auto-low: search/tooling/archive-style URL, not a direct profile.",
+      "flags": [
+        "status:search_or_tooling"
+      ]
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "bdsmlr:yogscast.bdsmlr.com",
+      "platform": "bdsmlr",
+      "handle": null,
+      "key": "yogscast.bdsmlr.com",
+      "urls": [
+        "https://Yogscast.bdsmlr.com"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.14999999999999997,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "search_or_tooling",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.15,
+      "verdict": "low",
+      "rationale": "Auto-low: search/tooling/archive-style URL, not a direct profile.",
+      "flags": [
+        "status:search_or_tooling"
+      ]
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "blogspot:yogscast.blogspot.com",
+      "platform": "blogspot",
+      "handle": null,
+      "key": "yogscast.blogspot.com",
+      "urls": [
+        "http://Yogscast.blogspot.com"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.14999999999999997,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "search_or_tooling",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.15,
+      "verdict": "low",
+      "rationale": "Auto-low: search/tooling/archive-style URL, not a direct profile.",
+      "flags": [
+        "status:search_or_tooling"
+      ]
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "chatango:yogscast.chatango.com",
+      "platform": "chatango",
+      "handle": null,
+      "key": "yogscast.chatango.com",
+      "urls": [
+        "https://Yogscast.chatango.com"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.14999999999999997,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "search_or_tooling",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.15,
+      "verdict": "low",
+      "rationale": "Auto-low: search/tooling/archive-style URL, not a direct profile.",
+      "flags": [
+        "status:search_or_tooling"
+      ]
+    },
+    {
+      "target": "Yogscast",
+      "cluster_id": "livejournal:yogscast.livejournal.com",
+      "platform": "livejournal",
+      "handle": null,
+      "key": "yogscast.livejournal.com",
+      "urls": [
+        "https://Yogscast.livejournal.com"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "Yogscast"
+      ],
+      "heuristic_score": 0.14999999999999997,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "low_signal_platform(-0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "search_or_tooling",
+      "account_count": 1,
+      "platform_trust": "unknown",
+      "final_confidence": 0.15,
+      "verdict": "low",
+      "rationale": "Auto-low: search/tooling/archive-style URL, not a direct profile.",
+      "flags": [
+        "status:search_or_tooling"
+      ]
+    }
+  ]
+}

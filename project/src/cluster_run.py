@@ -10,7 +10,7 @@ def latest_normalized_json() -> Path:
         raise FileNotFoundError("No normalized_spiderfoot_*.json files found in results/")
     return files[0]
 
-if __name__ == "__main__":
+def main() -> Path:
     fp = latest_normalized_json()
     data = json.loads(fp.read_text(encoding="utf-8"))
 
@@ -38,3 +38,8 @@ if __name__ == "__main__":
     print("Top 5 clusters (platform, handle, confidence):")
     for c in clusters[:5]:
         print("-", c["platform"], c.get("handle"), round(c["confidence"], 3))
+
+    return out_path
+
+if __name__ == "__main__":
+    main()

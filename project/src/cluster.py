@@ -67,6 +67,12 @@ HOST_PLATFORM_MAP = {
 
 NON_PROFILE_PLATFORMS = {"archive", "wikimedia"}
 
+LOW_SIGNAL_PLATFORMS = {
+    "7cups", "artbreeder", "fansly", "tinder", "linktree", "smule", "periscope",
+    "streamelements", "streamlabs", "blogspot", "bdsmlr", "chatango", "livejournal",
+    "insanejournal"
+}
+
 
 def _host(url: str) -> str:
     h = urlparse(url).netloc.lower()
@@ -97,7 +103,15 @@ def extract_handle(platform: str, url: str) -> Optional[str]:
     # archive/wiki/etc are not accounts
     if platform in NON_PROFILE_PLATFORMS:
         return None
+    
+    if platform == "duolingo":
+        return parts[1] if len(parts) >= 2 and parts[0].lower() == "profile" else None
 
+    if platform == "genius":
+        return parts[1] if len(parts) >= 2 and parts[0].lower() == "artists" else None
+
+    if platform == "nightbot":
+        return parts[1] if len(parts) >= 2 and parts[0].lower() == "t" else None
     # discord invites are codes, not user profiles
     if platform == "discord":
         return None
@@ -170,12 +184,13 @@ def extract_handle(platform: str, url: str) -> Optional[str]:
             return parts[3]
         return None
 
-    # default patterns:
-    if platform == "github":
-        return parts[0]
     return parts[0]
 
 def is_profile_like(platform: str, url: str) -> bool:
+    """
+    Conservative 'does this URL look like an actual profile page?'
+    We keep generic blockers, but add platform-specific allow rules.
+    """
     if platform in NON_PROFILE_PLATFORMS:
         return False
 
@@ -183,21 +198,46 @@ def is_profile_like(platform: str, url: str) -> bool:
     if not parts:
         return False
 
-    # common non-profile prefixes
+    parts_l = [p.lower() for p in parts]
+
+    # ---- Platform-specific ALLOW rules (override generic blockers) ----
+    if platform == "zepeto":
+        # /share/user/profile/<name>
+        return len(parts_l) >= 4 and parts_l[0:3] == ["share", "user", "profile"]
+
+    if platform == "duolingo":
+        # /profile/<name>
+        return len(parts_l) >= 2 and parts_l[0] == "profile"
+
+    if platform == "genius":
+        # /artists/<name>
+        return len(parts_l) >= 2 and parts_l[0] == "artists"
+
+    if platform == "nightbot":
+        # /t/<channel>/commands (not a profile, more like a channel page)
+        # We'll treat it as NOT profile-like to keep noise down.
+        return False
+
+    # ---- Platform-specific DENY rules ----
+    if platform == "stackoverflow" and parts_l[:2] == ["users", "filter"]:
+        return False
+
+    if platform == "truckersmp" and parts_l[:2] == ["user", "search"]:
+        return False
+
+    if platform == "discord":
+        # invite links are not user profiles
+        return False
+
+    # ---- Generic DENY rules ----
     bad_prefixes = {
-        "search", "search.php", "wayback", "web", "api", "share", "wiki", "commands", "filter"
+        "search", "search.php", "wayback", "web", "api", "wiki",
+        "commands", "filter", "invite"
     }
-    if parts[0].lower() in bad_prefixes:
+    if parts_l[0] in bad_prefixes:
         return False
 
-    # stackoverflow filter is not a profile
-    if platform == "stackoverflow" and parts[:2] == ["users", "filter"]:
-        return False
-
-    # truckersmp search is not a profile
-    if platform == "truckersmp" and parts[:2] == ["user", "search"]:
-        return False
-
+    # If it passes all blockers, assume it's profile-like
     return True
 
 def score_account(target: str, acc: Dict) -> Tuple[float, List[str]]:
@@ -236,10 +276,10 @@ def score_account(target: str, acc: Dict) -> Tuple[float, List[str]]:
         if plat in HIGH_SIGNAL_PLATFORMS:
             score += 0.10
             reasons.append("high_signal_platform(+0.10)")
-            
-    if plat == "unknown":
-        score -= 0.20
-        reasons.append("unknown_platform(-0.20)")
+
+    if plat in LOW_SIGNAL_PLATFORMS:
+        score -= 0.10
+        reasons.append("low_signal_platform(-0.10)")
 
     if target_n and target_n in normalized_handle(url):
         score += 0.05
