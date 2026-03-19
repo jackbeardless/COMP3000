@@ -9,7 +9,7 @@ def latest_clustered_json() -> Path:
         raise FileNotFoundError("No clustered_normalized_spiderfoot_*.json files found in results/")
     return files[0]
 
-if __name__ == "__main__":
+def main() -> Path:
     fp = latest_clustered_json()
     data = json.loads(fp.read_text(encoding="utf-8"))
 
@@ -38,3 +38,8 @@ if __name__ == "__main__":
     print("Input:", fp.name)
     print("Output:", out_path.name)
     print("Counts:", out["counts"])
+
+    return out_path
+
+if __name__ == "__main__":
+    main()

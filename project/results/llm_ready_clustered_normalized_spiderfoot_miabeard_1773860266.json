@@ -1,0 +1,414 @@
+{
+  "target": "miabeard",
+  "input_file": "clustered_normalized_spiderfoot_miabeard_1773860266.json",
+  "counts": {
+    "clusters": 14
+  },
+  "clusters": [
+    {
+      "target": "miabeard",
+      "cluster_id": "twitch:miabeard",
+      "platform": "twitch",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "urls": [
+        "https://twitch.tv/miabeard/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.9,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "high_signal_platform(+0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "miabeard",
+      "cluster_id": "duolingo:miabeard",
+      "platform": "duolingo",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "urls": [
+        "https://www.duolingo.com/profile/miabeard"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "miabeard",
+      "cluster_id": "kik:miabeard",
+      "platform": "kik",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "urls": [
+        "https://kik.me/miabeard"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "miabeard",
+      "cluster_id": "myspace:miabeard",
+      "platform": "myspace",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "urls": [
+        "https://myspace.com/miabeard"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "miabeard",
+      "cluster_id": "picsart:miabeard",
+      "platform": "picsart",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "urls": [
+        "https://picsart.com/u/miabeard"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "miabeard",
+      "cluster_id": "pinterest:miabeard",
+      "platform": "pinterest",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "urls": [
+        "https://www.pinterest.com/miabeard/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "miabeard",
+      "cluster_id": "scratch:miabeard",
+      "platform": "scratch",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "urls": [
+        "https://scratch.mit.edu/users/miabeard/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "miabeard",
+      "cluster_id": "unknown:snapchat.com",
+      "platform": "unknown",
+      "handle": "miabeard",
+      "key": "snapchat.com",
+      "urls": [
+        "https://www.snapchat.com/@miabeard"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "miabeard",
+      "cluster_id": "unknown:tellonym.me",
+      "platform": "unknown",
+      "handle": "miabeard",
+      "key": "tellonym.me",
+      "urls": [
+        "https://tellonym.me/miabeard"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "miabeard",
+      "cluster_id": "unknown:tiktok.com",
+      "platform": "unknown",
+      "handle": "miabeard",
+      "key": "tiktok.com",
+      "urls": [
+        "https://www.tiktok.com/@miabeard?lang=en"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "miabeard",
+      "cluster_id": "unknown:trello.com",
+      "platform": "unknown",
+      "handle": "miabeard",
+      "key": "trello.com",
+      "urls": [
+        "https://trello.com/miabeard"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "miabeard",
+      "cluster_id": "wattpad:miabeard",
+      "platform": "wattpad",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "urls": [
+        "https://www.wattpad.com/user/miabeard"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.8,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "miabeard",
+      "cluster_id": "unknown:poshmark.com",
+      "platform": "unknown",
+      "handle": "closet",
+      "key": "poshmark.com",
+      "urls": [
+        "https://poshmark.com/closet/miabeard"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "miabeard",
+      "cluster_id": "unknown:mcuuid.net",
+      "platform": "unknown",
+      "handle": null,
+      "key": "mcuuid.net",
+      "urls": [
+        "https://mcuuid.net/?q=miabeard"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "miabeard"
+      ],
+      "heuristic_score": 0.25,
+      "heuristic_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "target_in_url(+0.05)"
+      ],
+      "status": "search_or_tooling",
+      "account_count": 1
+    }
+  ]
+}

@@ -57,8 +57,13 @@ def run_spiderfoot_username_scan(target: str, output_format: str = "json") -> di
     }
 
 if __name__ == "__main__":
-    target = input("Target username: ").strip()
-    result = run_spiderfoot_username_scan(target)
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Run a SpiderFoot OSINT scan for a target username.")
+    parser.add_argument("target", help="Username to scan (e.g. Yogscast)")
+    args = parser.parse_args()
+
+    result = run_spiderfoot_username_scan(args.target)
 
     print(f"\nSaved results to: {result['output_file']}")
     print(f"Saved stderr log to: {result['stderr_log']}")

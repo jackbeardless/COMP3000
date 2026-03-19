@@ -1,0 +1,499 @@
+{
+  "target": "miabeard",
+  "input_file": "normalized_spiderfoot_miabeard_1773860266.json",
+  "counts": {
+    "accounts": 14,
+    "clusters": 14
+  },
+  "clusters": [
+    {
+      "platform": "twitch",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "accounts": [
+        {
+          "platform": "twitch",
+          "url": "https://twitch.tv/miabeard/",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": "miabeard"
+        }
+      ],
+      "confidence": 0.9,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "high_signal_platform(+0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://twitch.tv/miabeard/"
+      ]
+    },
+    {
+      "platform": "duolingo",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "accounts": [
+        {
+          "platform": "duolingo",
+          "url": "https://www.duolingo.com/profile/miabeard",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": "miabeard"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://www.duolingo.com/profile/miabeard"
+      ]
+    },
+    {
+      "platform": "kik",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "accounts": [
+        {
+          "platform": "kik",
+          "url": "https://kik.me/miabeard",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": "miabeard"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://kik.me/miabeard"
+      ]
+    },
+    {
+      "platform": "myspace",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "accounts": [
+        {
+          "platform": "myspace",
+          "url": "https://myspace.com/miabeard",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": "miabeard"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://myspace.com/miabeard"
+      ]
+    },
+    {
+      "platform": "picsart",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "accounts": [
+        {
+          "platform": "picsart",
+          "url": "https://picsart.com/u/miabeard",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": "miabeard"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://picsart.com/u/miabeard"
+      ]
+    },
+    {
+      "platform": "pinterest",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "accounts": [
+        {
+          "platform": "pinterest",
+          "url": "https://www.pinterest.com/miabeard/",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": "miabeard"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://www.pinterest.com/miabeard/"
+      ]
+    },
+    {
+      "platform": "scratch",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "accounts": [
+        {
+          "platform": "scratch",
+          "url": "https://scratch.mit.edu/users/miabeard/",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": "miabeard"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://scratch.mit.edu/users/miabeard/"
+      ]
+    },
+    {
+      "platform": "unknown",
+      "handle": "miabeard",
+      "key": "snapchat.com",
+      "accounts": [
+        {
+          "platform": "unknown",
+          "url": "https://www.snapchat.com/@miabeard",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": "miabeard"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://www.snapchat.com/@miabeard"
+      ]
+    },
+    {
+      "platform": "unknown",
+      "handle": "miabeard",
+      "key": "tellonym.me",
+      "accounts": [
+        {
+          "platform": "unknown",
+          "url": "https://tellonym.me/miabeard",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": "miabeard"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://tellonym.me/miabeard"
+      ]
+    },
+    {
+      "platform": "unknown",
+      "handle": "miabeard",
+      "key": "tiktok.com",
+      "accounts": [
+        {
+          "platform": "unknown",
+          "url": "https://www.tiktok.com/@miabeard?lang=en",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": "miabeard"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://www.tiktok.com/@miabeard?lang=en"
+      ]
+    },
+    {
+      "platform": "unknown",
+      "handle": "miabeard",
+      "key": "trello.com",
+      "accounts": [
+        {
+          "platform": "unknown",
+          "url": "https://trello.com/miabeard",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": "miabeard"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://trello.com/miabeard"
+      ]
+    },
+    {
+      "platform": "wattpad",
+      "handle": "miabeard",
+      "key": "miabeard",
+      "accounts": [
+        {
+          "platform": "wattpad",
+          "url": "https://www.wattpad.com/user/miabeard",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": "miabeard"
+        }
+      ],
+      "confidence": 0.8,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "exact_handle_match(+0.30)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://www.wattpad.com/user/miabeard"
+      ]
+    },
+    {
+      "platform": "unknown",
+      "handle": "closet",
+      "key": "poshmark.com",
+      "accounts": [
+        {
+          "platform": "unknown",
+          "url": "https://poshmark.com/closet/miabeard",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": "closet"
+        }
+      ],
+      "confidence": 0.49999999999999994,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "profile_like(+0.10)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://poshmark.com/closet/miabeard"
+      ]
+    },
+    {
+      "platform": "unknown",
+      "handle": null,
+      "key": "mcuuid.net",
+      "accounts": [
+        {
+          "platform": "unknown",
+          "url": "https://mcuuid.net/?q=miabeard",
+          "username": "miabeard",
+          "kind": "url",
+          "signals": [
+            {
+              "from_event": "Account on External Site",
+              "module": "sfp_accounts",
+              "source": "miabeard"
+            }
+          ],
+          "handle": ""
+        }
+      ],
+      "confidence": 0.25,
+      "confidence_reasons": [
+        "base=0.20",
+        "module_support(+0.15) modules=['sfp_accounts']",
+        "non_profile_like(-0.15)",
+        "target_in_url(+0.05)"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "urls": [
+        "https://mcuuid.net/?q=miabeard"
+      ]
+    }
+  ]
+}

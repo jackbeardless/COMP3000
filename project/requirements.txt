@@ -1,0 +1,8 @@
+# Core dependencies
+google-genai==1.47.0
+google-auth==2.48.0
+pydantic==2.12.5
+tenacity==9.1.2
+
+# Development / testing
+pytest>=7.0
