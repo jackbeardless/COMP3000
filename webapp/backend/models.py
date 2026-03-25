@@ -74,6 +74,9 @@ class ClusterResponse(BaseModel):
     rationale: Optional[str]
     flags: List[str]
     signals: List[str]
+    score_features: List[Dict]
+    source_reliability: str
+    contradiction_flags: List[str]
     raw_data: Dict
     analyst_verdict: Optional[str]
     analyst_note: Optional[str]

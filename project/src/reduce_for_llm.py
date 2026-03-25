@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict
 
 RESULTS_DIR = Path(__file__).resolve().parents[1] / "results"
 
@@ -20,19 +20,17 @@ def classify_status(cluster: Dict[str, Any]) -> str:
     - unknown_pattern: fallback
     """
     plat = (cluster.get("platform") or "unknown").lower()
-    urls: List[str] = cluster.get("urls") or []
 
     if plat in {"archive", "wikimedia"}:
         return "search_or_tooling"
     if plat == "discord":
         return "invite_or_redirect"
 
-    # If any URL in the cluster is profile-like according to earlier heuristics:
-    reasons = " ".join(cluster.get("confidence_reasons") or []).lower()
-    if "profile_like(+0.10)" in reasons:
+    # Use structured score_features from the updated cluster.py
+    feature_names = {f.get("feature") for f in (cluster.get("score_features") or [])}
+    if "profile_url" in feature_names:
         return "candidate_profile"
-    if "non_profile_like(-0.15)" in reasons:
-        # often search/tooling
+    if "non_profile_url" in feature_names:
         return "search_or_tooling"
 
     # weak fallback: if we at least have a handle, treat as candidate
@@ -73,7 +71,8 @@ def reduce_cluster_for_llm(target: str, cluster: Dict[str, Any]) -> Dict[str, An
         "event_types": sorted(list(event_types)),
         "sources": sorted(list(sources)),
         "heuristic_score": cluster.get("confidence", 0.0),
-        "heuristic_reasons": cluster.get("confidence_reasons") or [],
+        "score_features": cluster.get("score_features") or [],
+        "source_reliability": cluster.get("source_reliability", "unknown"),
         "status": classify_status(cluster),
         "account_count": len(accounts),
     }

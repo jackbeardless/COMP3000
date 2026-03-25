@@ -73,6 +73,49 @@ LOW_SIGNAL_PLATFORMS = {
     "insanejournal"
 }
 
+# Source reliability tiers — how trustworthy a platform is as an OSINT source.
+# Independent of HIGH/LOW_SIGNAL_PLATFORMS (which measure identity-match signal strength).
+# tier: high = strong authentication / established identity verification
+#        medium = legitimate platform, lower authentication bar
+#        low = anonymous, unverified, or not identity-focused
+SOURCE_RELIABILITY: Dict[str, Dict] = {
+    # High-trust: strong authentication, real-identity platforms
+    "github":        {"tier": "high",   "label": "Technical repository",    "delta":  0.08},
+    "linkedin":      {"tier": "high",   "label": "Professional platform",   "delta":  0.08},
+    "twitter":       {"tier": "high",   "label": "Mainstream social",       "delta":  0.06},
+    "instagram":     {"tier": "high",   "label": "Mainstream social",       "delta":  0.06},
+    "reddit":        {"tier": "high",   "label": "Mainstream social",       "delta":  0.06},
+    "twitch":        {"tier": "high",   "label": "Live-streaming platform", "delta":  0.06},
+    "youtube":       {"tier": "high",   "label": "Video platform",          "delta":  0.06},
+    "patreon":       {"tier": "high",   "label": "Creator platform",        "delta":  0.05},
+    # Medium-trust: legitimate, lower authentication bar
+    "steam":         {"tier": "medium", "label": "Gaming platform",         "delta":  0.03},
+    "chess":         {"tier": "medium", "label": "Chess platform",          "delta":  0.03},
+    "lastfm":        {"tier": "medium", "label": "Music tracker",           "delta":  0.03},
+    "deviantart":    {"tier": "medium", "label": "Creative platform",       "delta":  0.03},
+    "stackoverflow": {"tier": "medium", "label": "Technical Q&A",           "delta":  0.03},
+    "wattpad":       {"tier": "medium", "label": "Publishing platform",     "delta":  0.02},
+    "mixcloud":      {"tier": "medium", "label": "Music platform",          "delta":  0.02},
+    "letterboxd":    {"tier": "medium", "label": "Film review platform",    "delta":  0.02},
+    "duolingo":      {"tier": "medium", "label": "Language platform",       "delta":  0.02},
+    "genius":        {"tier": "medium", "label": "Lyrics platform",         "delta":  0.02},
+    # Low-trust: anonymous, unverified, or not identity-focused
+    "pastebin":      {"tier": "low",    "label": "Paste site",              "delta": -0.05},
+    "archive":       {"tier": "low",    "label": "Web archive",             "delta": -0.05},
+    "wikimedia":     {"tier": "low",    "label": "Wiki metadata",           "delta": -0.05},
+    "fansly":        {"tier": "low",    "label": "Adult content platform",  "delta": -0.08},
+    "tinder":        {"tier": "low",    "label": "Dating platform",         "delta": -0.08},
+    "bdsmlr":        {"tier": "low",    "label": "Adult content platform",  "delta": -0.08},
+    "periscope":     {"tier": "low",    "label": "Defunct live platform",   "delta": -0.06},
+    "chatango":      {"tier": "low",    "label": "Anonymous chat",          "delta": -0.05},
+    "livejournal":   {"tier": "low",    "label": "Legacy blog platform",    "delta": -0.04},
+    "insanejournal": {"tier": "low",    "label": "Legacy blog platform",    "delta": -0.04},
+    "blogspot":      {"tier": "low",    "label": "Generic blog host",       "delta": -0.04},
+    "kik":           {"tier": "low",    "label": "Anonymous messaging",     "delta": -0.06},
+    "imageshack":    {"tier": "low",    "label": "Image host",              "delta": -0.04},
+    "chyoa":         {"tier": "low",    "label": "Adult fiction site",      "delta": -0.06},
+}
+
 
 def _host(url: str) -> str:
     h = urlparse(url).netloc.lower()
@@ -103,7 +146,7 @@ def extract_handle(platform: str, url: str) -> Optional[str]:
     # archive/wiki/etc are not accounts
     if platform in NON_PROFILE_PLATFORMS:
         return None
-    
+
     if platform == "duolingo":
         return parts[1] if len(parts) >= 2 and parts[0].lower() == "profile" else None
 
@@ -240,11 +283,15 @@ def is_profile_like(platform: str, url: str) -> bool:
     # If it passes all blockers, assume it's profile-like
     return True
 
-def score_account(target: str, acc: Dict) -> Tuple[float, List[str]]:
+def score_account(target: str, acc: Dict) -> Tuple[float, List[Dict]]:
     """
-    Returns (score, reasons[]) so you can explain the confidence.
+    Returns (score, features) where features is a list of structured scoring components.
+    Each feature: {"feature": str, "delta": float, "label": str}
+
+    This makes confidence scores fully auditable — every point contribution is traceable
+    to a named, described feature. Supports the explainability requirement.
     """
-    reasons: List[str] = []
+    features: List[Dict] = []
 
     target_n = normalized_handle(target)
     plat = acc.get("platform") or "unknown"
@@ -257,37 +304,54 @@ def score_account(target: str, acc: Dict) -> Tuple[float, List[str]]:
     module_count = len(modules)
 
     score = 0.20
-    reasons.append("base=0.20")
+    features.append({"feature": "base_score", "delta": 0.20, "label": "Base score"})
 
-    mod_boost = min(0.15 * module_count, 0.45)
+    mod_boost = round(min(0.15 * module_count, 0.45), 2)
     score += mod_boost
-    reasons.append(f"module_support(+{mod_boost:.2f}) modules={sorted(m for m in modules if m)}")
+    n = module_count
+    features.append({
+        "feature": "module_corroboration",
+        "delta": mod_boost,
+        "label": f"Corroborated by {n} SpiderFoot module{'s' if n != 1 else ''}",
+    })
 
     if is_profile_like(plat, url):
         score += 0.10
-        reasons.append("profile_like(+0.10)")
+        features.append({"feature": "profile_url", "delta": 0.10, "label": "Profile-like URL structure"})
     else:
         score -= 0.15
-        reasons.append("non_profile_like(-0.15)")
+        features.append({"feature": "non_profile_url", "delta": -0.15, "label": "Non-profile URL (search/redirect/archive)"})
 
     if handle_n and handle_n == target_n:
         score += 0.30
-        reasons.append("exact_handle_match(+0.30)")
+        features.append({"feature": "exact_handle_match", "delta": 0.30, "label": f"Exact handle match: '{handle}'"})
         if plat in HIGH_SIGNAL_PLATFORMS:
             score += 0.10
-            reasons.append("high_signal_platform(+0.10)")
+            features.append({"feature": "high_signal_platform", "delta": 0.10, "label": f"High-signal platform: {plat}"})
 
     if plat in LOW_SIGNAL_PLATFORMS:
         score -= 0.10
-        reasons.append("low_signal_platform(-0.10)")
+        features.append({"feature": "low_signal_platform", "delta": -0.10, "label": f"Low-signal platform: {plat}"})
 
     if target_n and target_n in normalized_handle(url):
         score += 0.05
-        reasons.append("target_in_url(+0.05)")
+        features.append({"feature": "target_in_url", "delta": 0.05, "label": "Target identifier present in URL"})
 
-    # clamp
+    # Source reliability weighting — independent axis from signal strength.
+    # Measures how trustworthy the platform is as an OSINT source.
+    rel = SOURCE_RELIABILITY.get(plat)
+    if rel:
+        delta = rel["delta"]
+        score += delta
+        tier_label = {"high": "High", "medium": "Medium", "low": "Low"}.get(rel["tier"], "Unknown")
+        features.append({
+            "feature": "source_reliability",
+            "delta": round(delta, 2),
+            "label": f"Source reliability: {rel['label']} ({tier_label} trust)",
+        })
+
     score = max(0.0, min(1.0, score))
-    return score, reasons
+    return score, features
 
 def cluster_accounts(target: str, accounts: List[Dict]) -> List[Dict]:
     clusters: Dict[Tuple[str, str], Dict] = {}
@@ -320,10 +384,12 @@ def cluster_accounts(target: str, accounts: List[Dict]) -> List[Dict]:
 
     out: List[Dict] = []
     for c in clusters.values():
+        plat = c["platform"]
         scored = [score_account(target, a) for a in c["accounts"]]
-        best_score, best_reasons = max(scored, key=lambda t: t[0]) if scored else (0.0, [])
+        best_score, best_features = max(scored, key=lambda t: t[0]) if scored else (0.0, [])
         c["confidence"] = best_score
-        c["confidence_reasons"] = best_reasons
+        c["score_features"] = best_features
+        c["source_reliability"] = SOURCE_RELIABILITY.get(plat, {}).get("tier", "unknown")
 
         c["signals"] = sorted({
             s.get("module")

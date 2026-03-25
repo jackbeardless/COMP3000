@@ -1,0 +1,5841 @@
+{
+  "target": "jacksepticeye",
+  "input_file": "clustered_normalized_spiderfoot_jacksepticeye_1773957199.json",
+  "counts": {
+    "clusters": 118
+  },
+  "clusters": [
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "github:jacksepticeye",
+      "platform": "github",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://github.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.98,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "high_signal_platform",
+          "delta": 0.1,
+          "label": "High-signal platform: github"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.08,
+          "label": "Source reliability: Technical repository (High trust)"
+        }
+      ],
+      "source_reliability": "high",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "instagram:jacksepticeye",
+      "platform": "instagram",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.instagram.com/jacksepticeye/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.96,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "high_signal_platform",
+          "delta": 0.1,
+          "label": "High-signal platform: instagram"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.06,
+          "label": "Source reliability: Mainstream social (High trust)"
+        }
+      ],
+      "source_reliability": "high",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "reddit:jacksepticeye",
+      "platform": "reddit",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.reddit.com/user/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.96,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "high_signal_platform",
+          "delta": 0.1,
+          "label": "High-signal platform: reddit"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.06,
+          "label": "Source reliability: Mainstream social (High trust)"
+        }
+      ],
+      "source_reliability": "high",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "twitch:jacksepticeye",
+      "platform": "twitch",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://twitch.tv/jacksepticeye/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.96,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "high_signal_platform",
+          "delta": 0.1,
+          "label": "High-signal platform: twitch"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.06,
+          "label": "Source reliability: Live-streaming platform (High trust)"
+        }
+      ],
+      "source_reliability": "high",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "patreon:jacksepticeye",
+      "platform": "patreon",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.patreon.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.9500000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "high_signal_platform",
+          "delta": 0.1,
+          "label": "High-signal platform: patreon"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.05,
+          "label": "Source reliability: Creator platform (High trust)"
+        }
+      ],
+      "source_reliability": "high",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "chess:jacksepticeye",
+      "platform": "chess",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.chess.com/member/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8300000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.03,
+          "label": "Source reliability: Chess platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "deviantart:jacksepticeye",
+      "platform": "deviantart",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.deviantart.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8300000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.03,
+          "label": "Source reliability: Creative platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "lastfm:jacksepticeye",
+      "platform": "lastfm",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.last.fm/user/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8300000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.03,
+          "label": "Source reliability: Music tracker (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "steam:jacksepticeye",
+      "platform": "steam",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://steamcommunity.com/id/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8300000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.03,
+          "label": "Source reliability: Gaming platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "duolingo:jacksepticeye",
+      "platform": "duolingo",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.duolingo.com/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8200000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.02,
+          "label": "Source reliability: Language platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "genius:jacksepticeye",
+      "platform": "genius",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://genius.com/artists/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8200000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.02,
+          "label": "Source reliability: Lyrics platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "letterboxd:jacksepticeye",
+      "platform": "letterboxd",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://letterboxd.com/jacksepticeye/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8200000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.02,
+          "label": "Source reliability: Film review platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "mixcloud:jacksepticeye",
+      "platform": "mixcloud",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.mixcloud.com/jacksepticeye/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8200000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.02,
+          "label": "Source reliability: Music platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "wattpad:jacksepticeye",
+      "platform": "wattpad",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.wattpad.com/user/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8200000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.02,
+          "label": "Source reliability: Publishing platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:about.me",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "about.me",
+      "urls": [
+        "https://about.me/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:projecthub.arduino.cc",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "projecthub.arduino.cc",
+      "urls": [
+        "https://projecthub.arduino.cc/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:bandlab.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "bandlab.com",
+      "urls": [
+        "https://www.bandlab.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:bandcamp.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "bandcamp.com",
+      "urls": [
+        "https://bandcamp.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:coub.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "coub.com",
+      "urls": [
+        "https://coub.com/jacksepticeye/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "disqus:jacksepticeye",
+      "platform": "disqus",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://disqus.com/by/jacksepticeye/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "etoro:jacksepticeye",
+      "platform": "etoro",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.etoro.com/people/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:figma.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "figma.com",
+      "urls": [
+        "https://www.figma.com/@jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "flipboard:jacksepticeye",
+      "platform": "flipboard",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://flipboard.com/@jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:gab.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "gab.com",
+      "urls": [
+        "https://gab.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "gog:jacksepticeye",
+      "platform": "gog",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.gog.com/u/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:hubpages.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "hubpages.com",
+      "urls": [
+        "https://hubpages.com/@jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:huggingface.co",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "huggingface.co",
+      "urls": [
+        "https://huggingface.co/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:inkbunny.net",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "inkbunny.net",
+      "urls": [
+        "https://inkbunny.net/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:interpals.net",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "interpals.net",
+      "urls": [
+        "https://www.interpals.net/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:kaggle.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "kaggle.com",
+      "urls": [
+        "https://www.kaggle.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "kongregate:jacksepticeye",
+      "platform": "kongregate",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.kongregate.com/accounts/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:kwai.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "kwai.com",
+      "urls": [
+        "https://www.kwai.com/@jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:lemon8-app.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "lemon8-app.com",
+      "urls": [
+        "https://www.lemon8-app.com/jacksepticeye?region=us"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:mixlr.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "mixlr.com",
+      "urls": [
+        "https://mixlr.com/jacksepticeye/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "myspace:jacksepticeye",
+      "platform": "myspace",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://myspace.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:blog.naver.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "blog.naver.com",
+      "urls": [
+        "https://blog.naver.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:palnet.io",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "palnet.io",
+      "urls": [
+        "https://www.palnet.io/@jacksepticeye/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "picsart:jacksepticeye",
+      "platform": "picsart",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://picsart.com/u/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:pillowfort.social",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "pillowfort.social",
+      "urls": [
+        "https://www.pillowfort.social/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:replit.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "replit.com",
+      "urls": [
+        "https://replit.com/@jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "scratch:jacksepticeye",
+      "platform": "scratch",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://scratch.mit.edu/users/jacksepticeye/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:snapchat.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "snapchat.com",
+      "urls": [
+        "https://www.snapchat.com/@jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:solo.to",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "solo.to",
+      "urls": [
+        "https://solo.to/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:tellonym.me",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "tellonym.me",
+      "urls": [
+        "https://tellonym.me/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:tiktok.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "tiktok.com",
+      "urls": [
+        "https://www.tiktok.com/@jacksepticeye?lang=en"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:trello.com",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "trello.com",
+      "urls": [
+        "https://trello.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:vero.co",
+      "platform": "unknown",
+      "handle": "jacksepticeye",
+      "key": "vero.co",
+      "urls": [
+        "https://vero.co/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "zepeto:jacksepticeye",
+      "platform": "zepeto",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://web.zepeto.me/share/user/profile/jacksepticeye?language=en"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "imageshack:jacksepticeye",
+      "platform": "imageshack",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://imageshack.com/user/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.76,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.04,
+          "label": "Source reliability: Image host (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "pastebin:jacksepticeye",
+      "platform": "pastebin",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://pastebin.com/u/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.75,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.05,
+          "label": "Source reliability: Paste site (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "chyoa:jacksepticeye",
+      "platform": "chyoa",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://chyoa.com/user/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.74,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.06,
+          "label": "Source reliability: Adult fiction site (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "kik:jacksepticeye",
+      "platform": "kik",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://kik.me/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.74,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.06,
+          "label": "Source reliability: Anonymous messaging (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "7cups:jacksepticeye",
+      "platform": "7cups",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.7cups.com/@jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: 7cups"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "artbreeder:jacksepticeye",
+      "platform": "artbreeder",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.artbreeder.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: artbreeder"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "linktree:jacksepticeye",
+      "platform": "linktree",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://linktr.ee/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: linktree"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "smule:jacksepticeye",
+      "platform": "smule",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://www.smule.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: smule"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "streamelements:jacksepticeye",
+      "platform": "streamelements",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://streamelements.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: streamelements"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "streamlabs:jacksepticeye",
+      "platform": "streamlabs",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://streamlabs.com/jacksepticeye/tip"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: streamlabs"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "fansly:jacksepticeye",
+      "platform": "fansly",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://fansly.com/jacksepticeye/posts"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.6200000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: fansly"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.08,
+          "label": "Source reliability: Adult content platform (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "nightbot:jacksepticeye",
+      "platform": "nightbot",
+      "handle": "jacksepticeye",
+      "key": "jacksepticeye",
+      "urls": [
+        "https://nightbot.tv/t/jacksepticeye/commands"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.55,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacksepticeye'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:forum.arduino.cc",
+      "platform": "unknown",
+      "handle": "u",
+      "key": "forum.arduino.cc",
+      "urls": [
+        "https://forum.arduino.cc/u/jacksepticeye/summary"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:bsky.app",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "bsky.app",
+      "urls": [
+        "https://bsky.app/profile/jacksepticeye.bsky.social"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:codeforces.com",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "codeforces.com",
+      "urls": [
+        "https://codeforces.com/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:diigo.com",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "diigo.com",
+      "urls": [
+        "https://www.diigo.com/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:hub.docker.com",
+      "platform": "unknown",
+      "handle": "u",
+      "key": "hub.docker.com",
+      "urls": [
+        "https://hub.docker.com/u/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 2
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:donationalerts.com",
+      "platform": "unknown",
+      "handle": "r",
+      "key": "donationalerts.com",
+      "urls": [
+        "https://www.donationalerts.com/r/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:fl.ru",
+      "platform": "unknown",
+      "handle": "users",
+      "key": "fl.ru",
+      "urls": [
+        "https://www.fl.ru/users/jacksepticeye/portfolio/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:freelancer.com",
+      "platform": "unknown",
+      "handle": "u",
+      "key": "freelancer.com",
+      "urls": [
+        "https://www.freelancer.com/u/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:freesound.org",
+      "platform": "unknown",
+      "handle": "people",
+      "key": "freesound.org",
+      "urls": [
+        "https://freesound.org/people/jacksepticeye/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:furaffinity.net",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "furaffinity.net",
+      "urls": [
+        "https://www.furaffinity.net/user/jacksepticeye/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:gdbrowser.com",
+      "platform": "unknown",
+      "handle": "u",
+      "key": "gdbrowser.com",
+      "urls": [
+        "https://gdbrowser.com/u/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:friendfinder.com",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "friendfinder.com",
+      "urls": [
+        "https://friendfinder.com/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:geocaching.com",
+      "platform": "unknown",
+      "handle": "p",
+      "key": "geocaching.com",
+      "urls": [
+        "https://www.geocaching.com/p/?u=jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:gettr.com",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "gettr.com",
+      "urls": [
+        "https://gettr.com/user/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:greasyfork.org",
+      "platform": "unknown",
+      "handle": "en",
+      "key": "greasyfork.org",
+      "urls": [
+        "https://greasyfork.org/en/users?q=jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:habbo.com",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "habbo.com",
+      "urls": [
+        "https://www.habbo.com/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:habbo.com.tr",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "habbo.com.tr",
+      "urls": [
+        "https://www.habbo.com.tr/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:habbo.es",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "habbo.es",
+      "urls": [
+        "https://www.habbo.es/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:habbo.de",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "habbo.de",
+      "urls": [
+        "https://www.habbo.de/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:habbo.com.br",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "habbo.com.br",
+      "urls": [
+        "https://www.habbo.com.br/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:habbo.it",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "habbo.it",
+      "urls": [
+        "https://www.habbo.it/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:habbo.nl",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "habbo.nl",
+      "urls": [
+        "https://www.habbo.nl/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:news.ycombinator.com",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "news.ycombinator.com",
+      "urls": [
+        "https://news.ycombinator.com/user?id=jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:hackerrank.com",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "hackerrank.com",
+      "urls": [
+        "https://www.hackerrank.com/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:itch.io",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "itch.io",
+      "urls": [
+        "https://itch.io/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:monkeytype.com",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "monkeytype.com",
+      "urls": [
+        "https://monkeytype.com/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:myinstants.com",
+      "platform": "unknown",
+      "handle": "en",
+      "key": "myinstants.com",
+      "urls": [
+        "https://www.myinstants.com/en/profile/jacksepticeye/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:myanimelist.net",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "myanimelist.net",
+      "urls": [
+        "https://myanimelist.net/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:mynickname.com",
+      "platform": "unknown",
+      "handle": "en",
+      "key": "mynickname.com",
+      "urls": [
+        "https://mynickname.com/en/search?q=jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:poe.com",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "poe.com",
+      "urls": [
+        "https://poe.com/profile/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:poshmark.com",
+      "platform": "unknown",
+      "handle": "closet",
+      "key": "poshmark.com",
+      "urls": [
+        "https://poshmark.com/closet/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:pronouny.xyz",
+      "platform": "unknown",
+      "handle": "users",
+      "key": "pronouny.xyz",
+      "urls": [
+        "https://pronouny.xyz/users/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:redgifs.com",
+      "platform": "unknown",
+      "handle": "users",
+      "key": "redgifs.com",
+      "urls": [
+        "https://www.redgifs.com/users/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:robertsspaceindustries.com",
+      "platform": "unknown",
+      "handle": "citizens",
+      "key": "robertsspaceindustries.com",
+      "urls": [
+        "https://robertsspaceindustries.com/citizens/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:rumble.com",
+      "platform": "unknown",
+      "handle": "c",
+      "key": "rumble.com",
+      "urls": [
+        "https://rumble.com/c/jacksepticeye",
+        "https://rumble.com/user/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 2
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:seoclerks.com",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "seoclerks.com",
+      "urls": [
+        "https://www.seoclerks.com/user/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:simpleplanes.com",
+      "platform": "unknown",
+      "handle": "u",
+      "key": "simpleplanes.com",
+      "urls": [
+        "https://www.simpleplanes.com/u/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:ch.tetr.io",
+      "platform": "unknown",
+      "handle": "u",
+      "key": "ch.tetr.io",
+      "urls": [
+        "https://ch.tetr.io/u/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:wikidot.com",
+      "platform": "unknown",
+      "handle": "user:info",
+      "key": "wikidot.com",
+      "urls": [
+        "http://www.wikidot.com/user:info/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:wireclub.com",
+      "platform": "unknown",
+      "handle": "users",
+      "key": "wireclub.com",
+      "urls": [
+        "https://www.wireclub.com/users/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "insanejournal:profile",
+      "platform": "insanejournal",
+      "handle": "profile",
+      "key": "profile",
+      "urls": [
+        "https://jacksepticeye.insanejournal.com/profile"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.36,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: insanejournal"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.04,
+          "label": "Source reliability: Legacy blog platform (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "stackoverflow:stackoverflow.com",
+      "platform": "stackoverflow",
+      "handle": null,
+      "key": "stackoverflow.com",
+      "urls": [
+        "https://stackoverflow.com/users/filter?search=jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.28,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.03,
+          "label": "Source reliability: Technical Q&A (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "genius:genius.com",
+      "platform": "genius",
+      "handle": null,
+      "key": "genius.com",
+      "urls": [
+        "https://genius.com/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.27,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.02,
+          "label": "Source reliability: Lyrics platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:jacksepticeye.carrd.co",
+      "platform": "unknown",
+      "handle": null,
+      "key": "jacksepticeye.carrd.co",
+      "urls": [
+        "https://jacksepticeye.carrd.co"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.25,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "discord:discord.com",
+      "platform": "discord",
+      "handle": null,
+      "key": "discord.com",
+      "urls": [
+        "https://discord.com/invite/jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.25,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "invite_or_redirect",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:jacksepticeye.gumroad.com",
+      "platform": "unknown",
+      "handle": null,
+      "key": "jacksepticeye.gumroad.com",
+      "urls": [
+        "https://jacksepticeye.gumroad.com/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.25,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:jacksepticeye.komi.io",
+      "platform": "unknown",
+      "handle": null,
+      "key": "jacksepticeye.komi.io",
+      "urls": [
+        "https://jacksepticeye.komi.io"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.25,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:mastodon.social",
+      "platform": "unknown",
+      "handle": "api",
+      "key": "mastodon.social",
+      "urls": [
+        "https://mastodon.social/api/v2/search?q=jacksepticeye&type=accounts"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.25,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:mcuuid.net",
+      "platform": "unknown",
+      "handle": null,
+      "key": "mcuuid.net",
+      "urls": [
+        "https://mcuuid.net/?q=jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.25,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:origins.habbo.com",
+      "platform": "unknown",
+      "handle": "api",
+      "key": "origins.habbo.com",
+      "urls": [
+        "https://origins.habbo.com/api/public/users?name=jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.25,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "truckersmp:truckersmp.com",
+      "platform": "truckersmp",
+      "handle": null,
+      "key": "truckersmp.com",
+      "urls": [
+        "https://truckersmp.com/user/search?search=jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.25,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "unknown:unlistedvideos.com",
+      "platform": "unknown",
+      "handle": "search.php",
+      "key": "unlistedvideos.com",
+      "urls": [
+        "https://unlistedvideos.com/search.php?user=jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.25,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "archive:archive.org",
+      "platform": "archive",
+      "handle": null,
+      "key": "archive.org",
+      "urls": [
+        "https://archive.org/search.php?query=jacksepticeye",
+        "https://archive.org/wayback/available?url=https://instagram.com/jacksepticeye/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.2,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.05,
+          "label": "Source reliability: Web archive (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "search_or_tooling",
+      "account_count": 2
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "wikimedia:meta.wikimedia.org",
+      "platform": "wikimedia",
+      "handle": null,
+      "key": "meta.wikimedia.org",
+      "urls": [
+        "https://meta.wikimedia.org/wiki/Special:CentralAuth?target=jacksepticeye"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.2,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.05,
+          "label": "Source reliability: Wiki metadata (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "archive:web.archive.org",
+      "platform": "archive",
+      "handle": null,
+      "key": "web.archive.org",
+      "urls": [
+        "https://web.archive.org/web/*/https://twitter.com/jacksepticeye/status/*"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.2,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.05,
+          "label": "Source reliability: Web archive (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "blogspot:jacksepticeye.blogspot.com",
+      "platform": "blogspot",
+      "handle": null,
+      "key": "jacksepticeye.blogspot.com",
+      "urls": [
+        "http://jacksepticeye.blogspot.com"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.10999999999999996,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: blogspot"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.04,
+          "label": "Source reliability: Generic blog host (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "livejournal:jacksepticeye.livejournal.com",
+      "platform": "livejournal",
+      "handle": null,
+      "key": "jacksepticeye.livejournal.com",
+      "urls": [
+        "https://jacksepticeye.livejournal.com"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.10999999999999996,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: livejournal"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.04,
+          "label": "Source reliability: Legacy blog platform (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "jacksepticeye",
+      "cluster_id": "chatango:jacksepticeye.chatango.com",
+      "platform": "chatango",
+      "handle": null,
+      "key": "jacksepticeye.chatango.com",
+      "urls": [
+        "https://jacksepticeye.chatango.com"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacksepticeye"
+      ],
+      "heuristic_score": 0.09999999999999996,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: chatango"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.05,
+          "label": "Source reliability: Anonymous chat (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "search_or_tooling",
+      "account_count": 1
+    }
+  ]
+}

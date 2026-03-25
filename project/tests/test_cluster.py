@@ -192,8 +192,8 @@ class TestScoreAccount:
 
     def test_low_signal_platform_reduces_score(self):
         acc = self._make_account("fansly", "https://fansly.com/Yogscast", "Yogscast")
-        score, reasons = score_account("Yogscast", acc)
-        assert any("low_signal_platform" in r for r in reasons)
+        score, features = score_account("Yogscast", acc)
+        assert any(f["feature"] == "low_signal_platform" for f in features)
 
     def test_multiple_modules_boost_score(self):
         acc_one = self._make_account("github", "https://github.com/Yogscast", "Yogscast", modules=["sfp_accounts"])
@@ -202,10 +202,11 @@ class TestScoreAccount:
         score_many, _ = score_account("Yogscast", acc_many)
         assert score_many >= score_one
 
-    def test_reasons_list_nonempty(self):
+    def test_features_list_nonempty(self):
         acc = self._make_account("github", "https://github.com/Yogscast", "Yogscast")
-        _, reasons = score_account("Yogscast", acc)
-        assert len(reasons) > 0
+        _, features = score_account("Yogscast", acc)
+        assert len(features) > 0
+        assert all("feature" in f and "delta" in f and "label" in f for f in features)
 
     def test_score_clamped_to_zero_minimum(self):
         # Worst case: unknown platform, no handle match, non-profile URL
@@ -279,7 +280,7 @@ class TestClusterAccounts:
         assert "platform" in cluster
         assert "handle" in cluster
         assert "confidence" in cluster
-        assert "confidence_reasons" in cluster
+        assert "score_features" in cluster
         assert "signals" in cluster
         assert "urls" in cluster
         assert "accounts" in cluster
