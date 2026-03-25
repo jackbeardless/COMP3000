@@ -12,42 +12,57 @@ from reduce_for_llm import classify_status, reduce_cluster_for_llm
 # ---------------------------------------------------------------------------
 
 class TestClassifyStatus:
-    def _cluster(self, platform="github", handle="Yogscast", reasons=None, urls=None):
+    def _cluster(self, platform="github", handle="Yogscast", features=None, urls=None):
+        if features is None:
+            features = [
+                {"feature": "profile_url", "delta": 0.10, "label": "Profile-like URL structure"},
+                {"feature": "exact_handle_match", "delta": 0.30, "label": "Exact handle match"},
+            ]
         return {
             "platform": platform,
             "handle": handle,
             "urls": urls or [],
-            "confidence_reasons": reasons or ["profile_like(+0.10)", "exact_handle_match(+0.30)"],
+            "score_features": features,
         }
 
     def test_archive_is_search_or_tooling(self):
-        assert classify_status(self._cluster(platform="archive", reasons=[])) == "search_or_tooling"
+        assert classify_status(self._cluster(platform="archive", features=[])) == "search_or_tooling"
 
     def test_wikimedia_is_search_or_tooling(self):
-        assert classify_status(self._cluster(platform="wikimedia", reasons=[])) == "search_or_tooling"
+        assert classify_status(self._cluster(platform="wikimedia", features=[])) == "search_or_tooling"
 
     def test_discord_is_invite_or_redirect(self):
-        assert classify_status(self._cluster(platform="discord", reasons=[])) == "invite_or_redirect"
+        assert classify_status(self._cluster(platform="discord", features=[])) == "invite_or_redirect"
 
     def test_profile_like_reason_gives_candidate_profile(self):
-        cluster = self._cluster(reasons=["base=0.20", "profile_like(+0.10)", "exact_handle_match(+0.30)"])
-        assert classify_status(cluster) == "candidate_profile"
+        features = [
+            {"feature": "base_score", "delta": 0.20, "label": "Base score"},
+            {"feature": "profile_url", "delta": 0.10, "label": "Profile-like URL structure"},
+            {"feature": "exact_handle_match", "delta": 0.30, "label": "Exact handle match"},
+        ]
+        assert classify_status(self._cluster(features=features)) == "candidate_profile"
 
     def test_non_profile_like_reason_gives_search_or_tooling(self):
-        cluster = self._cluster(reasons=["base=0.20", "non_profile_like(-0.15)"])
-        assert classify_status(cluster) == "search_or_tooling"
+        features = [
+            {"feature": "base_score", "delta": 0.20, "label": "Base score"},
+            {"feature": "non_profile_url", "delta": -0.15, "label": "Non-profile URL"},
+        ]
+        assert classify_status(self._cluster(features=features)) == "search_or_tooling"
 
-    def test_handle_with_no_profile_reason_gives_candidate_profile(self):
-        # Has a handle but no profile_like signal — still candidate
-        cluster = self._cluster(handle="Yogscast", reasons=["base=0.20", "exact_handle_match(+0.30)"])
-        assert classify_status(cluster) == "candidate_profile"
+    def test_handle_with_no_profile_feature_gives_candidate_profile(self):
+        # Has a handle but no profile_url feature — falls back to handle check
+        features = [
+            {"feature": "base_score", "delta": 0.20, "label": "Base score"},
+            {"feature": "exact_handle_match", "delta": 0.30, "label": "Exact handle match"},
+        ]
+        assert classify_status(self._cluster(handle="Yogscast", features=features)) == "candidate_profile"
 
     def test_no_handle_no_signals_gives_unknown(self):
-        cluster = {"platform": "github", "handle": None, "urls": [], "confidence_reasons": []}
+        cluster = {"platform": "github", "handle": None, "urls": [], "score_features": []}
         assert classify_status(cluster) == "unknown_pattern"
 
     def test_empty_platform_still_classifies(self):
-        cluster = {"platform": None, "handle": "Yogscast", "urls": [], "confidence_reasons": []}
+        cluster = {"platform": None, "handle": "Yogscast", "urls": [], "score_features": []}
         # Has a handle so should be candidate_profile
         assert classify_status(cluster) == "candidate_profile"
 
@@ -58,7 +73,7 @@ class TestClassifyStatus:
 
 class TestReduceClusterForLlm:
     def _cluster(self, platform="github", key="yogscast", handle="Yogscast",
-                 confidence=0.9, reasons=None, accounts=None, urls=None):
+                 confidence=0.9, features=None, accounts=None, urls=None):
         if accounts is None:
             accounts = [
                 {
@@ -67,12 +82,18 @@ class TestReduceClusterForLlm:
                     ]
                 }
             ]
+        if features is None:
+            features = [
+                {"feature": "profile_url", "delta": 0.10, "label": "Profile-like URL structure"},
+                {"feature": "exact_handle_match", "delta": 0.30, "label": "Exact handle match"},
+            ]
         return {
             "platform": platform,
             "key": key,
             "handle": handle,
             "confidence": confidence,
-            "confidence_reasons": reasons or ["profile_like(+0.10)", "exact_handle_match(+0.30)"],
+            "score_features": features,
+            "source_reliability": "high",
             "accounts": accounts,
             "urls": urls or ["https://github.com/Yogscast"],
         }
@@ -81,7 +102,7 @@ class TestReduceClusterForLlm:
         result = reduce_cluster_for_llm("Yogscast", self._cluster())
         for field in ("target", "cluster_id", "platform", "handle", "key", "urls",
                       "signals", "event_types", "sources", "heuristic_score",
-                      "heuristic_reasons", "status", "account_count"):
+                      "score_features", "source_reliability", "status", "account_count"):
             assert field in result, f"Missing field: {field}"
 
     def test_cluster_id_format(self):

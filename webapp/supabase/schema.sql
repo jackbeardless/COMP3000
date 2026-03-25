@@ -116,6 +116,12 @@ create table public.clusters (
   rationale           text,       -- LLM explanation
   flags               text[]      not null default '{}',
   signals             text[]      not null default '{}',  -- SpiderFoot modules that found this
+  -- Explainability: per-feature score contributions (list of {feature, delta, label})
+  score_features      jsonb       not null default '[]'::jsonb,
+  -- Source reliability tier for the platform: high / medium / low / unknown
+  source_reliability  text        not null default 'unknown',
+  -- Contradiction flags: cross-cluster and within-cluster inconsistencies detected
+  contradiction_flags text[]      not null default '{}',
   -- Full raw cluster data for drilldown / evidence chain view
   raw_data            jsonb       not null default '{}'::jsonb,
   -- Analyst annotation (manual override)

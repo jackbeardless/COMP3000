@@ -10,8 +10,16 @@ import { ConfidenceBar } from "../components/charts/ConfidenceBar";
 import { VerdictPie } from "../components/charts/VerdictPie";
 import { PlatformBar } from "../components/charts/PlatformBar";
 import { ConfidenceHistogram } from "../components/charts/ConfidenceHistogram";
-import { ChevronLeft, ExternalLink, ChevronDown, ChevronUp, CheckCircle, AlertTriangle, HelpCircle } from "lucide-react";
+import { EntityGraph } from "../components/charts/EntityGraph";
+import { ChevronLeft, ExternalLink, ChevronDown, ChevronUp, CheckCircle, AlertTriangle, HelpCircle, Download } from "lucide-react";
 import { formatDistanceToNow } from "../lib/time";
+
+const CONTRADICTION_DESCRIPTIONS = {
+  source_trust_mismatch:    "High-trust platform but low-confidence verdict — this account may belong to a different person sharing the same identifier.",
+  structural_inconsistency: "Handle matches target but the URL is not a direct profile — may be a search page or misdirected link.",
+  handle_collision_risk:    "Same handle found on other platforms with conflicting confidence — possible identity collision between two people.",
+  signal_volume_mismatch:   "Multiple modules found this account but confidence remains low — signals may be indirect or the source unreliable.",
+};
 
 // ── WebSocket progress feed ────────────────────────────────────────────────
 function ProgressFeed({ scanId }) {
@@ -86,6 +94,9 @@ function ClusterRow({ cluster }) {
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap">
             <span className="font-medium text-gray-900 text-sm">{cluster.platform ?? "unknown"}</span>
+            {cluster.contradiction_flags?.length > 0 && (
+              <AlertTriangle size={13} className="text-amber-500" title="Contradictions detected" />
+            )}
             {cluster.handle && (
               <span className="font-mono text-xs text-brand-600 bg-brand-50 px-1.5 py-0.5 rounded">
                 @{cluster.handle}
@@ -150,11 +161,49 @@ function ClusterRow({ cluster }) {
             </div>
           )}
 
-          {/* Scores */}
-          <div className="grid grid-cols-2 gap-2 text-xs text-gray-500">
-            <div>Heuristic score: <span className="font-mono text-gray-700">{(cluster.heuristic_score * 100).toFixed(0)}%</span></div>
-            <div>Final confidence: <span className="font-mono text-gray-700">{((cluster.final_confidence ?? cluster.heuristic_score) * 100).toFixed(0)}%</span></div>
-          </div>
+          {/* Score feature breakdown */}
+          {cluster.score_features?.length > 0 && (
+            <div>
+              <p className="text-xs font-medium text-gray-500 mb-1">Score Breakdown</p>
+              <div className="space-y-0.5">
+                {cluster.score_features.map((f, i) => (
+                  <div key={i} className="flex items-center justify-between text-xs">
+                    <span className="text-gray-600">{f.label}</span>
+                    <span className={`font-mono font-medium ${f.delta > 0 ? "text-green-600" : f.delta < 0 ? "text-red-500" : "text-gray-400"}`}>
+                      {f.delta > 0 ? "+" : ""}{(f.delta * 100).toFixed(0)}%
+                    </span>
+                  </div>
+                ))}
+                <div className="flex items-center justify-between text-xs border-t border-gray-200 pt-1 mt-1">
+                  <span className="text-gray-500 font-medium">Heuristic total</span>
+                  <span className="font-mono font-semibold text-gray-700">{(cluster.heuristic_score * 100).toFixed(0)}%</span>
+                </div>
+                {cluster.final_confidence != null && (
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="text-gray-500 font-medium">Final (LLM-adjusted)</span>
+                    <span className="font-mono font-semibold text-gray-700">{(cluster.final_confidence * 100).toFixed(0)}%</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* Contradiction flags */}
+          {cluster.contradiction_flags?.length > 0 && (
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-3">
+              <p className="text-xs font-semibold text-amber-800 mb-1.5 flex items-center gap-1">
+                <AlertTriangle size={12} /> Contradictions Detected
+              </p>
+              <div className="space-y-1">
+                {cluster.contradiction_flags.map(flag => (
+                  <p key={flag} className="text-xs text-amber-700">
+                    <span className="font-medium">{flag.replace(/_/g, " ")}:</span>{" "}
+                    {CONTRADICTION_DESCRIPTIONS[flag] ?? flag}
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Analyst annotation */}
           <div className="border-t border-gray-200 pt-3">
@@ -187,6 +236,90 @@ function ClusterRow({ cluster }) {
   );
 }
 
+// ── Export button ──────────────────────────────────────────────────────────
+function ExportButton({ scan, clusters }) {
+  const [open, setOpen] = useState(false);
+
+  function triggerDownload(content, filename, mime) {
+    const blob = new Blob([content], { type: mime });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  function exportJSON() {
+    const payload = {
+      target: scan.target,
+      scan_id: scan.scan_id,
+      exported_at: new Date().toISOString(),
+      clusters: clusters.map(c => ({
+        platform: c.platform,
+        handle: c.handle,
+        verdict: c.verdict,
+        final_confidence: c.final_confidence,
+        heuristic_score: c.heuristic_score,
+        source_reliability: c.source_reliability,
+        urls: c.urls,
+        rationale: c.rationale,
+        score_features: c.score_features,
+        contradiction_flags: c.contradiction_flags,
+        signals: c.signals,
+        analyst_verdict: c.analyst_verdict,
+        analyst_note: c.analyst_note,
+      })),
+    };
+    triggerDownload(
+      JSON.stringify(payload, null, 2),
+      `vantage_${scan.target}_${scan.scan_id?.slice(0, 8)}.json`,
+      "application/json"
+    );
+    setOpen(false);
+  }
+
+  function exportCSV() {
+    const headers = ["platform", "handle", "verdict", "confidence_%", "source_reliability", "primary_url", "rationale", "contradiction_flags", "analyst_verdict", "analyst_note"];
+    const rows = clusters.map(c => [
+      c.platform ?? "",
+      c.handle ?? "",
+      c.verdict ?? "",
+      ((c.final_confidence ?? c.heuristic_score) * 100).toFixed(0),
+      c.source_reliability ?? "",
+      c.urls?.[0] ?? "",
+      (c.rationale ?? "").replace(/"/g, '""'),
+      (c.contradiction_flags ?? []).join("; "),
+      c.analyst_verdict ?? "",
+      (c.analyst_note ?? "").replace(/"/g, '""'),
+    ]);
+    const csv = [headers, ...rows].map(r => r.map(v => `"${v}"`).join(",")).join("\n");
+    triggerDownload(
+      csv,
+      `vantage_${scan.target}_${scan.scan_id?.slice(0, 8)}.csv`,
+      "text/csv"
+    );
+    setOpen(false);
+  }
+
+  return (
+    <div className="relative">
+      <Button variant="secondary" size="sm" onClick={() => setOpen(o => !o)}>
+        <Download size={14} /> Export
+      </Button>
+      {open && (
+        <>
+          <div className="fixed inset-0 z-10" onClick={() => setOpen(false)} />
+          <div className="absolute right-0 top-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-20 min-w-[110px]">
+            <button className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-t-lg" onClick={exportJSON}>JSON</button>
+            <button className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-b-lg" onClick={exportCSV}>CSV</button>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 // ── Main scan page ─────────────────────────────────────────────────────────
 export function ScanPage() {
   const { scanId } = useParams();
@@ -194,6 +327,7 @@ export function ScanPage() {
   const [verdictFilter, setVerdictFilter] = useState(null);
   const [platformFilter, setPlatformFilter] = useState("");
   const [minConf, setMinConf] = useState(0);
+  const [view, setView] = useState("list"); // "list" | "graph"
 
   const { data: scan, isLoading: loadingScan } = useQuery({
     queryKey: ["scan", scanId], queryFn: () => getScan(scanId),
@@ -246,6 +380,9 @@ export function ScanPage() {
             {scan.completed_at && <span className="ml-3">{formatDistanceToNow(scan.completed_at)}</span>}
           </p>
         </div>
+        {scan.status === "complete" && clusters.length > 0 && (
+          <ExportButton scan={scan} clusters={clusters} />
+        )}
       </div>
 
       {/* Live progress feed */}
@@ -307,8 +444,43 @@ export function ScanPage() {
         </div>
       )}
 
+      {/* View toggle */}
+      {scan.status === "complete" && clusters.length > 0 && (
+        <div className="flex gap-1 mb-5">
+          {["list", "graph"].map(v => (
+            <button key={v}
+              className={`px-4 py-1.5 text-sm rounded-full border transition-colors capitalize ${
+                view === v
+                  ? "bg-brand-600 text-white border-brand-600"
+                  : "bg-white text-gray-600 border-gray-300 hover:border-brand-400"
+              }`}
+              onClick={() => setView(v)}>
+              {v === "graph" ? "Graph View" : "List View"}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Graph view */}
+      {scan.status === "complete" && view === "graph" && clusters.length > 0 && (
+        <div className="mb-6">
+          <EntityGraph clusters={clusters} target={scan.target} />
+        </div>
+      )}
+
+      {/* Analyst disclaimer */}
+      {scan.status === "complete" && clusters.length > 0 && view === "list" && (
+        <div className="flex items-start gap-2 bg-blue-50 border border-blue-200 rounded-lg px-4 py-3 mb-5 text-xs text-blue-800">
+          <AlertTriangle size={13} className="mt-0.5 shrink-0 text-blue-500" />
+          <span>
+            <strong>Analyst notice:</strong> Confidence scores indicate statistical probability of identity linkage, not certainty.
+            All findings require human review before operational use. Contradictory evidence may exist beyond what is shown.
+          </span>
+        </div>
+      )}
+
       {/* Cluster list with filters */}
-      {scan.status === "complete" && (
+      {scan.status === "complete" && view === "list" && (
         <>
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <span className="text-sm font-medium text-gray-700">Filter:</span>

@@ -23,6 +23,8 @@ _src = str(settings.pipeline_src_dir)
 if _src not in sys.path:
     sys.path.insert(0, _src)
 
+from contradiction_detector import detect_contradictions  # noqa: E402 (after sys.path patch)
+
 # In-memory progress store: scan_id -> list of progress message dicts
 _progress: dict[str, list[dict]] = {}
 
@@ -65,6 +67,10 @@ def _save_clusters_to_db(scan_id: str, final_json_path: Path):
     data = json.loads(final_json_path.read_text(encoding="utf-8"))
 
     all_clusters = data.get("shown", []) + data.get("hidden", [])
+
+    # Annotate with contradiction flags before saving
+    all_clusters = detect_contradictions(all_clusters)
+
     rows = []
     for c in all_clusters:
         rows.append({
@@ -80,6 +86,9 @@ def _save_clusters_to_db(scan_id: str, final_json_path: Path):
             "rationale": c.get("rationale"),
             "flags": c.get("flags") or [],
             "signals": c.get("signals") or [],
+            "score_features": c.get("score_features") or [],
+            "source_reliability": c.get("source_reliability") or "unknown",
+            "contradiction_flags": c.get("contradiction_flags") or [],
             "raw_data": c,
         })
 
