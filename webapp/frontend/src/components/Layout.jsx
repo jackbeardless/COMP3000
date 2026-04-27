@@ -1,9 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "../lib/useAuth";
-import { ShieldCheck, FolderOpen, LogOut } from "lucide-react";
+import { ShieldCheck, FolderOpen, Building2, LogOut } from "lucide-react";
 
 export function Layout({ children }) {
-  const { user, signOut } = useAuth();
+  const { signOut } = useAuth();
   const { pathname } = useLocation();
 
   return (
@@ -17,9 +17,15 @@ export function Layout({ children }) {
           <div className="flex items-center gap-4">
             <Link to="/cases"
               className={`flex items-center gap-1.5 text-sm transition-colors ${
-                pathname.startsWith("/cases") ? "text-brand-600 font-medium" : "text-gray-500 hover:text-gray-900"
+                pathname.startsWith("/cases") || pathname.startsWith("/scans") ? "text-brand-600 font-medium" : "text-gray-500 hover:text-gray-900"
               }`}>
               <FolderOpen size={15} /> Cases
+            </Link>
+            <Link to="/org"
+              className={`flex items-center gap-1.5 text-sm transition-colors ${
+                pathname.startsWith("/org") ? "text-brand-600 font-medium" : "text-gray-500 hover:text-gray-900"
+              }`}>
+              <Building2 size={15} /> Org
             </Link>
             <button onClick={signOut}
               className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-900 transition-colors">

@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 from cluster import cluster_accounts
+from metadata_extractor import enrich_clusters
 
 RESULTS_DIR = Path(__file__).resolve().parents[1] / "results"
 
@@ -16,8 +17,10 @@ def main() -> Path:
 
     target = data["target"]
     accounts = data.get("accounts", [])
+    breaches = data.get("breaches", [])
 
     clusters = cluster_accounts(target, accounts)
+    clusters = enrich_clusters(clusters)
 
     out = {
         "target": target,
@@ -25,8 +28,10 @@ def main() -> Path:
         "counts": {
             "accounts": len(accounts),
             "clusters": len(clusters),
+            "breaches": len(breaches),
         },
         "clusters": clusters,
+        "breaches": breaches,
     }
 
     out_path = RESULTS_DIR / f"clustered_{fp.stem}.json"

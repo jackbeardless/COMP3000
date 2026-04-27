@@ -1,0 +1,7206 @@
+{
+  "target": "zuck",
+  "input_file": "clustered_normalized_spiderfoot_zuck_1774484746.json",
+  "counts": {
+    "clusters": 144,
+    "breaches": 0
+  },
+  "clusters": [
+    {
+      "target": "zuck",
+      "cluster_id": "instagram:zuck",
+      "platform": "instagram",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://www.instagram.com/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.96,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "high_signal_platform",
+          "delta": 0.1,
+          "label": "High-signal platform: instagram"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.06,
+          "label": "Source reliability: Mainstream social (High trust)"
+        }
+      ],
+      "source_reliability": "high",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "reddit:zuck",
+      "platform": "reddit",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://www.reddit.com/user/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.96,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "high_signal_platform",
+          "delta": 0.1,
+          "label": "High-signal platform: reddit"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.06,
+          "label": "Source reliability: Mainstream social (High trust)"
+        }
+      ],
+      "source_reliability": "high",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "twitch:zuck",
+      "platform": "twitch",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://twitch.tv/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.96,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "high_signal_platform",
+          "delta": 0.1,
+          "label": "High-signal platform: twitch"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.06,
+          "label": "Source reliability: Live-streaming platform (High trust)"
+        }
+      ],
+      "source_reliability": "high",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "chess:zuck",
+      "platform": "chess",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://www.chess.com/member/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8300000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.03,
+          "label": "Source reliability: Chess platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "deviantart:zuck",
+      "platform": "deviantart",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://www.deviantart.com/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8300000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.03,
+          "label": "Source reliability: Creative platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "lastfm:zuck",
+      "platform": "lastfm",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://www.last.fm/user/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8300000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.03,
+          "label": "Source reliability: Music tracker (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "steam:zuck",
+      "platform": "steam",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://steamcommunity.com/id/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8300000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.03,
+          "label": "Source reliability: Gaming platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "duolingo:zuck",
+      "platform": "duolingo",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://www.duolingo.com/profile/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8200000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.02,
+          "label": "Source reliability: Language platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "letterboxd:zuck",
+      "platform": "letterboxd",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://letterboxd.com/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8200000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.02,
+          "label": "Source reliability: Film review platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "mixcloud:zuck",
+      "platform": "mixcloud",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://www.mixcloud.com/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8200000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.02,
+          "label": "Source reliability: Music platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:about.me",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "about.me",
+      "urls": [
+        "https://about.me/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:ameblo.jp",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "ameblo.jp",
+      "urls": [
+        "https://ameblo.jp/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:projecthub.arduino.cc",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "projecthub.arduino.cc",
+      "urls": [
+        "https://projecthub.arduino.cc/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:bandcamp.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "bandcamp.com",
+      "urls": [
+        "https://bandcamp.com/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:bandlab.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "bandlab.com",
+      "urls": [
+        "https://www.bandlab.com/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:bodyspace.bodybuilding.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "bodyspace.bodybuilding.com",
+      "urls": [
+        "http://bodyspace.bodybuilding.com/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:cafecito.app",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "cafecito.app",
+      "urls": [
+        "https://cafecito.app/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:calendly.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "calendly.com",
+      "urls": [
+        "https://calendly.com/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:chomikuj.pl",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "chomikuj.pl",
+      "urls": [
+        "https://chomikuj.pl/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:clubhouse.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "clubhouse.com",
+      "urls": [
+        "https://www.clubhouse.com/@zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "disqus:zuck",
+      "platform": "disqus",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://disqus.com/by/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:donate.stream",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "donate.stream",
+      "urls": [
+        "https://donate.stream/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:figma.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "figma.com",
+      "urls": [
+        "https://www.figma.com/@zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "flipboard:zuck",
+      "platform": "flipboard",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://flipboard.com/@zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:freecodecamp.org",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "freecodecamp.org",
+      "urls": [
+        "https://www.freecodecamp.org/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:gitlab.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "gitlab.com",
+      "urls": [
+        "https://gitlab.com/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "gog:zuck",
+      "platform": "gog",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://www.gog.com/u/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:hackerearth.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "hackerearth.com",
+      "urls": [
+        "https://www.hackerearth.com/@zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:hubpages.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "hubpages.com",
+      "urls": [
+        "https://hubpages.com/@zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:huggingface.co",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "huggingface.co",
+      "urls": [
+        "https://huggingface.co/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:interpals.net",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "interpals.net",
+      "urls": [
+        "https://www.interpals.net/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:keybase.io",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "keybase.io",
+      "urls": [
+        "https://keybase.io/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "kongregate:zuck",
+      "platform": "kongregate",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://www.kongregate.com/accounts/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:mastodon.social",
+      "platform": "unknown",
+      "handle": "api",
+      "key": "mastodon.social",
+      "urls": [
+        "https://mastodon.social/@zuck",
+        "https://mastodon.social/api/v2/search?q=zuck&type=accounts"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 2
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:mastodon.online",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "mastodon.online",
+      "urls": [
+        "https://mastodon.online/@zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:mixlr.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "mixlr.com",
+      "urls": [
+        "https://mixlr.com/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "myspace:zuck",
+      "platform": "myspace",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://myspace.com/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "pinterest:zuck",
+      "platform": "pinterest",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://www.pinterest.com/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:pronouns.page",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "pronouns.page",
+      "urls": [
+        "https://pronouns.page/@zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:rarible.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "rarible.com",
+      "urls": [
+        "https://rarible.com/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:revolut.me",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "revolut.me",
+      "urls": [
+        "https://revolut.me/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:replit.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "replit.com",
+      "urls": [
+        "https://replit.com/@zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:solo.to",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "solo.to",
+      "urls": [
+        "https://solo.to/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:substack.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "substack.com",
+      "urls": [
+        "https://substack.com/@zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:t.me",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "t.me",
+      "urls": [
+        "https://t.me/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:teletype.in",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "teletype.in",
+      "urls": [
+        "https://teletype.in/@zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:tellonym.me",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "tellonym.me",
+      "urls": [
+        "https://tellonym.me/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:tiktok.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "tiktok.com",
+      "urls": [
+        "https://www.tiktok.com/@zuck?lang=en"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:trello.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "trello.com",
+      "urls": [
+        "https://trello.com/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:vero.co",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "vero.co",
+      "urls": [
+        "https://vero.co/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:mini.zbiornik.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "mini.zbiornik.com",
+      "urls": [
+        "https://mini.zbiornik.com/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:zenn.dev",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "zenn.dev",
+      "urls": [
+        "https://zenn.dev/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "zepeto:zuck",
+      "platform": "zepeto",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://web.zepeto.me/share/user/profile/zuck?language=en"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "imageshack:zuck",
+      "platform": "imageshack",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://imageshack.com/user/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.76,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.04,
+          "label": "Source reliability: Image host (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "pastebin:zuck",
+      "platform": "pastebin",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://pastebin.com/u/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.75,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.05,
+          "label": "Source reliability: Paste site (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "chyoa:zuck",
+      "platform": "chyoa",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://chyoa.com/user/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.74,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.06,
+          "label": "Source reliability: Adult fiction site (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "kik:zuck",
+      "platform": "kik",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://kik.me/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.74,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.06,
+          "label": "Source reliability: Anonymous messaging (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "7cups:zuck",
+      "platform": "7cups",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://www.7cups.com/@zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: 7cups"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "artbreeder:zuck",
+      "platform": "artbreeder",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://www.artbreeder.com/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: artbreeder"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "linktree:zuck",
+      "platform": "linktree",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://linktr.ee/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: linktree"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "streamelements:zuck",
+      "platform": "streamelements",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://streamelements.com/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: streamelements"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "streamlabs:zuck",
+      "platform": "streamlabs",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://streamlabs.com/zuck/tip"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.7000000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: streamlabs"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "periscope:zuck",
+      "platform": "periscope",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://www.periscope.tv/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.6400000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: periscope"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.06,
+          "label": "Source reliability: Defunct live platform (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "fansly:zuck",
+      "platform": "fansly",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://fansly.com/zuck/posts"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.6200000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: fansly"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.08,
+          "label": "Source reliability: Adult content platform (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "tinder:zuck",
+      "platform": "tinder",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://tinder.com/@zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.6200000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: tinder"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.08,
+          "label": "Source reliability: Dating platform (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "discord:zuck",
+      "platform": "discord",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://discord.com/invite/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.55,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "invite_or_redirect",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:zuck.komi.io",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "zuck.komi.io",
+      "urls": [
+        "https://zuck.komi.io"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.55,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:mcuuid.net",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "mcuuid.net",
+      "urls": [
+        "https://mcuuid.net/?q=zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.55,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:zuck.mssg.me",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "zuck.mssg.me",
+      "urls": [
+        "https://zuck.mssg.me/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.55,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "nightbot:zuck",
+      "platform": "nightbot",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://nightbot.tv/t/zuck/commands"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.55,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "truckersmp:zuck",
+      "platform": "truckersmp",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://truckersmp.com/user/search?search=zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.55,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:zuck.weebly.com",
+      "platform": "unknown",
+      "handle": "zuck",
+      "key": "zuck.weebly.com",
+      "urls": [
+        "https://zuck.weebly.com/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.55,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "archive:zuck",
+      "platform": "archive",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://archive.org/search.php?query=zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.5,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.05,
+          "label": "Source reliability: Web archive (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:3dtoday.ru",
+      "platform": "unknown",
+      "handle": "blogs",
+      "key": "3dtoday.ru",
+      "urls": [
+        "https://3dtoday.ru/blogs/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:audiojungle.net",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "audiojungle.net",
+      "urls": [
+        "https://audiojungle.net/user/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:atcoder.jp",
+      "platform": "unknown",
+      "handle": "users",
+      "key": "atcoder.jp",
+      "urls": [
+        "https://atcoder.jp/users/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:biggerpockets.com",
+      "platform": "unknown",
+      "handle": "users",
+      "key": "biggerpockets.com",
+      "urls": [
+        "https://www.biggerpockets.com/users/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:championat.com",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "championat.com",
+      "urls": [
+        "https://www.championat.com/user/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:codeforces.com",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "codeforces.com",
+      "urls": [
+        "https://codeforces.com/profile/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:codechef.com",
+      "platform": "unknown",
+      "handle": "users",
+      "key": "codechef.com",
+      "urls": [
+        "https://www.codechef.com/users/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:codewars.com",
+      "platform": "unknown",
+      "handle": "users",
+      "key": "codewars.com",
+      "urls": [
+        "https://www.codewars.com/users/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:cytoid.io",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "cytoid.io",
+      "urls": [
+        "https://cytoid.io/profile/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:destream.net",
+      "platform": "unknown",
+      "handle": "live",
+      "key": "destream.net",
+      "urls": [
+        "https://destream.net/live/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:discogs.com",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "discogs.com",
+      "urls": [
+        "https://www.discogs.com/user/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:hub.docker.com",
+      "platform": "unknown",
+      "handle": "u",
+      "key": "hub.docker.com",
+      "urls": [
+        "https://hub.docker.com/u/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 2
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:dota2.ru",
+      "platform": "unknown",
+      "handle": "forum",
+      "key": "dota2.ru",
+      "urls": [
+        "https://dota2.ru/forum/search/?type=user&keywords=zuck&sort_by=username"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:dotafire.com",
+      "platform": "unknown",
+      "handle": "ajax",
+      "key": "dotafire.com",
+      "urls": [
+        "https://www.dotafire.com/ajax/searchSite?text=zuck&search=members"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:faceit.com",
+      "platform": "unknown",
+      "handle": "en",
+      "key": "faceit.com",
+      "urls": [
+        "https://www.faceit.com/en/players/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:fl.ru",
+      "platform": "unknown",
+      "handle": "users",
+      "key": "fl.ru",
+      "urls": [
+        "https://www.fl.ru/users/zuck/portfolio/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:flickr.com",
+      "platform": "unknown",
+      "handle": "photos",
+      "key": "flickr.com",
+      "urls": [
+        "https://www.flickr.com/photos/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:freelancer.com",
+      "platform": "unknown",
+      "handle": "u",
+      "key": "freelancer.com",
+      "urls": [
+        "https://www.freelancer.com/u/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:connect.garmin.com",
+      "platform": "unknown",
+      "handle": "modern",
+      "key": "connect.garmin.com",
+      "urls": [
+        "https://connect.garmin.com/modern/profile/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:giphy.com",
+      "platform": "unknown",
+      "handle": "channel",
+      "key": "giphy.com",
+      "urls": [
+        "https://giphy.com/channel/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:geocaching.com",
+      "platform": "unknown",
+      "handle": "p",
+      "key": "geocaching.com",
+      "urls": [
+        "https://www.geocaching.com/p/?u=zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:gigapan.com",
+      "platform": "unknown",
+      "handle": "profiles",
+      "key": "gigapan.com",
+      "urls": [
+        "https://www.gigapan.com/profiles/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:gpodder.net",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "gpodder.net",
+      "urls": [
+        "https://gpodder.net/user/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:greasyfork.org",
+      "platform": "unknown",
+      "handle": "en",
+      "key": "greasyfork.org",
+      "urls": [
+        "https://greasyfork.org/en/users?q=zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:gtainside.com",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "gtainside.com",
+      "urls": [
+        "https://www.gtainside.com/user/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:habbo.com.br",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "habbo.com.br",
+      "urls": [
+        "https://www.habbo.com.br/profile/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:habbo.es",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "habbo.es",
+      "urls": [
+        "https://www.habbo.es/profile/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:habr.com",
+      "platform": "unknown",
+      "handle": "ru",
+      "key": "habr.com",
+      "urls": [
+        "https://habr.com/ru/users/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:news.ycombinator.com",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "news.ycombinator.com",
+      "urls": [
+        "https://news.ycombinator.com/user?id=zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:houzz.com",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "houzz.com",
+      "urls": [
+        "https://www.houzz.com/user/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:ifttt.com",
+      "platform": "unknown",
+      "handle": "p",
+      "key": "ifttt.com",
+      "urls": [
+        "https://ifttt.com/p/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:ifunny.co",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "ifunny.co",
+      "urls": [
+        "https://ifunny.co/user/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:inaturalist.nz",
+      "platform": "unknown",
+      "handle": "people",
+      "key": "inaturalist.nz",
+      "urls": [
+        "https://inaturalist.nz/people/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:itch.io",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "itch.io",
+      "urls": [
+        "https://itch.io/profile/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:jbzd.com.pl",
+      "platform": "unknown",
+      "handle": "uzytkownik",
+      "key": "jbzd.com.pl",
+      "urls": [
+        "https://jbzd.com.pl/uzytkownik/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:knowyourmeme.com",
+      "platform": "unknown",
+      "handle": "users",
+      "key": "knowyourmeme.com",
+      "urls": [
+        "https://knowyourmeme.com/users/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:mobilegta.net",
+      "platform": "unknown",
+      "handle": "en",
+      "key": "mobilegta.net",
+      "urls": [
+        "https://www.mobilegta.net/en/user/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:monkeytype.com",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "monkeytype.com",
+      "urls": [
+        "https://monkeytype.com/profile/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:myinstants.com",
+      "platform": "unknown",
+      "handle": "en",
+      "key": "myinstants.com",
+      "urls": [
+        "https://www.myinstants.com/en/profile/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:myanimelist.net",
+      "platform": "unknown",
+      "handle": "profile",
+      "key": "myanimelist.net",
+      "urls": [
+        "https://myanimelist.net/profile/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:mynickname.com",
+      "platform": "unknown",
+      "handle": "en",
+      "key": "mynickname.com",
+      "urls": [
+        "https://mynickname.com/en/search?q=zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:neocities.org",
+      "platform": "unknown",
+      "handle": "site",
+      "key": "neocities.org",
+      "urls": [
+        "https://neocities.org/site/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:openstreetmap.org",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "openstreetmap.org",
+      "urls": [
+        "https://www.openstreetmap.org/user/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:pornhub.com",
+      "platform": "unknown",
+      "handle": "model",
+      "key": "pornhub.com",
+      "urls": [
+        "https://www.pornhub.com/model/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:poshmark.com",
+      "platform": "unknown",
+      "handle": "closet",
+      "key": "poshmark.com",
+      "urls": [
+        "https://poshmark.com/closet/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:pronouny.xyz",
+      "platform": "unknown",
+      "handle": "users",
+      "key": "pronouny.xyz",
+      "urls": [
+        "https://pronouny.xyz/users/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:prv.pl",
+      "platform": "unknown",
+      "handle": "osoba",
+      "key": "prv.pl",
+      "urls": [
+        "https://www.prv.pl/osoba/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:redgifs.com",
+      "platform": "unknown",
+      "handle": "users",
+      "key": "redgifs.com",
+      "urls": [
+        "https://www.redgifs.com/users/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:robertsspaceindustries.com",
+      "platform": "unknown",
+      "handle": "citizens",
+      "key": "robertsspaceindustries.com",
+      "urls": [
+        "https://robertsspaceindustries.com/citizens/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:apps.runescape.com",
+      "platform": "unknown",
+      "handle": "runemetrics",
+      "key": "apps.runescape.com",
+      "urls": [
+        "https://apps.runescape.com/runemetrics/app/overview/player/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:scored.co",
+      "platform": "unknown",
+      "handle": "u",
+      "key": "scored.co",
+      "urls": [
+        "https://scored.co/u/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:seoclerks.com",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "seoclerks.com",
+      "urls": [
+        "https://www.seoclerks.com/user/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:simpleplanes.com",
+      "platform": "unknown",
+      "handle": "u",
+      "key": "simpleplanes.com",
+      "urls": [
+        "https://www.simpleplanes.com/u/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:sports-tracker.com",
+      "platform": "unknown",
+      "handle": "view_profile",
+      "key": "sports-tracker.com",
+      "urls": [
+        "https://sports-tracker.com/view_profile/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:ch.tetr.io",
+      "platform": "unknown",
+      "handle": "u",
+      "key": "ch.tetr.io",
+      "urls": [
+        "https://ch.tetr.io/u/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:tenor.com",
+      "platform": "unknown",
+      "handle": "users",
+      "key": "tenor.com",
+      "urls": [
+        "https://tenor.com/users/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:themeforest.net",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "themeforest.net",
+      "urls": [
+        "https://themeforest.net/user/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:untappd.com",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "untappd.com",
+      "urls": [
+        "https://untappd.com/user/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:warriorforum.com",
+      "platform": "unknown",
+      "handle": "members",
+      "key": "warriorforum.com",
+      "urls": [
+        "https://www.warriorforum.com/members/zuck.html"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:wikidot.com",
+      "platform": "unknown",
+      "handle": "user:info",
+      "key": "wikidot.com",
+      "urls": [
+        "http://www.wikidot.com/user:info/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:wowhead.com",
+      "platform": "unknown",
+      "handle": "user=zuck",
+      "key": "wowhead.com",
+      "urls": [
+        "https://www.wowhead.com/user=zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:wykop.pl",
+      "platform": "unknown",
+      "handle": "ludzie",
+      "key": "wykop.pl",
+      "urls": [
+        "https://wykop.pl/ludzie/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:zhihu.com",
+      "platform": "unknown",
+      "handle": "people",
+      "key": "zhihu.com",
+      "urls": [
+        "https://www.zhihu.com/people/zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "chatango:zuck",
+      "platform": "chatango",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://zuck.chatango.com"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.4,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: chatango"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.05,
+          "label": "Source reliability: Anonymous chat (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "bdsmlr:zuck",
+      "platform": "bdsmlr",
+      "handle": "zuck",
+      "key": "zuck",
+      "urls": [
+        "https://zuck.bdsmlr.com"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.37,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'zuck'"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: bdsmlr"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.08,
+          "label": "Source reliability: Adult content platform (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "insanejournal:profile",
+      "platform": "insanejournal",
+      "handle": "profile",
+      "key": "profile",
+      "urls": [
+        "https://zuck.insanejournal.com/profile"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.36,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "low_signal_platform",
+          "delta": -0.1,
+          "label": "Low-signal platform: insanejournal"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.04,
+          "label": "Source reliability: Legacy blog platform (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "stackoverflow:filter",
+      "platform": "stackoverflow",
+      "handle": "filter",
+      "key": "filter",
+      "urls": [
+        "https://stackoverflow.com/users/filter?search=zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.28,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.03,
+          "label": "Source reliability: Technical Q&A (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "unknown:chatovka.net",
+      "platform": "unknown",
+      "handle": "search",
+      "key": "chatovka.net",
+      "urls": [
+        "https://chatovka.net/search?user_nick=+zuck&user_sex_m=on&user_sex_f=on"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.25,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "archive:available",
+      "platform": "archive",
+      "handle": "available",
+      "key": "available",
+      "urls": [
+        "https://archive.org/wayback/available?url=https://instagram.com/zuck/"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.2,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.05,
+          "label": "Source reliability: Web archive (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "wikimedia:specialcentralauth",
+      "platform": "wikimedia",
+      "handle": "Special:CentralAuth",
+      "key": "specialcentralauth",
+      "urls": [
+        "https://meta.wikimedia.org/wiki/Special:CentralAuth?target=zuck"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.2,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.05,
+          "label": "Source reliability: Wiki metadata (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "search_or_tooling",
+      "account_count": 1
+    },
+    {
+      "target": "zuck",
+      "cluster_id": "archive:2",
+      "platform": "archive",
+      "handle": "2",
+      "key": "2",
+      "urls": [
+        "https://web.archive.org/web/2/https://parler.com/profile/zuck/posts"
+      ],
+      "display_names": [],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "zuck"
+      ],
+      "heuristic_score": 0.2,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "non_profile_url",
+          "delta": -0.15,
+          "label": "Non-profile URL (search/redirect/archive)"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.05,
+          "label": "Source reliability: Web archive (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "search_or_tooling",
+      "account_count": 1
+    }
+  ],
+  "breaches": []
+}

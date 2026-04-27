@@ -67,6 +67,7 @@ def _save_clusters_to_db(scan_id: str, final_json_path: Path):
     data = json.loads(final_json_path.read_text(encoding="utf-8"))
 
     all_clusters = data.get("shown", []) + data.get("hidden", [])
+    breaches = data.get("breaches") or []
 
     # Annotate with contradiction flags before saving
     all_clusters = detect_contradictions(all_clusters)
@@ -95,10 +96,10 @@ def _save_clusters_to_db(scan_id: str, final_json_path: Path):
     if rows:
         admin.table("clusters").insert(rows).execute()
 
-    return len(rows)
+    return len(rows), breaches
 
 
-def run_pipeline(scan_id: str, target: str, config: dict):
+def run_pipeline(scan_id: str, target: str, config: dict, target_type: str = "username"):  # target_type kept for signature compat
     """
     Synchronous pipeline runner — call this in a thread pool executor.
 
@@ -113,15 +114,41 @@ def run_pipeline(scan_id: str, target: str, config: dict):
     try:
         _update_scan_status(scan_id, "running")
 
-        # ── Step 1: SpiderFoot ────────────────────────────────
+        # ── Step 1: Data Collection (SpiderFoot + Sherlock + Maigret) ────
         if config.get("run_spiderfoot", True):
-            _push(scan_id, "spiderfoot", "running", f"Starting SpiderFoot scan for '{target}'…")
+            _push(scan_id, "collect", "running", f"Running SpiderFoot for '{target}'…")
             import run_spiderfoot as sf
-            result = sf.run_spiderfoot_username_scan(target)
-            _push(scan_id, "spiderfoot", "complete",
-                  f"SpiderFoot complete — {result['event_count']} events collected.")
+            sf_result = sf.run_spiderfoot_username_scan(target)
+            all_events = list(sf_result["events"]) if isinstance(sf_result["events"], list) else []
+            _push(scan_id, "collect", "running",
+                  f"SpiderFoot: {sf_result['event_count']} events. Running Sherlock…")
+
+            try:
+                import run_sherlock
+                sherlock_events = run_sherlock.run_sherlock_scan(target)
+                all_events.extend(sherlock_events)
+                _push(scan_id, "collect", "running",
+                      f"Sherlock: {len(sherlock_events)} accounts found. Running Maigret…")
+            except Exception as e:
+                _push(scan_id, "collect", "running", f"Sherlock skipped: {e}")
+
+            try:
+                import run_maigret
+                maigret_events = run_maigret.run_maigret_scan(target)
+                all_events.extend(maigret_events)
+                _push(scan_id, "collect", "running",
+                      f"Maigret: {len(maigret_events)} accounts found.")
+            except Exception as e:
+                _push(scan_id, "collect", "running", f"Maigret skipped: {e}")
+
+            # Overwrite SpiderFoot file with merged events so normalize_run picks it up
+            Path(sf_result["output_file"]).write_text(
+                json.dumps(all_events, ensure_ascii=False), encoding="utf-8"
+            )
+            _push(scan_id, "collect", "complete",
+                  f"Data collection complete — {len(all_events)} total events.")
         else:
-            _push(scan_id, "spiderfoot", "complete", "Skipped — using existing results file.")
+            _push(scan_id, "collect", "complete", "Skipped — using existing results file.")
 
         # ── Step 2: Normalise ─────────────────────────────────
         _push(scan_id, "normalize", "running", "Normalising events…")
@@ -129,11 +156,11 @@ def run_pipeline(scan_id: str, target: str, config: dict):
         normalize_run.main()
         _push(scan_id, "normalize", "complete", "Normalisation complete.")
 
-        # ── Step 3: Cluster ───────────────────────────────────
-        _push(scan_id, "cluster", "running", "Clustering accounts…")
+        # ── Step 3: Cluster + metadata enrichment ─────────────
+        _push(scan_id, "cluster", "running", "Clustering accounts and fetching profile metadata…")
         import cluster_run
         cluster_run.main()
-        _push(scan_id, "cluster", "complete", "Clustering complete.")
+        _push(scan_id, "cluster", "complete", "Clustering and metadata enrichment complete.")
 
         # ── Step 4: Reduce for LLM ────────────────────────────
         _push(scan_id, "reduce", "running", "Preparing LLM-ready summaries…")
@@ -164,15 +191,20 @@ def run_pipeline(scan_id: str, target: str, config: dict):
             if settings.gemini_api_key:
                 os.environ["GEMINI_API_KEY"] = settings.gemini_api_key
 
+            known_info = config.get("known_info") or {}
             import llm_judge_gemini
-            final_path = llm_judge_gemini.main()
+            final_path = llm_judge_gemini.main(known_info=known_info or None)
             _push(scan_id, "llm", "complete", "LLM judgement complete.")
 
         # ── Step 6: Save to Supabase ──────────────────────────
         _push(scan_id, "saving", "running", "Saving results to database…")
         if final_path and Path(final_path).exists():
-            count = _save_clusters_to_db(scan_id, Path(final_path))
+            count, breaches = _save_clusters_to_db(scan_id, Path(final_path))
             _push(scan_id, "saving", "complete", f"Saved {count} clusters to database.")
+            if breaches:
+                updated_config = dict(config)
+                updated_config["breaches"] = breaches
+                get_admin_client().table("scans").update({"config": updated_config}).eq("id", scan_id).execute()
         else:
             _push(scan_id, "saving", "complete", "No final output file found — nothing saved.")
 
@@ -185,7 +217,7 @@ def run_pipeline(scan_id: str, target: str, config: dict):
         _update_scan_status(scan_id, "failed", error=error_msg)
 
 
-async def run_pipeline_async(scan_id: str, target: str, config: dict):
+async def run_pipeline_async(scan_id: str, target: str, config: dict, target_type: str = "username"):
     """Async wrapper — runs the sync pipeline in a thread pool so it doesn't block FastAPI."""
     loop = asyncio.get_event_loop()
-    await loop.run_in_executor(None, run_pipeline, scan_id, target, config)
+    await loop.run_in_executor(None, run_pipeline, scan_id, target, config, target_type)

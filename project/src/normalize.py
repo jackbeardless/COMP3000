@@ -7,6 +7,62 @@ from urllib.parse import urlparse
 
 SFURL_RE = re.compile(r"<SFURL>\s*(.*?)\s*</SFURL>", re.IGNORECASE | re.DOTALL)
 
+# Maps common platform name strings (as they appear in ACCOUNT_EXTERNAL events) to our platform IDs
+_ACCT_EXT_PLATFORM_MAP = {
+    "github": "github",
+    "twitter": "twitter",
+    "x.com": "twitter",
+    "instagram": "instagram",
+    "reddit": "reddit",
+    "twitch": "twitch",
+    "linkedin": "linkedin",
+    "youtube": "youtube",
+    "facebook": "facebook",
+    "steam": "steam",
+    "steamcommunity": "steam",
+    "stackoverflow": "stackoverflow",
+    "stack overflow": "stackoverflow",
+    "pinterest": "pinterest",
+    "tiktok": "tiktok",
+    "snapchat": "snapchat",
+    "discord": "discord",
+    "tumblr": "tumblr",
+    "soundcloud": "soundcloud",
+    "spotify": "spotify",
+    "flickr": "flickr",
+    "vimeo": "vimeo",
+    "patreon": "patreon",
+    "myspace": "myspace",
+    "last.fm": "lastfm",
+    "lastfm": "lastfm",
+    "deviantart": "deviantart",
+    "wattpad": "wattpad",
+    "chess": "chess",
+    "duolingo": "duolingo",
+    "letterboxd": "letterboxd",
+}
+
+_ACCT_EXT_RE = re.compile(
+    r"^(?P<platform>[A-Za-z][A-Za-z0-9 ._\-]{0,30}?)\s*[:\-–]+\s*@?(?P<handle>[A-Za-z0-9._\-]{2,50})\s*$"
+)
+
+
+def _parse_account_external(data: str):
+    """
+    Parse ACCOUNT_EXTERNAL event data like "GitHub: jacklar20" or "Twitter - @jacklar20".
+    Returns (platform_id, handle) or (None, None).
+    """
+    m = _ACCT_EXT_RE.match(data.strip())
+    if not m:
+        return None, None
+    raw = m.group("platform").strip().lower()
+    handle = m.group("handle").strip()
+    for key, plat in _ACCT_EXT_PLATFORM_MAP.items():
+        if key in raw:
+            return plat, handle
+    # Unknown platform — return sanitised raw name so it still clusters
+    return re.sub(r"[^a-z0-9]", "", raw), handle
+
 # Path segment "handles" that are usually NOT the person's handle
 JUNK_PATH_SEGMENTS = {
     "user",
@@ -220,6 +276,8 @@ def normalize_events(events: List[Dict[str, Any]], target: str) -> Dict[str, Any
     usernames_set = set()
     urls_set = set()
     accounts: List[Dict[str, Any]] = []
+    breaches: List[Dict[str, Any]] = []
+    url_names: Dict[str, List[str]] = {}  # maps source URL -> list of human names found there
 
     for ev in events:
         ev_type = _safe_str(ev.get("type"))
@@ -244,8 +302,32 @@ def normalize_events(events: List[Dict[str, Any]], target: str) -> Dict[str, Any
             if data:
                 usernames_set.add(data)
 
+        # Data breach records from HIBP and similar modules
+        if ev_type.lower() == "breach_entry":
+            breaches.append({"raw": data, "module": module, "source": source})
+
+        # HUMAN_NAME: associate name with the source URL it was found at
+        if ev_type.lower() == "human_name" and data:
+            src = source.strip() if source else ""
+            if src.startswith("http"):
+                url_names.setdefault(src, []).append(data)
+
         # extract urls from SFURL markup
         urls = _extract_sfurls(data)
+
+        # ACCOUNT_EXTERNAL with no embedded URL — parse as plain-text "Platform: handle"
+        if ev_type.lower() == "account_external" and not urls:
+            plat, handle = _parse_account_external(data)
+            if plat and handle:
+                accounts.append({
+                    "platform": plat,
+                    "url": "",
+                    "username": handle,
+                    "kind": "account_external",
+                    "signals": [{"from_event": ev_type, "module": module, "source": source}],
+                    "display_names": [],
+                })
+
         for u in urls:
             urls_set.add(u)
 
@@ -274,6 +356,7 @@ def normalize_events(events: List[Dict[str, Any]], target: str) -> Dict[str, Any
                             "source": source,
                         }
                     ],
+                    "display_names": url_names.get(u, []),
                 }
             )
 
@@ -288,10 +371,13 @@ def normalize_events(events: List[Dict[str, Any]], target: str) -> Dict[str, Any
             "unique_usernames": len(usernames),
             "unique_urls": len(urls),
             "accounts": len(accounts),
+            "breaches": len(breaches),
         },
         "usernames": usernames,
         "urls": urls,
         "accounts": accounts,
+        "breaches": breaches,
         "evidence": evidence,
+        "url_names": url_names,
     }
     return out

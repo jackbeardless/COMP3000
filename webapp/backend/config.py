@@ -11,6 +11,10 @@ class Settings(BaseSettings):
     # Gemini
     gemini_api_key: str = ""
 
+    # Resend email service
+    resend_api_key: str = ""
+    app_url: str = "http://localhost:5173"
+
     # Pipeline defaults (can be overridden per-scan via config payload)
     osint_threshold: float = 0.75
     osint_model: str = "gemini-2.5-flash"

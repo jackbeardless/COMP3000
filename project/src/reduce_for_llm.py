@@ -67,6 +67,8 @@ def reduce_cluster_for_llm(target: str, cluster: Dict[str, Any]) -> Dict[str, An
         "handle": handle,
         "key": key,
         "urls": cluster.get("urls") or [],
+        "display_names": cluster.get("display_names") or [],
+        "metadata": cluster.get("metadata") or {},
         "signals": sorted(list(modules)),
         "event_types": sorted(list(event_types)),
         "sources": sorted(list(sources)),
@@ -84,6 +86,7 @@ def main() -> None:
 
     target = data.get("target") or ""
     clusters = data.get("clusters") or []
+    breaches = data.get("breaches") or []
 
     reduced = [reduce_cluster_for_llm(target, c) for c in clusters]
 
@@ -92,8 +95,10 @@ def main() -> None:
         "input_file": fp.name,
         "counts": {
             "clusters": len(clusters),
+            "breaches": len(breaches),
         },
         "clusters": reduced,
+        "breaches": breaches,
     }
 
     out_path = RESULTS_DIR / f"llm_ready_{fp.stem}.json"

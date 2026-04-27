@@ -111,15 +111,29 @@ function ClusterRow({ cluster }) {
             <ConfidenceBar value={cluster.final_confidence ?? cluster.heuristic_score} showLabel />
           </div>
         </div>
-        <div className="flex items-center gap-2 ml-2 shrink-0">
+        <div className="flex items-center gap-1.5 ml-2 shrink-0" onClick={e => e.stopPropagation()}>
+          {/* Quick confirm / dispute buttons */}
+          <button
+            title="Confirm — this account belongs to the target"
+            onClick={() => annotate.mutate({ analyst_verdict: cluster.analyst_verdict === "confirmed" ? null : "confirmed" })}
+            className={`p-1 rounded transition-colors ${cluster.analyst_verdict === "confirmed" ? "text-green-600 bg-green-50" : "text-gray-300 hover:text-green-500"}`}>
+            <CheckCircle size={16} />
+          </button>
+          <button
+            title="Dispute — this account does not belong to the target"
+            onClick={() => annotate.mutate({ analyst_verdict: cluster.analyst_verdict === "disputed" ? null : "disputed" })}
+            className={`p-1 rounded transition-colors ${cluster.analyst_verdict === "disputed" ? "text-red-500 bg-red-50" : "text-gray-300 hover:text-red-400"}`}>
+            <AlertTriangle size={16} />
+          </button>
           {cluster.urls[0] && (
             <a href={cluster.urls[0]} target="_blank" rel="noopener noreferrer"
-              className="text-gray-400 hover:text-brand-600"
-              onClick={e => e.stopPropagation()}>
+              className="p-1 text-gray-300 hover:text-brand-600">
               <ExternalLink size={14} />
             </a>
           )}
-          {expanded ? <ChevronUp size={15} className="text-gray-400" /> : <ChevronDown size={15} className="text-gray-400" />}
+          <span onClick={e => { e.stopPropagation(); setExpanded(!expanded); }}>
+            {expanded ? <ChevronUp size={15} className="text-gray-400" /> : <ChevronDown size={15} className="text-gray-400" />}
+          </span>
         </div>
       </div>
 
@@ -149,13 +163,61 @@ function ClusterRow({ cluster }) {
             </div>
           )}
 
+          {/* Profile metadata */}
+          {cluster.raw_data?.metadata && Object.keys(cluster.raw_data.metadata).length > 0 && (
+            <div className="bg-blue-50 border border-blue-100 rounded-lg p-3">
+              <p className="text-xs font-semibold text-blue-800 mb-2">Profile Metadata</p>
+              <div className="space-y-1">
+                {cluster.raw_data.metadata.display_name && (
+                  <div className="flex gap-2 text-xs">
+                    <span className="text-blue-400 w-24 shrink-0">Display name</span>
+                    <span className="text-blue-900 font-medium">{cluster.raw_data.metadata.display_name}</span>
+                  </div>
+                )}
+                {cluster.raw_data.metadata.bio && (
+                  <div className="flex gap-2 text-xs">
+                    <span className="text-blue-400 w-24 shrink-0">Bio</span>
+                    <span className="text-blue-900">{cluster.raw_data.metadata.bio}</span>
+                  </div>
+                )}
+                {cluster.raw_data.metadata.location && (
+                  <div className="flex gap-2 text-xs">
+                    <span className="text-blue-400 w-24 shrink-0">Location</span>
+                    <span className="text-blue-900">{cluster.raw_data.metadata.location}</span>
+                  </div>
+                )}
+                {cluster.raw_data.metadata.company && (
+                  <div className="flex gap-2 text-xs">
+                    <span className="text-blue-400 w-24 shrink-0">Company</span>
+                    <span className="text-blue-900">{cluster.raw_data.metadata.company}</span>
+                  </div>
+                )}
+                {cluster.raw_data.metadata.external_links?.length > 0 && (
+                  <div className="flex gap-2 text-xs">
+                    <span className="text-blue-400 w-24 shrink-0">Links</span>
+                    <div className="space-y-0.5">
+                      {cluster.raw_data.metadata.external_links.map((link, i) => (
+                        <a key={i} href={link} target="_blank" rel="noopener noreferrer"
+                          className="text-brand-600 hover:underline block break-all">{link}</a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
           {/* Signals */}
           {cluster.signals?.length > 0 && (
             <div>
-              <p className="text-xs font-medium text-gray-500 mb-1">SpiderFoot Modules</p>
+              <p className="text-xs font-medium text-gray-500 mb-1">Discovery Modules</p>
               <div className="flex flex-wrap gap-1">
                 {cluster.signals.map(s => (
-                  <span key={s} className="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full">{s}</span>
+                  <span key={s} className={`text-xs px-2 py-0.5 rounded-full ${
+                    s === "sherlock" ? "bg-purple-100 text-purple-700" :
+                    s === "maigret"  ? "bg-green-100 text-green-700" :
+                    "bg-gray-200 text-gray-600"
+                  }`}>{s}</span>
                 ))}
               </div>
             </div>
@@ -465,6 +527,25 @@ export function ScanPage() {
       {scan.status === "complete" && view === "graph" && clusters.length > 0 && (
         <div className="mb-6">
           <EntityGraph clusters={clusters} target={scan.target} />
+        </div>
+      )}
+
+      {/* Breach data panel — email scans only */}
+      {scan.status === "complete" && scan.config?.breaches?.length > 0 && (
+        <div className="bg-red-50 border border-red-200 rounded-xl p-4 mb-4">
+          <p className="font-semibold text-red-800 mb-2 text-sm">
+            Data breaches found — {scan.config.breaches.length} breach record{scan.config.breaches.length !== 1 ? "s" : ""}
+          </p>
+          <p className="text-xs text-red-600 mb-3">
+            This email address was found in the following data breach{scan.config.breaches.length !== 1 ? "es" : ""} by SpiderFoot:
+          </p>
+          <ul className="space-y-1">
+            {scan.config.breaches.map((b, i) => (
+              <li key={i} className="text-xs font-mono bg-white rounded px-2 py-1.5 border border-red-100 text-red-800 leading-snug">
+                {b.raw || JSON.stringify(b)}
+              </li>
+            ))}
+          </ul>
         </div>
       )}
 

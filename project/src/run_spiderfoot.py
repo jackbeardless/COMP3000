@@ -12,24 +12,26 @@ LOGS_DIR = PROJECT_DIR / "logs"
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
-EVENT_TYPES = "USERNAME,ACCOUNT_EXTERNAL,USERNAME_MEMBER,URL"
+EVENT_TYPES_USERNAME = "USERNAME,ACCOUNT_EXTERNAL,USERNAME_MEMBER,URL,HUMAN_NAME"
+
 MAX_THREADS = 5  # lower = fewer "too many open files" issues on macOS
 
-def run_spiderfoot_username_scan(target: str, output_format: str = "json") -> dict:
+
+def _run_spiderfoot(target: str, event_types: str, output_format: str = "json") -> dict:
+    """Core SpiderFoot runner — target type agnostic."""
     ts = int(time.time())
-    safe_target = "".join(c for c in target if c.isalnum() or c in "._-")[:50]
+    safe_target = "".join(c for c in target if c.isalnum() or c in "._-@")[:60]
 
-    out_json = RESULTS_DIR / f"spiderfoot_{safe_target}_{ts}.{output_format}"
-    out_stderr = LOGS_DIR / f"spiderfoot_{safe_target}_{ts}.stderr.log"
+    out_json   = RESULTS_DIR / f"spiderfoot_{safe_target}_{ts}.{output_format}"
+    out_stderr = LOGS_DIR    / f"spiderfoot_{safe_target}_{ts}.stderr.log"
 
-    # Ensure SpiderFoot dirs exist, raise ulimit, then run scan
     cmd = (
         'mkdir -p "$HOME/.spiderfoot/db" "$HOME/.spiderfoot/cache" && '
         'chmod -R u+rwX "$HOME/.spiderfoot" && '
         'ulimit -n 8192 && '
         f'cd "{SPIDERFOOT_DIR}" && '
         'source "venv/bin/activate" && '
-        f'python sf.py -max-threads {MAX_THREADS} -s "{target}" -t "{EVENT_TYPES}" -o {output_format}'
+        f'python sf.py -max-threads {MAX_THREADS} -s "{target}" -t "{event_types}" -o {output_format}'
     )
 
     print("Running (bash -lc):")
@@ -37,7 +39,6 @@ def run_spiderfoot_username_scan(target: str, output_format: str = "json") -> di
     print("-" * 60)
 
     res = subprocess.run(["bash", "-lc", cmd], capture_output=True, text=True)
-
     out_stderr.write_text(res.stderr or "", encoding="utf-8")
 
     if res.returncode != 0:
@@ -47,14 +48,20 @@ def run_spiderfoot_username_scan(target: str, output_format: str = "json") -> di
     data = json.loads(res.stdout) if output_format == "json" else res.stdout
 
     return {
-        "target": target,
-        "event_types": EVENT_TYPES,
-        "max_threads": MAX_THREADS,
-        "output_file": str(out_json),
-        "stderr_log": str(out_stderr),
-        "event_count": len(data) if isinstance(data, list) else None,
-        "events": data
+        "target":       target,
+        "event_types":  event_types,
+        "max_threads":  MAX_THREADS,
+        "output_file":  str(out_json),
+        "stderr_log":   str(out_stderr),
+        "event_count":  len(data) if isinstance(data, list) else None,
+        "events":       data,
     }
+
+
+def run_spiderfoot_username_scan(target: str, output_format: str = "json") -> dict:
+    return _run_spiderfoot(target, EVENT_TYPES_USERNAME, output_format)
+
+
 
 if __name__ == "__main__":
     import argparse

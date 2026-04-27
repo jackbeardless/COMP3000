@@ -3,6 +3,7 @@ import os
 import time
 import math
 from dataclasses import dataclass
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -68,11 +69,25 @@ def chunks(lst: List[Any], n: int):
         yield lst[i:i + n]
 
 
-def build_batch_prompt(target: str, clusters: List[Dict[str, Any]]) -> str:
+def build_batch_prompt(target: str, clusters: List[Dict[str, Any]], known_info: Dict[str, Any] = None) -> str:
+    known_section = ""
+    if known_info:
+        parts = []
+        if known_info.get("known_name"):
+            parts.append(f"Full name: {known_info['known_name']}")
+        if known_info.get("known_aliases"):
+            parts.append(f"Other known aliases/usernames: {known_info['known_aliases']}")
+        if known_info.get("known_location"):
+            parts.append(f"Location: {known_info['known_location']}")
+        if known_info.get("known_notes"):
+            parts.append(f"Additional context: {known_info['known_notes']}")
+        if parts:
+            known_section = "\n\nKnown information about the target person:\n" + "\n".join(f"- {p}" for p in parts)
+
     return f"""
 You are judging whether OSINT account clusters likely belong to the target identity.
 
-Target: {target}
+Target: {target}{known_section}
 
 Clusters JSON array:
 {json.dumps(clusters, ensure_ascii=False)}
@@ -104,7 +119,21 @@ Scoring guidance:
 - Downrank adult-content or niche-site matches unless the evidence is structurally very strong.
 - Uprank exact handle matches on high-signal platforms with profile-like URLs.
 - Be conservative. If uncertain, lower the score.
+- Never output final_confidence of 1.0. Maximum is 0.95 — OSINT attribution always carries uncertainty.
 - Do NOT infer anything about the person beyond linkage confidence.
+
+Name and metadata guidance:
+- Each cluster may include "display_names" (names seen in OSINT events) and "metadata" (structured data from the platform's public API: display_name, bio, location, company, external_links).
+- If known_name is provided and the profile's display_name or bio clearly belongs to a different person, significantly reduce confidence (usually "low").
+- If known_name matches the profile's display_name or bio mentions consistent details (employer, city, hobby), this is strong corroborating evidence — increase confidence.
+- If metadata.bio mentions recognisable details consistent with known_notes, treat this as a positive signal.
+- If metadata.location conflicts with known_location, apply a penalty.
+- If display_names and metadata are both empty, score purely on structural evidence — do not penalise.
+- Common short handles (e.g. "zuck", "admin", "user") are used by many different people — be conservative unless corroborating name or bio evidence exists.
+
+Multi-tool corroboration:
+- If the "signals" list contains "sherlock" and/or "maigret" alongside SpiderFoot modules, this means multiple independent tools found the same account — a meaningful positive signal.
+- A "multi_tool_corroboration" entry in score_features reflects this; treat it as genuine corroboration when adjusting confidence.
 """.strip()
 
 
@@ -124,7 +153,7 @@ def judge_cluster_dry(target: str, cluster: Dict[str, Any]) -> Dict[str, Any]:
     if plat in HIGH_SIGNAL_PLATFORMS and target_l and handle.lower() == target_l:
         score += 0.05
 
-    score = clamp01(score)
+    score = min(clamp01(score), 0.92)
 
     if score >= 0.75:
         verdict = "likely"
@@ -179,6 +208,42 @@ def judge_cluster_local_noise(cluster: Dict[str, Any]) -> Dict[str, Any]:
         "flags": [f"platform:{plat}"],
     }
 
+def apply_known_info_penalties(result: Dict[str, Any], cluster: Dict[str, Any], known_info: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Hard deterministic penalties based on known_info vs scraped metadata.
+    Runs after LLM so it cannot be overridden by model output.
+    """
+    if not known_info:
+        return result
+
+    known_name = (known_info.get("known_name") or "").strip().lower()
+    if not known_name:
+        return result
+
+    metadata = cluster.get("metadata") or {}
+    profile_name = (metadata.get("display_name") or "").strip().lower()
+
+    if not profile_name:
+        return result
+
+    sim = SequenceMatcher(None, known_name, profile_name).ratio()
+
+    if sim < 0.4:
+        out = dict(result)
+        out["final_confidence"] = min(out.get("final_confidence", 0.5), 0.35)
+        out["verdict"] = "low"
+        out["rationale"] = (
+            f"{out.get('rationale', '')} [Name mismatch penalty: "
+            f"known='{known_info.get('known_name')}' vs profile='{metadata.get('display_name')}']"
+        ).strip()
+        flags = list(out.get("flags") or [])
+        flags.append(f"name_mismatch:{metadata.get('display_name')}")
+        out["flags"] = flags
+        return out
+
+    return result
+
+
 def validate_batch_results(batch_results: List[Dict[str, Any]], expected_len: int) -> List[Dict[str, Any]]:
     if not isinstance(batch_results, list):
         raise ValueError("Gemini response was not a list.")
@@ -200,7 +265,7 @@ def validate_batch_results(batch_results: List[Dict[str, Any]], expected_len: in
 
         fixed = dict(item)
 
-        fixed["final_confidence"] = clamp01(fixed.get("final_confidence", 0.0))
+        fixed["final_confidence"] = min(clamp01(fixed.get("final_confidence", 0.0)), 0.92)
 
         verdict = str(fixed.get("verdict", "low")).strip().lower()
         if verdict not in valid_verdicts:
@@ -297,7 +362,7 @@ def call_gemini_json_batch(
             raise
 
 
-def main() -> Path:
+def main(known_info: dict = None) -> Path:
     key = os.getenv("GEMINI_API_KEY", "").strip()
     if not key:
         raise RuntimeError("GEMINI_API_KEY is not set. Export it as an environment variable.")
@@ -323,6 +388,7 @@ def main() -> Path:
     data = json.loads(fp.read_text(encoding="utf-8"))
     target = data.get("target") or ""
     clusters: List[Dict[str, Any]] = data.get("clusters") or []
+    breaches: List[Dict[str, Any]] = data.get("breaches") or []
 
     client = genai.Client(api_key=key)
 
@@ -339,6 +405,7 @@ def main() -> Path:
         if cfg.skip_obvious_noise and status in (AUTO_LOW_STATUSES | AUTO_MAYBE_STATUSES):
             j = judge_cluster_local_noise(c_for_judging)
             j = post_adjust_result(c_for_judging, j)
+            j = apply_known_info_penalties(j, c_for_judging, known_info or {})
             out_c = dict(c_for_judging)
             out_c.update(j)
             judged.append(out_c)
@@ -356,12 +423,13 @@ def main() -> Path:
         for c in llm_queue:
             j = judge_cluster_dry(target, c)
             j = post_adjust_result(c, j)
+            j = apply_known_info_penalties(j, c, known_info or {})
             out_c = dict(c)
             out_c.update(j)
             judged.append(out_c)
     else:
         for batch in chunks(llm_queue, cfg.batch_size):
-            prompt = build_batch_prompt(target, batch)
+            prompt = build_batch_prompt(target, batch, known_info=known_info)
 
             try:
                 batch_results = call_gemini_json_batch(
@@ -378,6 +446,7 @@ def main() -> Path:
 
             for c, j in zip(batch, batch_results):
                 j = post_adjust_result(c, j)
+                j = apply_known_info_penalties(j, c, known_info or {})
                 out_c = dict(c)
                 out_c.update(j)
                 judged.append(out_c)
@@ -391,6 +460,7 @@ def main() -> Path:
     out = {
         "target": target,
         "input_file": fp.name,
+        "breaches": breaches,
         "config": {
             "threshold": cfg.threshold,
             "include_low": cfg.include_low,

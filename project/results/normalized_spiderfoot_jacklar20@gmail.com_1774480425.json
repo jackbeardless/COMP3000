@@ -1,0 +1,201 @@
+{
+  "target": "jacklar20@gmail.com",
+  "counts": {
+    "raw_events": 10,
+    "evidence": 10,
+    "unique_usernames": 1,
+    "unique_urls": 8,
+    "accounts": 8
+  },
+  "usernames": [
+    "jacklar20"
+  ],
+  "urls": [
+    "https://greasyfork.org/en/users?q=jacklar20",
+    "https://kik.me/jacklar20",
+    "https://open.spotify.com/user/jacklar20",
+    "https://replit.com/@jacklar20",
+    "https://scratch.mit.edu/users/jacklar20/",
+    "https://www.deviantart.com/jacklar20",
+    "https://www.pinterest.com/jacklar20/",
+    "https://www.reddit.com/user/jacklar20"
+  ],
+  "accounts": [
+    {
+      "platform": null,
+      "url": "https://www.deviantart.com/jacklar20",
+      "username": "jacklar20",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "jacklar20"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://greasyfork.org/en/users?q=jacklar20",
+      "username": "jacklar20@gmail.com",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "jacklar20"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://kik.me/jacklar20",
+      "username": "jacklar20",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "jacklar20"
+        }
+      ]
+    },
+    {
+      "platform": "pinterest",
+      "url": "https://www.pinterest.com/jacklar20/",
+      "username": "jacklar20",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "jacklar20"
+        }
+      ]
+    },
+    {
+      "platform": "reddit",
+      "url": "https://www.reddit.com/user/jacklar20",
+      "username": "jacklar20",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "jacklar20"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://replit.com/@jacklar20",
+      "username": "jacklar20",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "jacklar20"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://scratch.mit.edu/users/jacklar20/",
+      "username": "jacklar20",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "jacklar20"
+        }
+      ]
+    },
+    {
+      "platform": null,
+      "url": "https://open.spotify.com/user/jacklar20",
+      "username": "jacklar20",
+      "kind": "url",
+      "signals": [
+        {
+          "from_event": "Account on External Site",
+          "module": "sfp_accounts",
+          "source": "jacklar20"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "type": "Email Address",
+      "value": "jacklar20@gmail.com",
+      "module": "SpiderFoot UI",
+      "source": "jacklar20@gmail.com",
+      "ts": 1774480440
+    },
+    {
+      "type": "Username",
+      "value": "jacklar20",
+      "module": "sfp_accounts",
+      "source": "jacklar20@gmail.com",
+      "ts": 1774480540
+    },
+    {
+      "type": "Account on External Site",
+      "value": "DeviantArt (Category: images)\n<SFURL>https://www.deviantart.com/jacklar20</SFURL>",
+      "module": "sfp_accounts",
+      "source": "jacklar20",
+      "ts": 1774480634
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Greasy Fork (Category: tech)\n<SFURL>https://greasyfork.org/en/users?q=jacklar20</SFURL>",
+      "module": "sfp_accounts",
+      "source": "jacklar20",
+      "ts": 1774480634
+    },
+    {
+      "type": "Account on External Site",
+      "value": "kik (Category: social)\n<SFURL>https://kik.me/jacklar20</SFURL>",
+      "module": "sfp_accounts",
+      "source": "jacklar20",
+      "ts": 1774480634
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Pinterest (Category: social)\n<SFURL>https://www.pinterest.com/jacklar20/</SFURL>",
+      "module": "sfp_accounts",
+      "source": "jacklar20",
+      "ts": 1774480634
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Reddit (Category: social)\n<SFURL>https://www.reddit.com/user/jacklar20</SFURL>",
+      "module": "sfp_accounts",
+      "source": "jacklar20",
+      "ts": 1774480634
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Replit (Category: coding)\n<SFURL>https://replit.com/@jacklar20</SFURL>",
+      "module": "sfp_accounts",
+      "source": "jacklar20",
+      "ts": 1774480634
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Scratch (Category: coding)\n<SFURL>https://scratch.mit.edu/users/jacklar20/</SFURL>",
+      "module": "sfp_accounts",
+      "source": "jacklar20",
+      "ts": 1774480634
+    },
+    {
+      "type": "Account on External Site",
+      "value": "Spotify (Category: music)\n<SFURL>https://open.spotify.com/user/jacklar20</SFURL>",
+      "module": "sfp_accounts",
+      "source": "jacklar20",
+      "ts": 1774480634
+    }
+  ]
+}

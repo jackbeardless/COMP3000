@@ -8,7 +8,7 @@ Run with:
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from routers import cases, scans, clusters
+from routers import cases, scans, clusters, orgs
 
 app = FastAPI(
     title="OSINT Analyser API",
@@ -32,6 +32,7 @@ app.add_middleware(
 app.include_router(cases.router)
 app.include_router(scans.router)
 app.include_router(clusters.router)
+app.include_router(orgs.router)
 
 
 @app.get("/health", tags=["meta"])

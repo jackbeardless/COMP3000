@@ -1,4 +1,5 @@
 import re
+from difflib import SequenceMatcher
 from typing import Dict, List, Optional, Tuple
 from urllib.parse import urlparse
 
@@ -137,6 +138,11 @@ def platform_guess(url: str, platform_field: Optional[str]) -> str:
 
 def normalized_handle(s: str) -> str:
     return re.sub(r"[^a-z0-9._-]+", "", s.lower())
+
+def _handle_similarity(a: str, b: str) -> float:
+    if not a or not b:
+        return 0.0
+    return SequenceMatcher(None, a, b).ratio()
 
 def extract_handle(platform: str, url: str) -> Optional[str]:
     parts = _path_parts(url)
@@ -293,7 +299,10 @@ def score_account(target: str, acc: Dict) -> Tuple[float, List[Dict]]:
     """
     features: List[Dict] = []
 
-    target_n = normalized_handle(target)
+    # For email targets, use the local part (before @) for handle matching.
+    # normalized_handle("jacklar20@gmail.com") → "jacklar20gmailcom" which never matches a platform handle.
+    match_target = target.split("@")[0] if "@" in target else target
+    target_n = normalized_handle(match_target)
     plat = acc.get("platform") or "unknown"
     url = acc.get("url") or ""
     handle = acc.get("handle") or ""
@@ -306,36 +315,63 @@ def score_account(target: str, acc: Dict) -> Tuple[float, List[Dict]]:
     score = 0.20
     features.append({"feature": "base_score", "delta": 0.20, "label": "Base score"})
 
-    mod_boost = round(min(0.15 * module_count, 0.45), 2)
+    mod_boost = round(min(0.08 * module_count, 0.16), 2)
     score += mod_boost
     n = module_count
     features.append({
         "feature": "module_corroboration",
         "delta": mod_boost,
-        "label": f"Corroborated by {n} SpiderFoot module{'s' if n != 1 else ''}",
+        "label": f"Corroborated by {n} discovery module{'s' if n != 1 else ''}",
     })
 
-    if is_profile_like(plat, url):
+    kind = acc.get("kind") or "url"
+    if kind == "account_external":
+        # Direct link found by SpiderFoot email intelligence — strong signal without a URL
+        score += 0.25
+        features.append({"feature": "email_linked_account", "delta": 0.25,
+                          "label": "Account directly linked to target email by OSINT module"})
+    elif is_profile_like(plat, url):
         score += 0.10
         features.append({"feature": "profile_url", "delta": 0.10, "label": "Profile-like URL structure"})
     else:
         score -= 0.15
         features.append({"feature": "non_profile_url", "delta": -0.15, "label": "Non-profile URL (search/redirect/archive)"})
 
-    if handle_n and handle_n == target_n:
-        score += 0.30
-        features.append({"feature": "exact_handle_match", "delta": 0.30, "label": f"Exact handle match: '{handle}'"})
-        if plat in HIGH_SIGNAL_PLATFORMS:
-            score += 0.10
-            features.append({"feature": "high_signal_platform", "delta": 0.10, "label": f"High-signal platform: {plat}"})
+    if handle_n and target_n:
+        sim = _handle_similarity(handle_n, target_n)
+        if sim == 1.0:
+            score += 0.22
+            features.append({"feature": "exact_handle_match", "delta": 0.22, "label": f"Exact handle match: '{handle}'"})
+            if plat in HIGH_SIGNAL_PLATFORMS:
+                score += 0.07
+                features.append({"feature": "high_signal_platform", "delta": 0.07, "label": f"High-signal platform: {plat}"})
+        elif sim >= 0.75:
+            delta = round(0.14 * sim, 2)
+            score += delta
+            features.append({"feature": "similar_handle", "delta": delta,
+                              "label": f"Similar handle ({int(sim * 100)}% match): '{handle}'"})
+
+    # Multi-tool corroboration — being found by multiple independent tools is a strong signal
+    spiderfoot_found = any(m.startswith("sfp_") for m in modules)
+    sherlock_found   = "sherlock" in modules
+    maigret_found    = "maigret" in modules
+    tool_count = sum([spiderfoot_found, sherlock_found, maigret_found])
+    if tool_count >= 2:
+        tool_delta = round(0.05 * (tool_count - 1), 2)
+        score += tool_delta
+        tool_names = (["SpiderFoot"] if spiderfoot_found else []) + \
+                     (["Sherlock"] if sherlock_found else []) + \
+                     (["Maigret"] if maigret_found else [])
+        features.append({"feature": "multi_tool_corroboration", "delta": tool_delta,
+                          "label": f"Found by {tool_count} independent tools: {', '.join(tool_names)}"})
 
     if plat in LOW_SIGNAL_PLATFORMS:
         score -= 0.10
         features.append({"feature": "low_signal_platform", "delta": -0.10, "label": f"Low-signal platform: {plat}"})
 
-    if target_n and target_n in normalized_handle(url):
-        score += 0.05
-        features.append({"feature": "target_in_url", "delta": 0.05, "label": "Target identifier present in URL"})
+    if url and target_n and target_n in normalized_handle(url.lower()):
+        score += 0.03
+        features.append({"feature": "target_in_url", "delta": 0.03, "label": "Target identifier present in URL"})
 
     # Source reliability weighting — independent axis from signal strength.
     # Measures how trustworthy the platform is as an OSINT source.
@@ -350,7 +386,7 @@ def score_account(target: str, acc: Dict) -> Tuple[float, List[Dict]]:
             "label": f"Source reliability: {rel['label']} ({tier_label} trust)",
         })
 
-    score = max(0.0, min(1.0, score))
+    score = max(0.0, min(0.88, score))
     return score, features
 
 def cluster_accounts(target: str, accounts: List[Dict]) -> List[Dict]:
@@ -359,7 +395,7 @@ def cluster_accounts(target: str, accounts: List[Dict]) -> List[Dict]:
     for acc in accounts:
         url = acc.get("url") or ""
         plat = platform_guess(url, acc.get("platform"))
-        handle = extract_handle(plat, url) or ""
+        handle = extract_handle(plat, url) or acc.get("username") or ""
 
         if handle.startswith("@"):
             handle = handle[1:]
@@ -398,6 +434,11 @@ def cluster_accounts(target: str, accounts: List[Dict]) -> List[Dict]:
             if s.get("module")
         })
         c["urls"] = sorted({a.get("url") for a in c["accounts"] if a.get("url")})
+        c["display_names"] = sorted({
+            name
+            for a in c["accounts"]
+            for name in (a.get("display_names") or [])
+        })
         out.append(c)
 
     out.sort(key=lambda x: x["confidence"], reverse=True)

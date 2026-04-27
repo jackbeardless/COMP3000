@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
-import { getCases, createCase, updateCase, deleteCase } from "../lib/api";
+import { getCases, createCase, updateCase, deleteCase, getMyOrg, createDeletionRequest } from "../lib/api";
 import { Card, CardBody } from "../components/ui/Card";
 import { Button } from "../components/ui/Button";
 import { Badge } from "../components/ui/Badge";
@@ -14,15 +14,23 @@ export function CasesPage() {
   const navigate = useNavigate();
   const [showNew, setShowNew] = useState(false);
   const [name, setName]       = useState("");
-  const [target, setTarget]   = useState("");
   const [description, setDesc] = useState("");
   const [search, setSearch]   = useState("");
+  const [knownName, setKnownName]         = useState("");
+  const [knownAliases, setKnownAliases]   = useState("");
+  const [knownLocation, setKnownLocation] = useState("");
+  const [knownNotes, setKnownNotes]       = useState("");
+  const [showKnownInfo, setShowKnownInfo] = useState(false);
+  const [createError, setCreateError]     = useState("");
 
   const { data: cases = [], isLoading } = useQuery({ queryKey: ["cases"], queryFn: getCases });
+  const { data: org } = useQuery({ queryKey: ["org-me"], queryFn: getMyOrg });
+  const isAdmin = org?.role === "admin";
 
   const create = useMutation({
-    mutationFn: () => createCase({ name, target, description }),
-    onSuccess: (c) => { qc.invalidateQueries({ queryKey: ["cases"] }); setShowNew(false); setName(""); setTarget(""); setDesc(""); navigate(`/cases/${c.id}`); },
+    mutationFn: () => createCase({ name, description, known_info: { known_name: knownName, known_aliases: knownAliases, known_location: knownLocation, known_notes: knownNotes } }),
+    onSuccess: (c) => { qc.invalidateQueries({ queryKey: ["cases"] }); setShowNew(false); setCreateError(""); setName(""); setDesc(""); setKnownName(""); setKnownAliases(""); setKnownLocation(""); setKnownNotes(""); navigate(`/cases/${c.id}`); },
+    onError: (e) => setCreateError(e?.response?.data?.detail || e?.message || "Failed to create case."),
   });
 
   const archive = useMutation({
@@ -33,6 +41,12 @@ export function CasesPage() {
   const remove = useMutation({
     mutationFn: (id) => deleteCase(id),
     onSuccess: () => qc.invalidateQueries({ queryKey: ["cases"] }),
+  });
+
+  const requestDelete = useMutation({
+    mutationFn: ({ id, name }) => createDeletionRequest({ resource_type: "case", resource_id: id, resource_name: name }),
+    onSuccess: () => alert("Deletion request submitted. An admin will review it."),
+    onError: (e) => alert(e?.response?.data?.detail || "Failed to submit deletion request."),
   });
 
   const filtered = cases.filter(c =>
@@ -69,15 +83,35 @@ export function CasesPage() {
             <div className="space-y-3">
               <input value={name} onChange={e => setName(e.target.value)} placeholder="Case name *"
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500" />
-              <input value={target} onChange={e => setTarget(e.target.value)} placeholder="Target username *"
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500" />
               <textarea value={description} onChange={e => setDesc(e.target.value)} placeholder="Description (optional)" rows={2}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 resize-none" />
+              <button
+                type="button"
+                onClick={() => setShowKnownInfo(v => !v)}
+                className="text-sm text-gray-500 hover:text-gray-700 text-left"
+              >
+                Known information (optional) {showKnownInfo ? "▴" : "▾"}
+              </button>
+              {showKnownInfo && (
+                <div className="space-y-2 p-3 bg-gray-50 rounded-lg border border-gray-200">
+                  <input value={knownName} onChange={e => setKnownName(e.target.value)} placeholder="Full name (e.g. Mark Zuckerberg)"
+                    className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm bg-gray-50 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+                  <input value={knownAliases} onChange={e => setKnownAliases(e.target.value)} placeholder="Other aliases (comma-separated)"
+                    className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm bg-gray-50 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+                  <input value={knownLocation} onChange={e => setKnownLocation(e.target.value)} placeholder="Location (e.g. San Francisco, CA)"
+                    className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm bg-gray-50 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+                  <input value={knownNotes} onChange={e => setKnownNotes(e.target.value)} placeholder="Additional notes (job, bio keywords…)"
+                    className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm bg-gray-50 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+                </div>
+              )}
+              {createError && (
+                <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded px-3 py-2">{createError}</p>
+              )}
               <div className="flex gap-2">
-                <Button onClick={() => create.mutate()} disabled={!name || !target || create.isPending}>
+                <Button onClick={() => create.mutate()} disabled={!name || create.isPending}>
                   {create.isPending ? <Spinner size="sm" /> : "Create"}
                 </Button>
-                <Button variant="secondary" onClick={() => setShowNew(false)}>Cancel</Button>
+                <Button variant="secondary" onClick={() => { setShowNew(false); setCreateError(""); }}>Cancel</Button>
               </div>
             </div>
           </CardBody>
@@ -105,7 +139,7 @@ export function CasesPage() {
                       <Badge variant={c.status} label={c.status} />
                     </div>
                     <div className="flex items-center gap-3 mt-1">
-                      <span className="text-sm text-gray-500">Target: <span className="font-mono text-gray-700">{c.target}</span></span>
+                      {c.target && <span className="text-sm text-gray-500">Target: <span className="font-mono text-gray-700">{c.target}</span></span>}
                       <span className="text-xs text-gray-400">{c.total_scans ?? 0} scan{c.total_scans !== 1 ? "s" : ""}</span>
                       <span className="text-xs text-gray-400">{formatDistanceToNow(c.updated_at)}</span>
                     </div>
@@ -117,10 +151,17 @@ export function CasesPage() {
                         <Archive size={15} />
                       </button>
                     )}
-                    <button className="p-1.5 text-gray-400 hover:text-red-500 rounded"
-                      title="Delete" onClick={() => { if (confirm(`Delete case "${c.name}"?`)) remove.mutate(c.id); }}>
-                      <Trash2 size={15} />
-                    </button>
+                    {isAdmin ? (
+                      <button className="p-1.5 text-gray-400 hover:text-red-500 rounded"
+                        title="Delete" onClick={() => { if (confirm(`Delete case "${c.name}"?`)) remove.mutate(c.id); }}>
+                        <Trash2 size={15} />
+                      </button>
+                    ) : (
+                      <button className="p-1.5 text-gray-400 hover:text-amber-500 rounded"
+                        title="Request deletion" onClick={() => { if (confirm(`Request deletion of "${c.name}"? An admin will need to approve it.`)) requestDelete.mutate({ id: c.id, name: c.name }); }}>
+                        <Trash2 size={15} />
+                      </button>
+                    )}
                     <ChevronRight size={16} className="text-gray-300 ml-1" />
                   </div>
                 </div>

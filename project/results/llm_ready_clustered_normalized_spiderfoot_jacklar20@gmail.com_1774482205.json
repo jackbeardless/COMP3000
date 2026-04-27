@@ -1,0 +1,466 @@
+{
+  "target": "jacklar20@gmail.com",
+  "input_file": "clustered_normalized_spiderfoot_jacklar20@gmail.com_1774482205.json",
+  "counts": {
+    "clusters": 9,
+    "breaches": 0
+  },
+  "clusters": [
+    {
+      "target": "jacklar20@gmail.com",
+      "cluster_id": "reddit:jacklar20",
+      "platform": "reddit",
+      "handle": "jacklar20",
+      "key": "jacklar20",
+      "urls": [
+        "https://www.reddit.com/user/jacklar20"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacklar20"
+      ],
+      "heuristic_score": 0.96,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacklar20'"
+        },
+        {
+          "feature": "high_signal_platform",
+          "delta": 0.1,
+          "label": "High-signal platform: reddit"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.06,
+          "label": "Source reliability: Mainstream social (High trust)"
+        }
+      ],
+      "source_reliability": "high",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacklar20@gmail.com",
+      "cluster_id": "deviantart:jacklar20",
+      "platform": "deviantart",
+      "handle": "jacklar20",
+      "key": "jacklar20",
+      "urls": [
+        "https://www.deviantart.com/jacklar20"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacklar20"
+      ],
+      "heuristic_score": 0.8300000000000001,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacklar20'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": 0.03,
+          "label": "Source reliability: Creative platform (Medium trust)"
+        }
+      ],
+      "source_reliability": "medium",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacklar20@gmail.com",
+      "cluster_id": "pinterest:jacklar20",
+      "platform": "pinterest",
+      "handle": "jacklar20",
+      "key": "jacklar20",
+      "urls": [
+        "https://www.pinterest.com/jacklar20/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacklar20"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacklar20'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacklar20@gmail.com",
+      "cluster_id": "unknown:replit.com",
+      "platform": "unknown",
+      "handle": "jacklar20",
+      "key": "replit.com",
+      "urls": [
+        "https://replit.com/@jacklar20"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacklar20"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacklar20'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacklar20@gmail.com",
+      "cluster_id": "scratch:jacklar20",
+      "platform": "scratch",
+      "handle": "jacklar20",
+      "key": "jacklar20",
+      "urls": [
+        "https://scratch.mit.edu/users/jacklar20/"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacklar20"
+      ],
+      "heuristic_score": 0.8,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacklar20'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacklar20@gmail.com",
+      "cluster_id": "kik:jacklar20",
+      "platform": "kik",
+      "handle": "jacklar20",
+      "key": "jacklar20",
+      "urls": [
+        "https://kik.me/jacklar20"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacklar20"
+      ],
+      "heuristic_score": 0.74,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "exact_handle_match",
+          "delta": 0.3,
+          "label": "Exact handle match: 'jacklar20'"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        },
+        {
+          "feature": "source_reliability",
+          "delta": -0.06,
+          "label": "Source reliability: Anonymous messaging (Low trust)"
+        }
+      ],
+      "source_reliability": "low",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacklar20@gmail.com",
+      "cluster_id": "unknown:greasyfork.org",
+      "platform": "unknown",
+      "handle": "en",
+      "key": "greasyfork.org",
+      "urls": [
+        "https://greasyfork.org/en/users?q=jacklar20"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacklar20"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacklar20@gmail.com",
+      "cluster_id": "unknown:ifttt.com",
+      "platform": "unknown",
+      "handle": "p",
+      "key": "ifttt.com",
+      "urls": [
+        "https://ifttt.com/p/jacklar20"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacklar20"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    },
+    {
+      "target": "jacklar20@gmail.com",
+      "cluster_id": "unknown:open.spotify.com",
+      "platform": "unknown",
+      "handle": "user",
+      "key": "open.spotify.com",
+      "urls": [
+        "https://open.spotify.com/user/jacklar20"
+      ],
+      "signals": [
+        "sfp_accounts"
+      ],
+      "event_types": [
+        "Account on External Site"
+      ],
+      "sources": [
+        "jacklar20"
+      ],
+      "heuristic_score": 0.49999999999999994,
+      "score_features": [
+        {
+          "feature": "base_score",
+          "delta": 0.2,
+          "label": "Base score"
+        },
+        {
+          "feature": "module_corroboration",
+          "delta": 0.15,
+          "label": "Corroborated by 1 SpiderFoot module"
+        },
+        {
+          "feature": "profile_url",
+          "delta": 0.1,
+          "label": "Profile-like URL structure"
+        },
+        {
+          "feature": "target_in_url",
+          "delta": 0.05,
+          "label": "Target identifier present in URL"
+        }
+      ],
+      "source_reliability": "unknown",
+      "status": "candidate_profile",
+      "account_count": 1
+    }
+  ],
+  "breaches": []
+}

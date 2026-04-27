@@ -3,18 +3,40 @@ from typing import Any, Dict, List, Optional
 from pydantic import BaseModel
 
 
+# ── Organisations ──────────────────────────────────────────────
+
+class OrgCreate(BaseModel):
+    name: str
+
+
+class InviteMember(BaseModel):
+    email: str
+
+
+class AcceptInvite(BaseModel):
+    token: str
+
+
+class DeletionRequestCreate(BaseModel):
+    resource_type: str   # "case" | "scan"
+    resource_id: str
+    resource_name: Optional[str] = None
+
+
 # ── Cases ─────────────────────────────────────────────────────
 
 class CaseCreate(BaseModel):
     name: str
-    target: str
+    target: str = ""
     description: Optional[str] = None
+    known_info: Optional[Dict] = None
 
 
 class CaseUpdate(BaseModel):
     name: Optional[str] = None
     description: Optional[str] = None
     status: Optional[str] = None  # "active" | "archived"
+    known_info: Optional[Dict] = None
 
 
 class CaseResponse(BaseModel):
@@ -24,6 +46,7 @@ class CaseResponse(BaseModel):
     target: str
     description: Optional[str]
     status: str
+    known_info: Optional[Dict]
     created_at: datetime
     updated_at: datetime
 
@@ -43,6 +66,7 @@ class ScanConfig(BaseModel):
 
 class ScanCreate(BaseModel):
     config: ScanConfig = ScanConfig()
+    scan_target: Optional[str] = None  # override case target for this scan only
 
 
 class ScanResponse(BaseModel):
