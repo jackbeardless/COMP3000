@@ -60,6 +60,18 @@ function ProgressFeed({ scanId }) {
 }
 
 // ── Cluster row ────────────────────────────────────────────────────────────
+function platformLabel(platform, urls) {
+  if (platform && platform !== "unknown") return platform;
+  const url = Array.isArray(urls) ? urls[0] : urls;
+  if (!url) return "unknown";
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, "");
+    return host.split(".")[0]; // e.g. "reddit" from "reddit.com"
+  } catch {
+    return "unknown";
+  }
+}
+
 function ClusterRow({ cluster }) {
   const qc = useQueryClient();
   const [expanded, setExpanded] = useState(false);
@@ -93,7 +105,7 @@ function ClusterRow({ cluster }) {
         {VERDICT_ICON[cluster.verdict]}
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="font-medium text-gray-900 text-sm">{cluster.platform ?? "unknown"}</span>
+            <span className="font-medium text-gray-900 text-sm">{platformLabel(cluster.platform, cluster.urls)}</span>
             {cluster.contradiction_flags?.length > 0 && (
               <AlertTriangle size={13} className="text-amber-500" title="Contradictions detected" />
             )}
