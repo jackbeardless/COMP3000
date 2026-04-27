@@ -1,262 +1,173 @@
-import { useEffect, useRef, useState, useCallback } from "react";
-import {
-  forceSimulation, forceLink, forceManyBody, forceCenter, forceCollide,
-} from "d3-force";
+import { useState, useRef, useEffect } from "react";
+
+function platformLabel(platform, urls) {
+  if (platform && platform !== "unknown") return platform;
+  const url = Array.isArray(urls) ? urls[0] : urls;
+  if (!url) return "unknown";
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, "");
+    return host.split(".")[0];
+  } catch {
+    return "unknown";
+  }
+}
 
 const VERDICT_COLOUR = {
   likely: { fill: "#166534", bg: "#dcfce7", border: "#16a34a" },
   maybe:  { fill: "#92400e", bg: "#fef3c7", border: "#d97706" },
   low:    { fill: "#991b1b", bg: "#fee2e2", border: "#dc2626" },
 };
-const TARGET = { fill: "#fff", bg: "#1e40af", border: "#1e3a8a" };
 
-function ClusterLabel({ node, onHover, hovered }) {
-  const c = VERDICT_COLOUR[node.verdict] ?? VERDICT_COLOUR.low;
-  const isHovered = hovered === node.id;
-  const pad = { x: 10, y: 6 };
-  const lineH = 16;
-  const lines = [node.platform, node.handle ? `@${node.handle}` : null].filter(Boolean);
-  const w = Math.max(90, (Math.max(...lines.map(l => l.length)) * 7) + pad.x * 2);
-  const h = lines.length * lineH + pad.y * 2;
+const NODE_W = 90;
+const NODE_H = 36;
+const MIN_ARC  = 104; // minimum arc-length spacing between nodes in a ring
 
-  return (
-    <g
-      transform={`translate(${node.x - w / 2},${node.y - h / 2})`}
-      style={{ cursor: "pointer" }}
-      onMouseEnter={() => onHover(node.id)}
-      onMouseLeave={() => onHover(null)}
-    >
-      <rect
-        x={0} y={0} width={w} height={h} rx={7} ry={7}
-        fill={c.bg}
-        stroke={isHovered ? c.fill : c.border}
-        strokeWidth={isHovered ? 2.5 : 1.5}
-        filter={isHovered ? "url(#glow)" : undefined}
-      />
-      {/* Verdict colour stripe on left edge */}
-      <rect x={0} y={0} width={4} height={h} rx={3} ry={3} fill={c.border} />
-      {lines.map((line, i) => (
-        <text
-          key={i}
-          x={w / 2 + 2} y={pad.y + lineH * i + 11}
-          textAnchor="middle"
-          fontSize={i === 0 ? 11 : 9.5}
-          fontWeight={i === 0 ? 700 : 400}
-          fontFamily={i === 1 ? "monospace" : "sans-serif"}
-          fill={i === 0 ? c.fill : "#6b7280"}
-        >
-          {line}
-        </text>
-      ))}
-      {/* Confidence badge */}
-      <text
-        x={w - 5} y={h - 4}
-        textAnchor="end"
-        fontSize={9} fontWeight={700}
-        fill={c.border}
-      >
-        {Math.round(node.confidence * 100)}%
-      </text>
-      {/* Contradiction dot */}
-      {node.contradictions > 0 && (
-        <circle cx={w - 7} cy={7} r={6} fill="#f59e0b" />
-      )}
-      {node.contradictions > 0 && (
-        <text x={w - 7} y={11} textAnchor="middle" fontSize={8} fontWeight={700} fill="white">!</text>
-      )}
-    </g>
-  );
+function ringRadius(count, base) {
+  if (count === 0) return base;
+  return Math.max(base, (count * MIN_ARC) / (2 * Math.PI));
+}
+
+function placeRing(clusters, radius) {
+  return clusters.map((c, i) => {
+    const angle = (2 * Math.PI * i / clusters.length) - Math.PI / 2;
+    return { cluster: c, x: radius * Math.cos(angle), y: radius * Math.sin(angle) };
+  });
 }
 
 export function EntityGraph({ clusters, target }) {
-  const svgRef = useRef(null);
-  const [nodes, setNodes] = useState([]);
-  const [links, setLinks] = useState([]);
-  const [hovered, setHovered] = useState(null);
+  const containerRef = useRef(null);
+  const [width, setWidth]     = useState(800);
   const [selected, setSelected] = useState(null);
-  const [dims, setDims] = useState({ w: 800, h: 520 });
-  const simRef = useRef(null);
 
-  // Measure container width
   useEffect(() => {
-    const el = svgRef.current?.parentElement;
-    if (!el) return;
-    const ro = new ResizeObserver(([entry]) => {
-      const w = entry.contentRect.width;
-      setDims({ w, h: Math.min(560, Math.max(420, w * 0.6)) });
-    });
-    ro.observe(el);
+    if (!containerRef.current) return;
+    const ro = new ResizeObserver(([e]) => setWidth(Math.floor(e.contentRect.width)));
+    ro.observe(containerRef.current);
     return () => ro.disconnect();
   }, []);
 
-  // Build and run force simulation
-  useEffect(() => {
-    if (!clusters.length) return;
-    const { w, h } = dims;
+  const likely = clusters.filter(c => c.verdict === "likely");
+  const maybe  = clusters.filter(c => c.verdict === "maybe");
+  const low    = clusters.filter(c => c.verdict === "low");
 
-    const simNodes = [
-      { id: "target", type: "target", x: w / 2, y: h / 2, fx: w / 2, fy: h / 2 },
-      ...clusters.map((c, i) => ({
-        id: `c-${i}`,
-        type: "cluster",
-        platform: c.platform ?? "unknown",
-        handle: c.handle ?? "",
-        verdict: c.verdict ?? "low",
-        confidence: c.final_confidence ?? c.heuristic_score ?? 0,
-        contradictions: (c.contradiction_flags ?? []).length,
-        clusterIdx: i,
-        x: w / 2 + (Math.random() - 0.5) * 200,
-        y: h / 2 + (Math.random() - 0.5) * 200,
-      })),
-    ];
+  const r1 = ringRadius(likely.length, 130);
+  const r2 = ringRadius(maybe.length,  r1 + 95);
+  const r3 = ringRadius(low.length,    r2 + 95);
 
-    const simLinks = clusters.map((_, i) => ({
-      source: "target",
-      target: `c-${i}`,
-      verdict: clusters[i].verdict ?? "low",
-      confidence: clusters[i].final_confidence ?? clusters[i].heuristic_score ?? 0,
-    }));
+  const outerR = (low.length ? r3 : maybe.length ? r2 : r1) + NODE_W / 2 + 12;
+  const viewBox = `${-outerR} ${-outerR} ${outerR * 2} ${outerR * 2}`;
+  const svgH = Math.round(width * 0.58);
 
-    if (simRef.current) simRef.current.stop();
+  const nodes = [
+    ...placeRing(likely, r1),
+    ...placeRing(maybe,  r2),
+    ...placeRing(low,    r3),
+  ];
 
-    const sim = forceSimulation(simNodes)
-      .force("link", forceLink(simLinks).id(d => d.id).distance(d => {
-        // Likely clusters sit closer to the target
-        if (d.verdict === "likely") return 140;
-        if (d.verdict === "maybe")  return 180;
-        return 220;
-      }).strength(0.8))
-      .force("charge", forceManyBody().strength(-400))
-      .force("center", forceCenter(w / 2, h / 2))
-      .force("collide", forceCollide(70))
-      .on("tick", () => {
-        setNodes([...sim.nodes()]);
-        setLinks([...simLinks]);
-      })
-      .on("end", () => {
-        setNodes([...sim.nodes()]);
-        setLinks([...simLinks]);
-      });
+  const selCluster = selected !== null ? nodes[selected]?.cluster : null;
 
-    simRef.current = sim;
-    return () => sim.stop();
-  }, [clusters, dims]);
-
-  const targetNode = nodes.find(n => n.id === "target");
-  const clusterNodes = nodes.filter(n => n.type === "cluster");
-
-  const linkStroke = verdict =>
-    verdict === "likely" ? "#16a34a"
-    : verdict === "maybe" ? "#d97706"
-    : "#dc2626";
-
-  const selCluster = selected?.startsWith("c-")
-    ? clusters[parseInt(selected.replace("c-", ""))]
-    : null;
-
-  const likelyCt = clusters.filter(c => c.verdict === "likely").length;
-  const maybeCt  = clusters.filter(c => c.verdict === "maybe").length;
-  const lowCt    = clusters.filter(c => c.verdict === "low").length;
-  const contCt   = clusters.filter(c => (c.contradiction_flags ?? []).length > 0).length;
-
-  const handleNodeClick = useCallback((id) => {
-    setSelected(prev => prev === id ? null : id);
-  }, []);
+  const contCt = clusters.filter(c => (c.contradiction_flags ?? []).length > 0).length;
 
   return (
-    <div className="border border-gray-200 rounded-xl overflow-hidden">
-      <div className="relative bg-slate-950" style={{ minHeight: dims.h }}>
-        <svg
-          ref={svgRef}
-          width={dims.w}
-          height={dims.h}
-          style={{ display: "block" }}
-        >
-          <defs>
-            <filter id="glow">
-              <feGaussianBlur stdDeviation="3" result="blur" />
-              <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-            </filter>
-            {/* Arrow markers per verdict */}
-            {Object.entries(VERDICT_COLOUR).map(([v, c]) => (
-              <marker key={v} id={`arrow-${v}`} markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-                <path d="M0,0 L0,6 L6,3 z" fill={c.border} opacity={0.7} />
-              </marker>
-            ))}
-          </defs>
+    <div ref={containerRef} className="border border-gray-200 rounded-xl overflow-hidden">
+      <div className="relative bg-slate-950">
+        <svg width={width} height={svgH} viewBox={viewBox} style={{ display: "block" }}>
 
-          {/* Edges */}
-          {clusterNodes.map((cn, i) => {
-            const lk = links[i];
-            if (!lk || !targetNode) return null;
-            const conf = cn.confidence ?? 0;
-            const verdict = cn.verdict ?? "low";
+          {/* Edges — drawn first so they sit under nodes */}
+          {nodes.map(({ cluster, x, y }, i) => {
+            const conf = cluster.final_confidence ?? cluster.heuristic_score ?? 0;
+            const col  = VERDICT_COLOUR[cluster.verdict] ?? VERDICT_COLOUR.low;
             return (
-              <line
-                key={cn.id}
-                x1={targetNode.x} y1={targetNode.y}
-                x2={cn.x} y2={cn.y}
-                stroke={linkStroke(verdict)}
-                strokeWidth={1 + conf * 3.5}
-                strokeOpacity={0.4 + conf * 0.35}
-                strokeDasharray={verdict === "low" ? "5,4" : undefined}
-                markerEnd={`url(#arrow-${verdict})`}
+              <line key={i}
+                x1={0} y1={0} x2={x} y2={y}
+                stroke={col.border}
+                strokeWidth={1 + conf * 3}
+                strokeOpacity={0.28 + conf * 0.42}
+                strokeDasharray={cluster.verdict === "low" ? "6,4" : undefined}
               />
             );
           })}
 
           {/* Target node */}
-          {targetNode && (
-            <g style={{ cursor: "default" }}>
-              <circle
-                cx={targetNode.x} cy={targetNode.y} r={34}
-                fill={TARGET.bg} stroke={TARGET.border} strokeWidth={2.5}
-                filter="url(#glow)"
-              />
-              <text x={targetNode.x} y={targetNode.y - 7} textAnchor="middle" fontSize={9} fill="rgba(255,255,255,0.6)" fontFamily="sans-serif">
-                TARGET
-              </text>
-              <text x={targetNode.x} y={targetNode.y + 8} textAnchor="middle" fontSize={12} fontWeight={700} fill="white" fontFamily="sans-serif">
-                {target.length > 12 ? target.slice(0, 11) + "…" : target}
-              </text>
-            </g>
-          )}
+          <circle cx={0} cy={0} r={32} fill="#1e40af" stroke="#1e3a8a" strokeWidth={2.5} />
+          <text x={0} y={-8}  textAnchor="middle" fontSize={9}  fill="rgba(255,255,255,0.5)" fontFamily="sans-serif">TARGET</text>
+          <text x={0} y={10}  textAnchor="middle" fontSize={13} fontWeight={700} fill="white" fontFamily="sans-serif">
+            {target.length > 12 ? target.slice(0, 11) + "…" : target}
+          </text>
 
           {/* Cluster nodes */}
-          {clusterNodes.map(n => (
-            <g key={n.id} onClick={() => handleNodeClick(n.id)}>
-              <ClusterLabel
-                node={n}
-                onHover={setHovered}
-                hovered={hovered}
-              />
-            </g>
-          ))}
+          {nodes.map(({ cluster, x, y }, i) => {
+            const col      = VERDICT_COLOUR[cluster.verdict] ?? VERDICT_COLOUR.low;
+            const label    = platformLabel(cluster.platform, cluster.urls);
+            const handle   = cluster.handle;
+            const isSelected = selected === i;
+            const hasContra  = (cluster.contradiction_flags ?? []).length > 0;
+            const hw = NODE_W / 2, hh = NODE_H / 2;
+
+            return (
+              <g key={i} onClick={() => setSelected(p => p === i ? null : i)} style={{ cursor: "pointer" }}>
+                <rect
+                  x={x - hw} y={y - hh} width={NODE_W} height={NODE_H} rx={7}
+                  fill={col.bg}
+                  stroke={isSelected ? col.fill : col.border}
+                  strokeWidth={isSelected ? 2.5 : 1.5}
+                />
+                {/* Left accent stripe */}
+                <rect x={x - hw} y={y - hh} width={4} height={NODE_H} rx={2} fill={col.border} />
+
+                <text x={x + 2} y={y + (handle ? -4 : 5)}
+                  textAnchor="middle" fontSize={11} fontWeight={700}
+                  fill={col.fill} fontFamily="sans-serif">
+                  {label.length > 11 ? label.slice(0, 10) + "…" : label}
+                </text>
+                {handle && (
+                  <text x={x + 2} y={y + 9}
+                    textAnchor="middle" fontSize={9} fill="#6b7280" fontFamily="monospace">
+                    {(`@${handle}`).length > 13 ? `@${handle}`.slice(0, 12) + "…" : `@${handle}`}
+                  </text>
+                )}
+
+                {/* Contradiction warning dot */}
+                {hasContra && (
+                  <>
+                    <circle cx={x + hw - 6} cy={y - hh + 6} r={6} fill="#f59e0b" />
+                    <text x={x + hw - 6} y={y - hh + 10} textAnchor="middle" fontSize={8} fontWeight={700} fill="white">!</text>
+                  </>
+                )}
+              </g>
+            );
+          })}
         </svg>
 
-        {/* Selected detail panel */}
+        {/* Detail panel */}
         {selCluster && (
           <div className="absolute top-3 right-3 bg-white rounded-xl border border-gray-200 shadow-lg p-4 w-56 text-xs z-10">
             <p className="font-bold text-gray-900 mb-1">
-              {selCluster.platform}
+              {platformLabel(selCluster.platform, selCluster.urls)}
               {selCluster.handle && (
-                <span className="font-normal text-gray-500 font-mono ml-1">@{selCluster.handle}</span>
+                <span className="font-mono font-normal text-gray-500 ml-1">@{selCluster.handle}</span>
               )}
             </p>
-            <p style={{ color: VERDICT_COLOUR[selCluster.verdict]?.border }} className="font-semibold mb-2">
+            <p className="font-semibold mb-2" style={{ color: (VERDICT_COLOUR[selCluster.verdict] ?? VERDICT_COLOUR.low).border }}>
               {selCluster.verdict} · {Math.round((selCluster.final_confidence ?? selCluster.heuristic_score ?? 0) * 100)}%
             </p>
             {selCluster.rationale && (
-              <p className="text-gray-500 leading-relaxed">
+              <p className="text-gray-500 leading-relaxed mb-2">
                 {selCluster.rationale.slice(0, 160)}{selCluster.rationale.length > 160 ? "…" : ""}
               </p>
             )}
             {(selCluster.contradiction_flags ?? []).length > 0 && (
-              <p className="text-amber-600 mt-2 font-medium">
+              <p className="text-amber-600 font-medium mb-2">
                 ⚠ {selCluster.contradiction_flags.length} contradiction{selCluster.contradiction_flags.length > 1 ? "s" : ""}
               </p>
             )}
-            <button className="mt-3 text-gray-400 hover:text-gray-600 text-xs" onClick={() => setSelected(null)}>
+            {selCluster.urls?.[0] && (
+              <a href={selCluster.urls[0]} target="_blank" rel="noopener noreferrer"
+                className="block text-brand-600 hover:underline truncate mb-2">
+                {selCluster.urls[0]}
+              </a>
+            )}
+            <button className="text-gray-400 hover:text-gray-600" onClick={() => setSelected(null)}>
               Dismiss ×
             </button>
           </div>
@@ -267,17 +178,17 @@ export function EntityGraph({ clusters, target }) {
       <div className="flex items-center gap-4 px-4 py-2.5 bg-slate-900 text-xs flex-wrap">
         <span className="text-gray-400 font-medium">Legend:</span>
         {[
-          { colour: "#16a34a", label: `Likely (${likelyCt})` },
-          { colour: "#d97706", label: `Maybe (${maybeCt})` },
-          { colour: "#dc2626", label: `Low (${lowCt})` },
+          { colour: "#16a34a", label: `Likely (${likely.length})` },
+          { colour: "#d97706", label: `Maybe (${maybe.length})` },
+          { colour: "#dc2626", label: `Low (${low.length})` },
         ].map(l => (
           <span key={l.label} className="flex items-center gap-1.5 text-gray-300">
-            <span style={{ width: 10, height: 10, borderRadius: "50%", background: l.colour, display: "inline-block" }} />
+            <span className="inline-block w-2.5 h-2.5 rounded-full" style={{ background: l.colour }} />
             {l.label}
           </span>
         ))}
         {contCt > 0 && <span className="text-amber-400 font-medium">⚠ {contCt} with contradictions</span>}
-        <span className="ml-auto text-gray-500">Click a node for detail · Solid edges = likely · Dashed = low</span>
+        <span className="ml-auto text-gray-500">Click a node for detail</span>
       </div>
     </div>
   );
